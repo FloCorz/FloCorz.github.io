@@ -173,7 +173,7 @@
 			onEachFeature: function (feature, layer) {
 				var note2 = '<h3>' + feature.properties.STATION + '</h3>';
 				note2 += '<h4>' + "Bezirk: " + feature.properties.BEZIRK + '</h4>';
-				layer.bindPopup(note2);
+				layer.bindTooltip(note2);
 			}
         }).addTo(cluster_group);
 		map.addLayer(cluster_group);
