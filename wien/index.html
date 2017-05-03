@@ -13,6 +13,15 @@
     <script src="citybike_punkte.json.js"></script>
     <script src="wanderwege_linien.json.js"></script>
 	<script src="wiener_märkte.json.js"></script>
+	<script src="my_geojson.js"></script>	
+	<script src="leaflet-hash.js"></script>
+	<script src="leaflet.markercluster.js"></script>
+	<link rel="stylesheet" href="MarkerCluster.css" />
+	<link rel="stylesheet" href="MarkerCluster.Default.css" />
+	
+	<link rel="stylesheet" href="leaflet-routing-machine.css" />
+	<script src="leaflet-routing-machine.js"></script>
+	
     <style>
         h1 {
             text-align: center;
@@ -84,9 +93,13 @@
         // Karte definieren und Ausschnitt setzen
         var map = L.map('wienMap', {
             layers: [layers.bmapgrau],
+			center: [48.20833, 16.373064],
+            zoom: 12
         });
+		
+		var cluster_group = L.markerClusterGroup();
 
-		map.locate({setView: true, maxZoom: 16});
+		//map.locate({setView: true, maxZoom: 16});
 		
 		function onLocationFound(e) {
 		var radius = e.accuracy / 10;
@@ -156,13 +169,14 @@
                         iconUrl: 'http://www.data.wien.gv.at/icons/citybike.png'
                     })
                 });
-            }
-
-        }).bindPopup(function(layer) {
-			var note2 = '<h3>' + layer.feature.properties.STATION + '</h3>';
-			note2 += '<h4>' + "Bezirk: " + layer.feature.properties.BEZIRK + '</h4>';
-            return note2
-        }).addTo(map);
+            }, 
+			onEachFeature: function (feature, layer) {
+				var note2 = '<h3>' + feature.properties.STATION + '</h3>';
+				note2 += '<h4>' + "Bezirk: " + feature.properties.BEZIRK + '</h4>';
+				layer.bindPopup(note2);
+			}
+        }).addTo(cluster_group);
+		map.addLayer(cluster_group);
 
         // GeoJSON Daten der Wanderwege laden, nach Typ einfärben und Popup erstellen
         var linienWanderwege = L.geoJSON(window.wanderwegeLinien, {
@@ -220,7 +234,16 @@
 			"Märkte": flächenWienermärkte
         }).addTo(map)
 		
-
+		L.geoJSON(window.my_geojson).addTo(map);
+		
+		var hash = new L.Hash(map); 
+		
+		L.Routing.control({
+		waypoints: [
+		L.latLng(47.26100, 11.40460),
+		L.latLng(48.22735, 16.35150)
+		]
+		}).addTo(map);
     </script>
 
 </body>
