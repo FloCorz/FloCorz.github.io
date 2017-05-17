@@ -8,9 +8,13 @@
     <title>basemap.at mit leaflet-hash Plugin</title>
 
     <link rel="stylesheet" href="js/leaflet/leaflet.css" />
+	<link rel="stylesheet" href="js/leaflet-elevation/leaflet.elevation-0.0.4.css" />
     <script src="js/leaflet/leaflet.js"></script>
     <script src="js/leaflet-hash/leaflet-hash.js"></script>
 	<script src="Data/adlerwegetappe05.js"></script>
+	<script src="js/leaflet-elevation/leaflet.elevation-0.0.4.min.js"></script>
+	<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	
     <style>
         body {
             padding: 0px;
@@ -82,6 +86,12 @@
         // leaflet-hash aktivieren
         var hash = new L.Hash(map);
 		L.geoJSON(window.etappe05).addTo(map);
+		
+		var el = L.control.elevation();
+		el.addTo(map);
+		L.geoJson(window.etappe05, {
+			onEachFeature: el.addData.bind(el)
+		}).addTo(map);
 		
 		var huts = [
 			L.marker([47.533657, 12.019142], { title: "Gasthof Buchhacker", icon: L.icon({iconUrl: 'icons/hut.png'}) }),
