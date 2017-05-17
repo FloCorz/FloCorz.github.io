@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="js/leaflet/leaflet.css" />
     <script src="js/leaflet/leaflet.js"></script>
     <script src="js/leaflet-hash/leaflet-hash.js"></script>
-
+	<script src="Data/adlerwegetappe05.js"></script>
     <style>
         body {
             padding: 0px;
@@ -81,7 +81,7 @@
 
         // leaflet-hash aktivieren
         var hash = new L.Hash(map);
-
+		L.geoJSON(window.etappe05).addTo(map);
     </script>
 
 </body>
