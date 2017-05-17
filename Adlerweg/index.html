@@ -14,6 +14,7 @@
 	<script src="Data/adlerwegetappe05.js"></script>
 	<script src="js/leaflet-elevation/leaflet.elevation-0.0.4.min.js"></script>
 	<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.2.0/leaflet-omnivore.min.js'></script>
 	
     <style>
         body {
@@ -87,9 +88,11 @@
         var hash = new L.Hash(map);
 		L.geoJSON(window.etappe05).addTo(map);
 		
+		// var etappe = omnivore.gpx('data/AdlerwegEtappe05.gpx').addTo(map);
+		
 		var el = L.control.elevation();
-		el.addTo(map);
-		L.geoJson(window.etappe05, {
+			el.addTo(map);
+			L.geoJson(window.etappe05, {
 			onEachFeature: el.addData.bind(el)
 		}).addTo(map);
 		
