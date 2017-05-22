@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -5,34 +6,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <title>basemap.at mit leaflet-hash Plugin</title>
+    <title>Adlerweg Etappe 5: Alpengasthof Buchacker - Kaiserhaus </title>
 
-    <link rel="stylesheet" href="js/leaflet/leaflet.css" />
-	<link rel="stylesheet" href="js/leaflet-elevation/leaflet.elevation-0.0.4.css" />
-    <script src="js/leaflet/leaflet.js"></script>
-    <script src="js/leaflet-hash/leaflet-hash.js"></script>
-	<script src="Data/adlerwegetappe05.js"></script>
-	<script src="js/leaflet-elevation/leaflet.elevation-0.0.4.min.js"></script>
-	<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-	<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.2.0/leaflet-omnivore.min.js'></script>
-	
+    <link rel="stylesheet" href="../js/leaflet/leaflet.css" />
+    <link rel="stylesheet" href="../js/leaflet-elevation/leaflet.elevation-0.0.4.css" />
+
+    <script src="../js/leaflet/leaflet.js"></script>
+    <script src="../js/leaflet-omnivore/leaflet-omnivore.js"></script>
+    <script src="../js/leaflet-elevation/leaflet.elevation-0.0.4.min.js"></script>
+    <script src="../js/d3js/d3.v3.min.js"></script>
+
     <style>
         body {
             padding: 0px;
             margin: 0px;
         }
-        html, body, #map {
+        html, body, {
             height: 100vh;
             width: 100vw;
         }
+		#map {
+			float: center;
+			height: 600px;
+			width: 1024px;
+			border: 1px solid black
+		}
     </style>
 </head>
 
 <body>
+	<h1> Adlerweg Etappe 5: Alpengasthof Buchacker – Kaiserhaus</h1>
+	<p> Moderate Ansprüche an die Kondition stellt diese Adlerweg-Etappe, die vom Alpengasthaus Buchacker zum Gasthof Gwerchtwirt führt. Entlang der Strecke gibt es immer wieder wunderbare Ausblicke zum Kaisergebirge, zu den Kitzbühler Alpen, zum Rofangebirge, zu den Zillertaler und Stubaier Alpen, und bei guter Sicht sogar bis zum Großglockner und Großvenediger.</p>
     <div id="map"></div>
 
     <script>
-        // WMTS-Layer basemap.at - Quelle: http://www.basemap.at/wmts/1.0.0/WMTSCapabilities.xml
         var layers = {
             geolandbasemap: L.tileLayer("https://{s}.wien.gv.at/basemap/geolandbasemap/normal/google3857/{z}/{y}/{x}.png", {
                 subdomains: ['maps', 'maps1', 'maps2', 'maps3', 'maps4'],
@@ -67,14 +74,50 @@
             zoom : 8
         });
 
-        // Ma�stab hinzuf�gen
+        // Maßstab hinzufügen
         L.control.scale({
             maxWidth: 200,
             metric: true,
             imperial: false
         }).addTo(map);
 
-        // WMTS-Layer Auswahl hinzuf�gen
+        // Höhenprofil control hinzufügen
+        var profileControl = L.control.elevation({
+            position : 'bottomleft',
+            theme : 'steelblue-theme'
+        });
+        profileControl.addTo(map);
+
+        // GPX Track laden
+        gpxTrack = omnivore.gpx('gpx/AdlerwegEtappe05.gpx').addTo(map);
+
+        // nach erfolgreichem Laden Popup hinzufügen, Ausschnitt setzen und Höhenprofil erzeugen
+        gpxTrack.on('ready', function () {
+            // Popup hinzufügen
+            var markup = '<h3>Adlerweg-Etappe 5: Alpengasthof Buchacker - Kaiserhaus</h3>';
+            markup += '<p>Moderate Ansprüche an die Kondition stellt diese Adlerweg-Etappe, die vom Alpengasthaus Buchacker zum Gasthof Gwerchtwirt führt. Entlang der Strecke gibt es immer wieder wunderbare Ausblicke zum Kaisergebirge, zu den Kitzbühler Alpen, zum Rofangebirge, zu den Zillertaler und Stubaier Alpen, und bei guter Sicht sogar bis zum Großglockner und Großvenediger.</p>'
+            markup += '<li>Ausgangspunkt: Alpengasthaus Buchacker</li>';
+            markup += '<li>Endpunkt: Gasthof Gwercherwirt</li>';
+            markup += '<li>Höhenmeter bergauf: 980</li>';
+            markup += '<li>Höhenmeter bergab: 1630</li>';
+            markup += '<li>Höchster Punkt: 1772</li>';
+            markup += '<li>Schwierigkeitsgrad: leicht</li>';
+            markup += '<li>Streckenlänge (in km): 18</li>';
+            markup += '<li>Gehzeit (in Stunden): 3</li>';
+            markup += '<li>Einkehrmöglichkeiten: Alpengasthof Buchacker, Gwercherwirt</li>';
+            markup += '<li><a href="http://www.tirol.at/reisefuehrer/sport/wandern/wandertouren/a-adlerweg-etappe-5-gasthof-buchacker-pinegg">Weitere Informationen</a></li>';
+            gpxTrack.bindPopup(markup, { maxWidth : 450 });
+
+            // Ausschnitt setzen
+            map.fitBounds(gpxTrack.getBounds());
+
+            // Höhenprofil erzeugen
+            gpxTrack.eachLayer(function(layer) {
+                profileControl.addData(layer.feature);
+            });
+        });
+
+        // WMTS-Layer Auswahl hinzufügen
         var layerControl = L.control.layers({
             "basemap.at - STANDARD": layers.geolandbasemap,
             "basemap.at - GRAU": layers.bmapgrau,
@@ -82,19 +125,9 @@
             "basemap.at - HIGH-DPI": layers.bmaphidpi,
             "basemap.at - ORTHOFOTO": layers.bmaporthofoto30cm,
             "OpenStreetMap": layers.osm,
+        },{
+            "Adlerweg Etappe 5" : gpxTrack
         }).addTo(map);
-
-        // leaflet-hash aktivieren
-        var hash = new L.Hash(map);
-		L.geoJSON(window.etappe05).addTo(map);
-		
-		// var etappe = omnivore.gpx('data/AdlerwegEtappe05.gpx').addTo(map);
-		
-		var el = L.control.elevation();
-			el.addTo(map);
-			L.geoJson(window.etappe05, {
-			onEachFeature: el.addData.bind(el)
-		}).addTo(map);
 		
 		var huts = [
 			L.marker([47.533657, 12.019142], { title: "Gasthof Buchhacker", icon: L.icon({iconUrl: 'icons/hut.png'}) }),
@@ -112,8 +145,7 @@
 				map.removeLayer(hutsLayer); 
 			}
 		});
-		
-		</script>
+    </script>
 
 </body>
 
