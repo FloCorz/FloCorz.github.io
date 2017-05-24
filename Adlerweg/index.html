@@ -53,6 +53,33 @@
 	<h1> Adlerweg Etappe 5: Alpengasthof Buchacker – Kaiserhaus</h1>
 	<p style="text-align: center"> Moderate Ansprüche an die Kondition stellt diese Adlerweg-Etappe, die vom Alpengasthaus Buchacker zum Gasthof Gwerchtwirt führt. Entlang der Strecke gibt es immer wieder wunderbare Ausblicke zum Kaisergebirge, zu den Kitzbühler Alpen, zum Rofangebirge, zu den Zillertaler und Stubaier Alpen, und bei guter Sicht sogar bis zum Großglockner und Großvenediger.</p>
     <div id="map"></div>
+	<select id="etappen">
+	<option value="AdlerwegEtappe01.gpx">Adlerweg Etappe 1 </option>
+	<option value="AdlerwegEtappe02.gpx">Adlerweg Etappe 2 </option>
+	<option value="AdlerwegEtappe03.gpx">Adlerweg Etappe 3 </option>
+	<option value="AdlerwegEtappe04.gpx">Adlerweg Etappe 4 </option>
+	<option value="AdlerwegEtappe05.gpx">Adlerweg Etappe 5 </option>
+	<option value="AdlerwegEtappe06.gpx">Adlerweg Etappe 6 </option>
+	<option value="AdlerwegEtappe07.gpx">Adlerweg Etappe 7 </option>
+	<option value="AdlerwegEtappe08.gpx">Adlerweg Etappe 8 </option>
+	<option value="AdlerwegEtappe09.gpx">Adlerweg Etappe 9 </option>
+	<option value="AdlerwegEtappe10.gpx">Adlerweg Etappe 10</option>
+	<option value="AdlerwegEtappe11.gpx">Adlerweg Etappe 11</option>
+	<option value="AdlerwegEtappe12.gpx">Adlerweg Etappe 12</option>
+	<option value="AdlerwegEtappe13.gpx">Adlerweg Etappe 13</option>
+	<option value="AdlerwegEtappe14.gpx">Adlerweg Etappe 14</option>
+	<option value="AdlerwegEtappe15.gpx">Adlerweg Etappe 15</option>
+	<option value="AdlerwegEtappe16.gpx">Adlerweg Etappe 16</option>
+	<option value="AdlerwegEtappe17.gpx">Adlerweg Etappe 17</option>
+	<option value="AdlerwegEtappe18.gpx">Adlerweg Etappe 18</option>
+	<option value="AdlerwegEtappe19.gpx">Adlerweg Etappe 19</option>
+	<option value="AdlerwegEtappe20.gpx">Adlerweg Etappe 20</option>
+	<option value="AdlerwegEtappe21.gpx">Adlerweg Etappe 21</option>
+	<option value="AdlerwegEtappe22.gpx">Adlerweg Etappe 22</option>
+	<option value="AdlerwegEtappe23.gpx">Adlerweg Etappe 23</option>
+	<option value="AdlerwegEtappe24.gpx">Adlerweg Etappe 24</option>
+	<option value="AdlerwegEtappe25.gpx">Adlerweg Etappe 25</option>
+	</select>
 	<h4> Autor: <a href="https://github.com/FloCorz/FloCorz.github.io" style="color: white; text-decoration:none;">Florian Corzelius</a></h4> 
 	
     <script>
@@ -173,12 +200,12 @@
          opacity: 1,
          smoothFactor: 1
 
-    });
+		});
     
-      firstpolyline.addTo(map);
+		firstpolyline.addTo(map);
 		}
         });
-     });
+		});
 		
 		var huts = [
 			L.marker([47.533657, 12.019142], { title: "Gasthof Buchhacker", icon: L.icon({iconAnchor: [12,30], iconUrl: 'icons/hut.png'}) }),
@@ -225,6 +252,8 @@
         },{
             "Adlerweg Etappe 5" : gpxTrack
         }).addTo(map);
+		
+		var etappenSelektor = document.getElementById("etappen");
 		
     </script>
 </body>
