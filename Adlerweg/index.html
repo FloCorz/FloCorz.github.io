@@ -132,28 +132,23 @@
         gpxTrack.eachLayer(function(layer) {
         profileControl.addData(layer.feature);
 				
-		//console.log(layer.feature.geometry.coordinates)
 		var pts = layer.feature.geometry.coordinates;
 		
 		for (var i = 1; i<pts.length; i++) {
-			//console.log(pts[i]);
-			//console.log(pts[i-1]);
-			
-		
-		//Entfernung bestimmen 
 		
 		var dist = map.distance(
 			[pts[i][1],pts[i][0] ], 
 			[pts[i-1][1],pts[i-1][0] ]
 			).toFixed(0);
-			//console.log(dist);
 			
 		var delta = pts[i][2]-pts[i-1][2];
-		//console.log(delta, "Höhenmeter auf", dist, "m Strecke");
 		
-		var s = Math.atan(delta/dist);
+		var rad = Math.atan(delta/dist);
 		var deg = (rad * (180/Math.PI)).toFixed(1);
-		console.log(deg);
+		
+		var rot = ["#ab2524", "#a02128", "#a1232b", "#8d1d2c", "#701f29", "#5e2028"];
+		var gruen = ["#42EB00", "#38C400", "#288F00", "#195700", "#0A2400"];
+		//colorbrewer 
 		}
         });
      });
