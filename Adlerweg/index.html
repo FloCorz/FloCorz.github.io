@@ -25,6 +25,14 @@
             height: 100vh;
             width: 100vw;
         }
+		h1 {
+		color: white;
+		background-color: black;
+		text-align: center;
+		}
+		div {
+		align: center;
+		}
 		#map {
 			float: center;
 			height: 600px;
@@ -137,12 +145,29 @@
 		for (var i=0; i<huts.length; i++) {
 			hutsLayer.addLayer(huts[i]);
 		}
-		// hutsLayer.addTo(map);
+
 		map.on("zoomend", function () {
 			if (map.getZoom() >= 15) { 
 				map.addLayer(hutsLayer);
 			} else { 
 				map.removeLayer(hutsLayer); 
+			}
+		});
+		
+		var track = [
+			L.marker([47.53318720, 12.01885110], { title: "Etappenstart", icon: L.icon({iconUrl: 'icons/start.png'}) }),
+			L.marker([47.51852840, 11.89731090], { title: "Etappenziel", icon: L.icon({iconUrl: 'icons/ziel.png'}) }),
+			];
+		var trackLayer = L.featureGroup(); 
+		for (var i=0; i<track.length; i++) {
+			trackLayer.addLayer(track[i]);
+		}
+
+		map.on("zoomend", function () {
+			if (map.getZoom() >= 10) { 
+				map.addLayer(trackLayer);
+			} else { 
+				map.removeLayer(trackLayer); 
 			}
 		});
     </script>
