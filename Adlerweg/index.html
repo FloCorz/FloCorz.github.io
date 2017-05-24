@@ -129,17 +129,16 @@
             map.fitBounds(gpxTrack.getBounds());
 
             // Höhenprofil erzeugen
-            gpxTrack.eachLayer(function(layer) {
-                profileControl.addData(layer.feature);
+        gpxTrack.eachLayer(function(layer) {
+        profileControl.addData(layer.feature);
 				
-					//console.log(layer.feature.geometry.coordinates)
+		//console.log(layer.feature.geometry.coordinates)
 		var pts = layer.feature.geometry.coordinates;
 		
 		for (var i = 1; i<pts.length; i++) {
 			//console.log(pts[i]);
 			//console.log(pts[i-1]);
-			}
-		;
+			
 		
 		//Entfernung bestimmen 
 		
@@ -150,9 +149,14 @@
 			//console.log(dist);
 			
 		var delta = pts[i][2]-pts[i-1][2];
-		console.log(delta, "Höhenmeter auf", dist, "m Strecke");
-            });
+		//console.log(delta, "Höhenmeter auf", dist, "m Strecke");
+		
+		var s = Math.atan(delta/dist);
+		var deg = (rad * (180/Math.PI)).toFixed(1);
+		console.log(deg);
+		}
         });
+     });
 		
 		var huts = [
 			L.marker([47.533657, 12.019142], { title: "Gasthof Buchhacker", icon: L.icon({iconAnchor: [12,30], iconUrl: 'icons/hut.png'}) }),
