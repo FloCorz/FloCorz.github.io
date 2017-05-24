@@ -30,8 +30,13 @@
 		background-color: black;
 		text-align: center;
 		}
-		div {
-		align: center;
+		p {
+		text-align: center;
+		}
+		h4 {
+		color: white;
+		background-color: black;
+		text-align: center;
 		}
 		#map {
 			float: center;
@@ -124,22 +129,10 @@
                 profileControl.addData(layer.feature);
             });
         });
-
-        // WMTS-Layer Auswahl hinzufügen
-        var layerControl = L.control.layers({
-            "basemap.at - STANDARD": layers.geolandbasemap,
-            "basemap.at - GRAU": layers.bmapgrau,
-            "basemap.at - OVERLAY": layers.bmapoverlay,
-            "basemap.at - HIGH-DPI": layers.bmaphidpi,
-            "basemap.at - ORTHOFOTO": layers.bmaporthofoto30cm,
-            "OpenStreetMap": layers.osm,
-        },{
-            "Adlerweg Etappe 5" : gpxTrack
-        }).addTo(map);
 		
 		var huts = [
-			L.marker([47.533657, 12.019142], { title: "Gasthof Buchhacker", icon: L.icon({iconUrl: 'icons/hut.png'}) }),
-			L.marker([47.51879, 11.89715], { title: "Gschwercherwirt", icon: L.icon({iconUrl: 'icons/hut.png'}) }),
+			L.marker([47.533657, 12.019142], { title: "Gasthof Buchhacker", icon: L.icon({iconAnchor: [12,30], iconUrl: 'icons/hut.png'}) }),
+			L.marker([47.51879, 11.89715], { title: "Gschwercherwirt", icon: L.icon({iconAnchor: [12,30], iconUrl: 'icons/hut.png'}) }),
 			];
 		var hutsLayer = L.featureGroup(); 
 		for (var i=0; i<huts.length; i++) {
@@ -155,8 +148,8 @@
 		});
 		
 		var track = [
-			L.marker([47.53318720, 12.01885110], { title: "Etappenstart", icon: L.icon({iconUrl: 'icons/start.png'}) }),
-			L.marker([47.51852840, 11.89731090], { title: "Etappenziel", icon: L.icon({iconUrl: 'icons/ziel.png'}) }),
+			L.marker([47.53318720, 12.01885110], { title: "Etappenstart", icon: L.icon({iconAnchor: [12,30], iconUrl: 'icons/start.png'}) }),
+			L.marker([47.51852840, 11.89731090], { title: "Etappenziel", icon: L.icon({iconAnchor: [12,30], iconUrl: 'icons/ziel.png'}) }),
 			];
 		var trackLayer = L.featureGroup(); 
 		for (var i=0; i<track.length; i++) {
@@ -170,6 +163,20 @@
 				map.removeLayer(trackLayer); 
 			}
 		});
+		
+		var layerControl = L.control.layers({
+            "basemap.at - STANDARD": layers.geolandbasemap,
+            "basemap.at - GRAU": layers.bmapgrau,
+            "basemap.at - OVERLAY": layers.bmapoverlay,
+            "basemap.at - HIGH-DPI": layers.bmaphidpi,
+            "basemap.at - ORTHOFOTO": layers.bmaporthofoto30cm,
+            "OpenStreetMap": layers.osm,
+        },{
+            "Adlerweg Etappe 5" : gpxTrack,
+			"Einkehrmöglichkeiten": hutsLayer,
+        }).addTo(map);
+		
+		<h4> Autor: <a href="https://github.com/FloCorz/FloCorz.github.io">Florian Corzelius</a></h4> 
     </script>
 
 </body>
