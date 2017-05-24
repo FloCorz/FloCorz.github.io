@@ -255,7 +255,7 @@
             "basemap.at - ORTHOFOTO": layers.bmaporthofoto30cm,
             "OpenStreetMap": layers.osm,
         },{
-            "Adlerweg Etappe 5" : gpxTrack
+           // "Adlerweg Etappe 5" : gpxTrack
         }).addTo(map);
 		
 		var etappenSelektor = document.getElementById("etappen");
@@ -264,6 +264,8 @@
 		console.log("GPX Track laden: ", etappenSelektor[etappenSelektor.selectedIndex].value);
 		loadTrack(etappenSelektor[etappenSelektor.selectedIndex].value);
 		}
+		
+		loadTrack("AdlerwegEtappe01.gpx");
 		
     </script>
 </body>
