@@ -80,10 +80,16 @@
 	<option value="AdlerwegEtappe22.gpx">Adlerweg Etappe 22</option>
 	<option value="AdlerwegEtappe23.gpx">Adlerweg Etappe 23</option>
 	<option value="AdlerwegEtappe24.gpx">Adlerweg Etappe 24</option>
-	<option value="AdlerwegEtappe25.gpx">Adlerweg Etappe 25</option>
+	<option value="AdlerwegEtappeO1.gpx">Adlerweg Etappe O1</option>
+	<option value="AdlerwegEtappeO2.gpx">Adlerweg Etappe O2</option>
+	<option value="AdlerwegEtappeO3.gpx">Adlerweg Etappe O3</option>
+	<option value="AdlerwegEtappeO4.gpx">Adlerweg Etappe O4</option>
+	<option value="AdlerwegEtappeO5.gpx">Adlerweg Etappe O5</option>
+	<option value="AdlerwegEtappeO6.gpx">Adlerweg Etappe O6</option>
+	<option value="AdlerwegEtappeO7.gpx">Adlerweg Etappe O7</option>
+	<option value="AdlerwegEtappeO8.gpx">Adlerweg Etappe O8</option>
+	<option value="AdlerwegEtappeO9.gpx">Adlerweg Etappe O9</option>
 	</select>
-	
-	<h4> Autor: <a href="https://github.com/FloCorz/FloCorz.github.io" style="color: white; text-decoration:none;">Florian Corzelius</a></h4> 
 	
     <script>
         var layers = {
@@ -137,7 +143,7 @@
         
 		function loadTrack(track) {
 		
-			gpxTrack = omnivore.gpx('gpx/'+ track).addTo(map);
+			gpxTrack = omnivore.gpx('Data/'+ track).addTo(map);
 			
 			// nach erfolgreichem Laden Popup hinzufügen, Ausschnitt setzen und Höhenprofil erzeugen
 			gpxTrack.on('ready', function () {
@@ -268,6 +274,8 @@
 		loadTrack("AdlerwegEtappe01.gpx");
 		
     </script>
+	
+	<h4> Autor: <a href="https://github.com/FloCorz/FloCorz.github.io" style="color: white; text-decoration:none;">Florian Corzelius</a></h4> 
 </body>
 
 </html>
