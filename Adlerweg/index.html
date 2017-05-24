@@ -106,7 +106,29 @@
 
         // GPX Track laden
         gpxTrack = omnivore.gpx('Data/AdlerwegEtappe05.gpx').addTo(map);
-
+		
+		//var pts =
+		
+		//console.log(layer.feature.geometry.coordinates)
+		var pts = layer.feature.geometry.coordinates;
+		
+		for (var i = 1; i<pts.length; i++) {
+			//console.log(pts[i]);
+			//console.log(pts[i-1]);
+			}
+		;
+		
+		//Entfernung bestimmen 
+		
+		var dist = map.distance(
+			[pts[i][1],pts[i][0] ], 
+			[pts[i-1][1],pts[i-1][0] ]
+			).toFixed(0);
+			//console.log(dist);
+			
+		var delta = pts[i][2]-pts[i-1][2];
+		//console.log(delta, "Höhenmeter auf", dist, "m Strecke");
+			
         // nach erfolgreichem Laden Popup hinzufügen, Ausschnitt setzen und Höhenprofil erzeugen
         gpxTrack.on('ready', function () {
             // Popup hinzufügen
