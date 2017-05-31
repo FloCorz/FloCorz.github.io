@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <title>Adlerweg Etappe 5: Alpengasthof Buchacker - Kaiserhaus </title>
+    <title>Adlerweg</title>
 
     <link rel="stylesheet" href="js/leaflet/leaflet.css" />
 	<link rel="stylesheet" href="js/leaflet-elevation/leaflet.elevation-0.0.4.css" />
@@ -15,11 +15,14 @@
 	<script src="js/leaflet-omnivore/leaflet-omnivore.js"></script>
 	<script src="js/leaflet-elevation/leaflet.elevation-0.0.4.min.js"></script>
 	<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	<script src="./etappeninfo.js"></script>
+	<script src="./map.js"></script>
 
     <style>
         body {
             padding: 0px;
             margin: 0px;
+			text-align: center;
         }
         html, body, {
             height: 100vh;
@@ -50,11 +53,10 @@
 </head>
 
 <body>
-	<h1> Adlerweg Etappe 5: Alpengasthof Buchacker – Kaiserhaus</h1>
-	<p style="text-align: center"> Moderate Ansprüche an die Kondition stellt diese Adlerweg-Etappe, die vom Alpengasthaus Buchacker zum Gasthof Gwerchtwirt führt. Entlang der Strecke gibt es immer wieder wunderbare Ausblicke zum Kaisergebirge, zu den Kitzbühler Alpen, zum Rofangebirge, zu den Zillertaler und Stubaier Alpen, und bei guter Sicht sogar bis zum Großglockner und Großvenediger.</p>
-   
-    <div id="map"></div>
-	
+	<h1> Adlerweg </h1>
+	<p> Der Adlerweg ist der Hauptwanderweg durch ganz Tirol. Entlang der Hauptroute kann man in 31 Etappen rund 23.000 Höhenmeter im Anstieg zurücklegen. Varianten führen außerdem durch die Kitzbüheler, Zillertaler und Tuxer Alpen sowie durch Teile Osttirols.
+		Der Adlerweg, dessen Verlauf auf der Karte dem Tiroler Wappentier gleicht, verläuft von St. Johann im Tiroler Unterland zunächst entlang der Wände des Wilden Kaisers, in Folge durch die Brandenberger Alpen, durch das Rofan- und Karwendelgebirge, durch die Lechtaler Alpen und schließlich nach St. Anton am Arlberg.</p>
+  
 	<select id="etappen">
 	<option value="AdlerwegEtappe01.gpx">Adlerweg Etappe 1 </option>
 	<option value="AdlerwegEtappe02.gpx">Adlerweg Etappe 2 </option>
@@ -91,190 +93,12 @@
 	<option value="AdlerwegEtappeO9.gpx">Adlerweg Etappe O9</option>
 	</select>
 	
-    <script>
-        var layers = {
-            geolandbasemap: L.tileLayer("https://{s}.wien.gv.at/basemap/geolandbasemap/normal/google3857/{z}/{y}/{x}.png", {
-                subdomains: ['maps', 'maps1', 'maps2', 'maps3', 'maps4'],
-                attribution: 'Datenquelle: <a href="http://www.basemap.at/">basemap.at</a>'
-            }),
-            bmapgrau: L.tileLayer("https://{s}.wien.gv.at/basemap/bmapgrau/normal/google3857/{z}/{y}/{x}.png", {
-                subdomains: ['maps', 'maps1', 'maps2', 'maps3', 'maps4'],
-                attribution: 'Datenquelle: <a href="http://www.basemap.at/">basemap.at</a>'
-            }),
-            bmapoverlay: L.tileLayer("https://{s}.wien.gv.at/basemap/bmapoverlay/normal/google3857/{z}/{y}/{x}.png", {
-                subdomains: ['maps', 'maps1', 'maps2', 'maps3', 'maps4'],
-                attribution: 'Datenquelle: <a href="http://www.basemap.at/">basemap.at</a>'
-            }),
-            bmaphidpi: L.tileLayer("https://{s}.wien.gv.at/basemap/bmaphidpi/normal/google3857/{z}/{y}/{x}.jpeg", {
-                subdomains: ['maps', 'maps1', 'maps2', 'maps3', 'maps4'],
-                attribution: 'Datenquelle: <a href="http://www.basemap.at/">basemap.at</a>'
-            }),
-            bmaporthofoto30cm: L.tileLayer("https://{s}.wien.gv.at/basemap/bmaporthofoto30cm/normal/google3857/{z}/{y}/{x}.jpeg", {
-                subdomains: ['maps', 'maps1', 'maps2', 'maps3', 'maps4'],
-                attribution: 'Datenquelle: <a href="http://www.basemap.at/">basemap.at</a>'
-            }),
-            osm: L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                subdomains: ['a', 'b', 'c'],
-                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-            })
-        };
-
-        // Karte definieren
-        var map = L.map('map', {
-            layers: [layers.geolandbasemap],
-            center : [47.654, 13.370],
-            zoom : 8
-        });
-
-        // Maßstab hinzufügen
-        L.control.scale({
-            maxWidth: 200,
-            metric: true,
-            imperial: false
-        }).addTo(map);
-
-        // Höhenprofil control hinzufügen
-        var profileControl = L.control.elevation({
-            position : 'bottomleft',
-            theme : 'steelblue-theme'
-        });
-        profileControl.addTo(map);
-
-        
-		function loadTrack(track) {
-		
-			gpxTrack = omnivore.gpx('Data/'+ track).addTo(map);
-			
-			// nach erfolgreichem Laden Popup hinzufügen, Ausschnitt setzen und Höhenprofil erzeugen
-			gpxTrack.on('ready', function () {
-				// Popup hinzufügen
-				var markup = '<h3>Adlerweg-Etappe 5: Alpengasthof Buchacker - Kaiserhaus</h3>';
-				markup += '<p>Moderate Ansprüche an die Kondition stellt diese Adlerweg-Etappe, die vom Alpengasthaus Buchacker zum Gasthof Gwerchtwirt führt. Entlang der Strecke gibt es immer wieder wunderbare Ausblicke zum Kaisergebirge, zu den Kitzbühler Alpen, zum Rofangebirge, zu den Zillertaler und Stubaier Alpen, und bei guter Sicht sogar bis zum Großglockner und Großvenediger.</p>'
-				markup += '<li>Ausgangspunkt: Alpengasthaus Buchacker</li>';
-				markup += '<li>Endpunkt: Gasthof Gwercherwirt</li>';
-				markup += '<li>Höhenmeter bergauf: 980</li>';
-				markup += '<li>Höhenmeter bergab: 1630</li>';
-				markup += '<li>Höchster Punkt: 1772</li>';
-				markup += '<li>Schwierigkeitsgrad: leicht</li>';
-				markup += '<li>Streckenlänge (in km): 18</li>';
-				markup += '<li>Gehzeit (in Stunden): 3</li>';
-				markup += '<li>Einkehrmöglichkeiten: Alpengasthof Buchacker, Gwercherwirt</li>';
-				markup += '<li><a href="http://www.tirol.at/reisefuehrer/sport/wandern/wandertouren/a-adlerweg-etappe-5-gasthof-buchacker-pinegg">Weitere Informationen</a></li>';
-				gpxTrack.bindPopup(markup, { maxWidth : 450 });
-
-				// Ausschnitt setzen
-				map.fitBounds(gpxTrack.getBounds());
-
-				// Höhenprofil erzeugen
-			profileControl.clear();
-			gpxTrack.eachLayer(function(layer) {
-			profileControl.addData(layer.feature);
-					
-			var pts = layer.feature.geometry.coordinates;
-			
-			for (var i = 1; i<pts.length; i++) {
-			
-			var dist = map.distance(
-				[pts[i][1],pts[i][0] ], 
-				[pts[i-1][1],pts[i-1][0] ]
-				).toFixed(0);
-				
-			var delta = pts[i][2]-pts[i-1][2];
-			
-			var rad = Math.atan(delta/dist);
-			var deg = (rad * (180/Math.PI)).toFixed(1);
-			
-			var rot = ["#ab2524", "#a02128", "#a1232b", "#8d1d2c", "#701f29", "#5e2028"];
-			var gruen = ["#42EB00", "#38C400", "#288F00", "#195700", "#0A2400"];
-
-			var farbe;
-			switch(true) {
-			case (deg >= 20) :  farbe = "#bd0026"; break;
-			case (deg >= 15) :  farbe = "#f03b20"; break;
-			case (deg >= 10) :  farbe = "#fd8d3c"; break;
-			case (deg >= 5) :  farbe = "#feb24c"; break;
-			case (deg >= 1) :  farbe = "#fed976"; break;
-			case (deg >= -1) :  farbe = "yellow"; break;
-			case (deg >= -5) :  farbe = "#d9f0a3"; break;
-			case (deg >=-10) :  farbe = "#addd8e"; break;
-			case (deg >=-15) :  farbe = "#78c679"; break;
-			case (deg >= -20) :  farbe = "#31a354"; break;
-			case (deg < -20) :  farbe = "#006837"; break;
-			}	
-			var pointA = new L.LatLng(pts[i][1],pts[i][0] );
-			var pointB = new L.LatLng(pts[i-1][1],pts[i-1][0]);
-			var pointList = [pointA, pointB];
-	   
-			var firstpolyline = new L.Polyline(pointList, {
-			 color: farbe,
-			 weight: 6,
-			 opacity: 1,
-			 smoothFactor: 1
-
-			});
-		
-			firstpolyline.addTo(map);
-			}
-			});
-			});
-		}
-		
-		var huts = [
-			L.marker([47.533657, 12.019142], { title: "Gasthof Buchhacker", icon: L.icon({iconAnchor: [12,30], iconUrl: 'icons/hut.png'}) }),
-			L.marker([47.51879, 11.89715], { title: "Gschwercherwirt", icon: L.icon({iconAnchor: [12,30], iconUrl: 'icons/hut.png'}) }),
-			];
-		var hutsLayer = L.featureGroup(); 
-		for (var i=0; i<huts.length; i++) {
-			hutsLayer.addLayer(huts[i]);
-		}
-
-		map.on("zoomend", function () {
-			if (map.getZoom() >= 15) { 
-				map.addLayer(hutsLayer);
-			} else { 
-				map.removeLayer(hutsLayer); 
-			}
-		});
-		
-		var track1 = [
-			L.marker([47.53318720, 12.01885110], { title: "Etappenstart", icon: L.icon({iconAnchor: [12,30], iconUrl: 'icons/start.png'}) }),
-			L.marker([47.537894, 12.023172], { title: "Buchacker Alm Adlerhorst", icon: L.icon({iconAnchor: [12,30], iconUrl: 'icons/adler.png'}) }),
-			L.marker([47.51852840, 11.89731090], { title: "Etappenziel", icon: L.icon({iconAnchor: [12,30], iconUrl: 'icons/ziel.png'}) }),
-			];
-		var track1Layer = L.featureGroup(); 
-		for (var i=0; i<track1.length; i++) {
-			track1Layer.addLayer(track1[i]);
-		}
-
-		map.on("zoomend", function () {
-			if (map.getZoom() >= 10) { 
-				map.addLayer(track1Layer);
-			} else { 
-				map.removeLayer(track1Layer); 
-			}
-		});
-		
-		var layerControl = L.control.layers({
-            "basemap.at - STANDARD": layers.geolandbasemap,
-            "basemap.at - GRAU": layers.bmapgrau,
-            "basemap.at - OVERLAY": layers.bmapoverlay,
-            "basemap.at - HIGH-DPI": layers.bmaphidpi,
-            "basemap.at - ORTHOFOTO": layers.bmaporthofoto30cm,
-            "OpenStreetMap": layers.osm,
-        },{
-           // "Adlerweg Etappe 5" : gpxTrack
-        }).addTo(map);
-		
-		var etappenSelektor = document.getElementById("etappen");
-		etappenSelektor.onchange = function (evt) {
-		console.log("Change event: ", evt); 
-		console.log("GPX Track laden: ", etappenSelektor[etappenSelektor.selectedIndex].value);
-		loadTrack(etappenSelektor[etappenSelektor.selectedIndex].value);
-		}
-		
-		loadTrack("AdlerwegEtappe01.gpx");
-		
-    </script>
+	<div id="map"></div>
+	
+	<h4>Kurztext</h4>
+	<div id="Kurztext"></div>
+	<h4>Streckenbeschreibung</h4>
+	<div id="Streckenbeschreibung"></div>
 	
 	<h4> Autor: <a href="https://github.com/FloCorz/FloCorz.github.io" style="color: white; text-decoration:none;">Florian Corzelius</a></h4> 
 </body>
