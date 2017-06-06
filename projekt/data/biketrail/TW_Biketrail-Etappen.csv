@@ -1,4 +1,4 @@
-Etappennummer;Titel;Ausgangspunkt;Endpunkt;Länge (in km);Fahrzeit (in Stunden);Schwierigkeitsgrad;Höhenmeter bergauf;Höhenmeter bergab;Info
+Etappennummer;Titel;Ausgangspunkt;Endpunkt;Laenge (in km);Fahrzeit (in Stunden);Schwierigkeitsgrad;Hoehenmeter bergauf;Hoehenmeter bergab;Info
 1;Biketrail-Etappe 1: Steeg-Weissenbach;Steeg;Weissenbach;44;4,5;leicht;200;420;http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-steeg-weissenbach
 2;Biketrail-Etappe 2: Weissenbach-Tannheim;Weissenbach;Tannheim;17,1;2,25;mittelschwierig;400;190;http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-weissenbach-tannheim
 3;Biketrail-Etappe 3: Tannheim-Reutte;Tannheim;Reutte;44;4;mittelschwierig;500;590;http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-tannheim-reutte
@@ -8,10 +8,10 @@ Etappennummer;Titel;Ausgangspunkt;Endpunkt;Länge (in km);Fahrzeit (in Stunden);S
 7;Biketrail-Etappe 7: Scharnitz - Achensee;Scharnitz;Achensee;61,5;6;schwierig;1850;1880;http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-scharnitz-achensee
 8;Biketrail-Etappe 8: Achensee - Kaiserhaus;Achensee;Kaiserhaus;56;5;schwierig;1460;1660;http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-achensee-kaiserhaus
 9;Biketrail-Etappe 9: Kaiserhaus – Kufstein ;Kaiserhaus;Kufstein;31,5;3,25;mittelschwierig;540;780;http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-kaiserhaus-kufstein
-10;Biketrail-Etappe 10: Kufstein - Kössen ;Kufstein;Kössen;33,8;3;mittelschwierig;770;660;http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-kufstein-koessen
-11;Biketrail-Etappe 11: Kössen - Kitzbühel;Kössen;Kitzbühel;56;7;schwierig;1900;1730;http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-koessen-kitzbuehel
-12;Biketrail-Etappe 12: Variante Pillersee ;Erpfendorf;Mühlbach;42;4;mittelschwierig;850;770;http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-variante-pillersee
-13;Biketrail-Etappe 13: Kitzbühel - Westendorf ;Kitzbühel;Westendorf;15,5;1,75;leicht;150;150;http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-kitzbuehel-westendorf
+10;Biketrail-Etappe 10: Kufstein - Koessen ;Kufstein;Koessen;33,8;3;mittelschwierig;770;660;http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-kufstein-koessen
+11;Biketrail-Etappe 11: Koessen - Kitzbuehel;Koessen;Kitzbuehel;56;7;schwierig;1900;1730;http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-koessen-kitzbuehel
+12;Biketrail-Etappe 12: Variante Pillersee ;Erpfendorf;Muehlbach;42;4;mittelschwierig;850;770;http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-variante-pillersee
+13;Biketrail-Etappe 13: Kitzbuehel - Westendorf ;Kitzbuehel;Westendorf;15,5;1,75;leicht;150;150;http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-kitzbuehel-westendorf
 14;Biketrail-Etappe 14: Westendorf - Alpbach ;Westendorf;Alpbach;36,5;4,5;mittelschwierig;1300;1100;http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-westendorf-alpbach
 15;Biketrail-Etappe 15: Alpbach- Zell;Alpbach;Zell;43,5;5;mittelschwierig;1150;1550;http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-alpbach-zell
 16;Biketrail-Etappe 16: Zell - Achensee ;Zell;Achensee;36,5;3;leicht;580;220;http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-zell-achensee
@@ -23,10 +23,10 @@ Etappennummer;Titel;Ausgangspunkt;Endpunkt;Länge (in km);Fahrzeit (in Stunden);S
 22;Biketrail-Etappe 22: Matrei - Mieders;Matrei;Mieders;13;3;mittelschwierig;740;740;http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-matrei-maria-waldrast-mieders
 23;Biketrail-Etappe 23: Mieders - Mutters ;Mieders;Mutters;20;2;mittelschwierig;900;1030;http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-mieders-mutters
 24;Biketrail-Etappe 24: Mutters - Sellrain ;Mutters;Sellrain;16,7;1;leicht;415;310;http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-mutters-sellrain
-25;Biketrail-Etappe 25: Sellrain - Kühtai - Oetz ;Sellrain;Oetz;34,6;3;mittelschwierig;1110;1270;http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-sellrain-kuehtai-oetz
+25;Biketrail-Etappe 25: Sellrain - Kuehtai - Oetz ;Sellrain;Oetz;34,6;3;mittelschwierig;1110;1270;http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-sellrain-kuehtai-oetz
 26;Biketrail-Etappe 26: Oetz - Imst;Oetz;Imst;14,6;1;leicht;215;280;http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-oetz-imst
 27;Biketrail-Etappe 27: Imst - Venetalm - Wenns ;Imst;Wenns;21,9;2;schwierig;1230;965;http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-imst-venetalm-wenns
-28;Biketrail-Etappe 28: Wenns - Pillerhöhe - Landeck ;Wenns;Landeck;18,7;1;mittelschwierig;630;880;http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-wenns-pillerhoehe-landeck
+28;Biketrail-Etappe 28: Wenns - Pillerhoehe - Landeck ;Wenns;Landeck;18,7;1;mittelschwierig;630;880;http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-wenns-pillerhoehe-landeck
 29;Biketrail-Etappe 29: Landeck - Ischgl ;Landeck;Ischgl;33;3;schwierig;1250;690;http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-landeck-ischgl
 30;Biketrail-Etappe 30: Ischgl - St. Anton ;Ischgl;St. Anton;41,8;4;schwierig;1290;1200;http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-ischgl-st-anton
 31;Biketrail-Etappe 31: St. Anton - Steeg ;St. Anton;Steeg;35,1;3;mittelschwierig;750;1080;http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-st-anton-steeg
