@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Bike Trail Tirol</title>
+
+    <link rel="stylesheet" href="./js/leaflet/leaflet.css" />
+	<link rel="stylesheet" href="./js/leaflet-elevation/leaflet.elevation-0.0.4.css" />
+	
+    <script src="./js/leaflet/leaflet.js"></script>
+	<script src="./js/leaflet-omnivore/leaflet-omnivore.js"></script>
+	<script src="./js/leaflet-elevation/leaflet.elevation-0.0.4.min.js"></script>
+	<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	<script src="./etappeninfo.js"></script>
+	<script src="./map.js"></script>
+
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+			text-align: center;
+        }
+        html, body, {
+            height: 100vh;
+            width: 100vw;
+        }
+		h1 {
+		color: white;
+		background-color: black;
+		text-align: center;
+		}
+		h3 {
+		color: white;
+		background-color: black;
+		text-align: center;
+		}
+		#map {
+			float: center;
+			height: 600px;
+			width: 1024px;
+			border: 1px solid black;
+		}
+		div {
+		display: block;
+		margin-left: auto;
+		margin-right: auto; 
+		} 
+    </style>
+</head>
+
+<body>
+	<h1> Mountainbiken am „Bike Trail Tirol“  </h1>
+	<h3> Der „Bike Trail Tirol“ ist der längste zusammenhängende Mountainbike-Rundkurs der Alpen und führt auf 32 Etappen, 1.000 Kilometern und 27.000 Höhenmetern durch die vielfältigen Regionen des Landes.</h3>
+	<p> Der Aufbau des Rundkurses erlaubt dabei die freie Wahl von Start- und Zielpunkt. Ob ein- oder mehrtägige Rundtouren: Am „Bike Trail Tirol“ wartet auf jeden die passende Tour. Genussradler finden ihre Balance zwischen Entspannung und Anstrengung auf flacheren, landschaftlich reizvollen Strecken. Und wer die sportliche Herausforderung sucht, ist auf den Mountainbike-Touren in Tirol gut aufgehoben. Treten Sie in die Pedale und erkunden Sie das Herz der Alpen am längsten zusammenhängenden Mountainbike-Rundkurs der Alpen.</p>
+  
+	<select id="etappen">
+	<option value="01 Steeg-Weissenbach.gpx">Biketrail-Etappe 1 </option>
+	<option value="02 Weissenbach-Tannheim.gpx">Biketrail-Etappe 2 </option>
+	<option value="03 Tannheim-Reutte.gpx">Biketrail-Etappe 3 </option>
+	<option value="04 Weissenbach-Reutte.gpx">Biketrail-Etappe 4 </option>
+	<option value="05 Reutte-Ehrwald.gpx">Biketrail-Etappe 5 </option>
+	<option value="06 Ehrwald-Scharnitz.gpx">Biketrail-Etappe 6 </option>
+	<option value="07 Scharnitz-Achensee.gpx">Biketrail-Etappe 7 </option>
+	<option value="08 Achensee-Kaiserhaus.gpx">Biketrail-Etappe 8 </option>
+	<option value="09 Kaiserhaus-Kufstein.gpx">Biketrail-Etappe 9 </option>
+	<option value="10 Kufstein-Koessen.gpx">Biketrail-Etappe 10</option>
+	<option value="11 Koessen-Kitzbuehel.gpx">Biketrail-Etappe 11</option>
+	<option value="12 Variante Pillersee.gpx">Biketrail-Etappe 12</option>
+	<option value="13 Kitzbühel-Westendorf.gpx">Biketrail-Etappe 13</option>
+	<option value="14 Westendorf-Alpbach.gpx">Biketrail-Etappe 14</option>
+	<option value="15 Alpbach-Zell.gpx">Biketrail-Etappe 15</option>
+	<option value="16 Zell-Achensee.gpx">Biketrail-Etappe 16</option>
+	<option value="17 Zell-Mayrhofen.gpx">Biketrail-Etappe 17</option>
+	<option value="18 Mayrhofen-Lanersbach.gpx">Biketrail-Etappe 18</option>
+	<option value="19 Lanersbach-Weerberg.gpx">Biketrail-Etappe 19</option>
+	<option value="20 Weerberg-Windegg.gpx">Biketrail-Etappe 20</option>
+	<option value="21 Windegg-Matrei.gpx">Biketrail-Etappe 21</option>
+	<option value="22 Matrei-Mieders.gpx">Biketrail-Etappe 22</option>
+	<option value="23 Mieders-Mutters.gpx">Biketrail-Etappe 23</option>
+	<option value="24 Mutters-Sellrain.gpx">Biketrail-Etappe 24</option>
+	<option value="25 Sellrain-Oetz.gpx">Biketrail-Etappe 25</option>
+	<option value="26 Oetz-Imst.gpx">Biketrail-Etappe 26</option>
+	<option value="27 Imst-Wenns.gpx">Biketrail-Etappe 27</option>
+	<option value="28 Wenns-Landeck.gpx">Biketrail-Etappe 28</option>
+	<option value="29 Landeck-Ischgl.gpx">Biketrail-Etappe 29</option>
+	<option value="30 Ischgl-St.Anton.gpx">Biketrail-Etappe 30</option>
+	<option value="31 St.Anton-Steeg.gpx">Biketrail-Etappe 31</option>
+	<option value="32 Imst-Ehrwald.gpx">Biketrail-Etappe 32</option>
+	</select>
+	
+	<div id="map"></div>	
+</body>
+
+</html>
