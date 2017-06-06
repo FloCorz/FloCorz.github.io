@@ -56,38 +56,14 @@ window.onload = function() {
 				
 		// Funktion zum Laden eines Tracks
 		function loadTrack(gpxFile) {
-		// Etappen Info anzeigen
-		console.log("etappeninfo:", window.ETAPPENINFO);
-		console.log("info:", window.ETAPPENINFO[gpxFile]);
-		console.log("Kurztext:", window.ETAPPENINFO[gpxFile].Kurztext);
-		document.getElementById("Kurztext").innerHTML = window.ETAPPENINFO[gpxFile].Kurztext;
-		document.getElementById("Streckenbeschreibung").innerHTML = window.ETAPPENINFO[gpxFile].Streckenbeschreibung;
+			
+		document.getElementById("Schwierigkeitsgrad").innerHTML = window.ETAPPENINFO[gpxFile].Schwierigkeitsgrad;
 		
 		gpxTrackGroup.clearLayers();
 		coloredLineGroup.clearLayers();
 		
 					// GPX Track laden
-					gpxEtappeO6 = omnivore.gpx('data/'+ gpxFile).addTo(gpxTrackGroup);
-
-					// nach erfolgreichem Laden Popup hinzufügen, Ausschnitt setzen und Höhenprofil erzeugen
-					gpxEtappeO6.on('ready', function () {
-						// Popup hinzufügen
-						var markup = '<h3> Adlerweg-Etappe O6: Matrei in Osttirol - Sudetendeutsche Hütte </h3>';
-						markup += '<p>Ausgehend vom Matreier Tauernhaus verläuft diese Etappe am Osttiroler Adlerweg bis zur Sudetendeutschen Hütte.</p>'
-						markup += '<li>Ausgangspunkt: Matreier Tauernhaus</li>';
-						markup += '<li>Endpunkt: Sudetendeutsche Hütte</li>';
-						markup += '<li>Höhenmeter bergauf: 1250</li>';
-						markup += '<li>Höhenmeter bergab: 100</li>';
-						markup += '<li>Höchster Punkt: 2656</li>';
-						markup += '<li>Schwierigkeitsgrad: mittelschwierig</li>';
-						markup += '<li>Streckenlänge (in km): 8</li>';
-						markup += '<li>Gehzeit (in Stunden): 4</li>';
-						markup += '<li>Einkehrmöglichkeiten: Steiner Alm & Sudetendeutsche Hütte</li>';
-						markup += '<li><a href="http://www.tirol.at/reisefuehrer/sport/wandern/wandertouren/a-adlerweg-etappe-o6-matrei-in-osttirol-sudetendeutsche-huette">Weitere Informationen</a></li>';
-						gpxEtappeO6.bindPopup(markup, { maxWidth : 450 });
-
-						// Ausschnitt setzen
-						map.fitBounds(gpxEtappeO6.getBounds());
+					gpxTrack = omnivore.gpx('./data/biketrail'+ gpxFile).addTo(gpxTrackGroup);
 						
 						// Höhenprofil erzeugen
 						profileControl.clear();
@@ -107,24 +83,12 @@ window.onload = function() {
 							[ pts [i][1],pts[i][0] ],
 							[ pts [i-1][1],pts[i-1][0] ]
 						).toFixed(0);
-						//console.log(dist);
+						
 						
 						var delta = pts [i][2] - pts [i-1][2];
-						console.log(delta, "Höhenmeter auf", dist,"m Strecke");
-						
 						var rad = Math.atan(delta/dist);
 						var deg = (rad*(180/Math.PI)).toFixed(1);
-						//console.log(deg);
-						
-						//var rot = ["#ab2524", "#a02128", "#a1232b", "#8d1d2c", "#701f29", "#5e2028"];
-						//var gruen = ["#42EB00", "#38C400", "#288F00", "#195700", "#0A2400"];
-						//colorbrewer2.org
-						
-						//rot http://colorbrewer2.org/?type=sequential&scheme=YlOrRd&n=6
-						//['#ffffb2','#fed976','#feb24c','#fd8d3c','#f03b20','#bd0026']
-						
-						//grün http://colorbrewer2.org/?type=sequential&scheme=BuGn&n=6
-						//['#edf8fb','#ccece6','#99d8c9','#66c2a4','#2ca25f','#006d2c']
+
 						
 						var farbe;
 						switch(true) { // checks if condition is true, not for certain values of a variable
@@ -179,32 +143,14 @@ window.onload = function() {
 		var etappenSelektor = document.getElementById("etappen");
 		//console.log("Selector", etappenSelektor);
 		etappenSelektor.onchange = function(evt) {
-		console.log("Change event:", evt);
-		console.log("GPX Track laden: ", etappenSelektor[etappenSelektor.selectedIndex].value);
 		loadTrack(etappenSelektor[etappenSelektor.selectedIndex].value);
 		};
-		loadTrack("AdlerwegEtappe01.gpx");
+		
+		loadTrack("01 Steeg-Weissenbach.gpx");
 
         // leaflet-hash aktivieren
         var hash = new L.Hash(map);
 
-		//Icon von mapicons.mapsmarker.com herunterladen
-		var huts = [
-				L.marker([47.030306, 12.548986], {title:"Steiner Alm", icon: L.icon ({iconUrl: 'icons/hut.png', iconAnchor:[14, 30]}) }),  					//Steiner Alm 			47.030306, 12.548986
-				L.marker([47.049335, 12.576691], {title:"Sudetendeutsche Hütte", icon: L.icon ({iconUrl: 'icons/hut.png', iconAnchor:[14, 30]}) }),  					//Sudetendeutsche Hütte 	47.049335, 12.576691
-			];
-			
-		var hutsLayer = L.featureGroup();
-		for (var i=0; i<huts.length; i++) {
-			hutsLayer.addLayer(huts[i]);
-		}
-		// hutsLayer.addTo(map);
-		map.on("zoomend", function() {
-			if (map.getZoom() >= 13) {
-				map.addLayer(hutsLayer);
-			} else {
-				map.removeLayer(hutsLayer);
-				}
 		});
 	
 		var StartZiel = [
