@@ -42,12 +42,12 @@ window.onload = function() {
             imperial: false
         }).addTo(map);
 
-        // Punkte des Stadtspaziergangs als verschiedenfarbige Marker mit Popup hinzufügen
+        // Punkte Skatespots
  var iconByCategory = {
-            1: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+            1: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-orange.png",
             2: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png"
         };
-        // Punkte des Stadtspaziergangs als Marker mit Popup hinzufügen
+        // Punkte der Skatespots als Marker mit Popup hinzufügen
         var punkteSkate = L.geoJSON(window.skatespotMarker, {
             pointToLayer: function(feature, latlng) {
                 return L.marker(latlng, {
@@ -64,10 +64,39 @@ window.onload = function() {
         }).bindPopup(function(layer) {
 			var note = '<h2>' + layer.feature.properties.NAME + '</h2>';
 			note += '<h5>' + "Bemerkung: " + layer.feature.properties.BEMERKUNG + '</h5>';
-			note += '<h5>' + "Kategorie: " + layer.feature.properties.KATEGORIE + '</h5>';
+			note += '<h5>' + "Typ: " + layer.feature.properties.TYP + '</h5>';
             return note;
 					
         }).addTo(map);
+		
+		//Punkte Surfspots
+		
+ var surficonByCategory = {
+            1: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
+            2: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png"
+        };
+        // Punkte des Stadtspaziergangs als Marker mit Popup hinzufügen
+        var punkteSurf = L.geoJSON(window.surfspotMarker, {
+            pointToLayer: function(feature, latlng) {
+                return L.marker(latlng, {
+                    icon: L.icon({
+                        iconSize: [25, 41],
+                        iconAnchor: [12, 41],
+                        popupAnchor: [1, -34],
+                        shadowSize: [41, 41],
+                        shadowUrl: 'https://unpkg.com/leaflet@1.0.3/dist/images/marker-shadow.png',
+                        iconUrl: surficonByCategory[feature.properties.KATEGORIE]
+                    })
+                });
+            }
+        }).bindPopup(function(layer) {
+			var note = '<h2>' + layer.feature.properties.NAME + '</h2>';
+			note += '<h5>' + "Bemerkung: " + layer.feature.properties.BEMERKUNG + '</h5>';
+			note += '<h5>' + "Typ: " + layer.feature.properties.TYP + '</h5>';
+            return note;
+					
+        }).addTo(map);
+		
 
         // Ausschnitt auf Punkte des Stadtspaziergangs setzen
         map.fitBounds(punkteSkate.getBounds());
@@ -83,5 +112,6 @@ window.onload = function() {
             "OpenStreetMap": layers.osm,
         }, {
             "Skateboard": punkteSkate,
+			"Surfboard": punkteSurf,
         }).addTo(map);
 };
