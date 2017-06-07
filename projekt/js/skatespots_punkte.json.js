@@ -1,4 +1,4 @@
-window.spotMarker={
+window.skatespotMarker={
     "type": "FeatureCollection",
     "totalFeatures": 23,
     "features": [{
@@ -6,14 +6,15 @@ window.spotMarker={
         "id": "SPOTS.01",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.2582, 11.3954]
+            "coordinates": [11.3954, 47.2582]
         },
         "geometry_name": "SHAPE",
         "properties": {
             "OBJECTID": 1,
             "KATEGORIE": 2,
             "NAME": "Altenheim Wilten",
-            "BEMERKUNG": "",
+			"TYP": "Curb/Ledge",
+            "BEMERKUNG": "Flatcurb von der Einfahrt auf den Gehweg.",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -21,14 +22,15 @@ window.spotMarker={
         "id": "SPOTS.02",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.2732, 11.3967]
+            "coordinates": [11.3967, 47.2732]
         },
         "geometry_name": "SHAPE",
         "properties": {
             "OBJECTID": 2,
             "KATEGORIE": 2,
             "NAME": "Asfinag Ledge",
-            "BEMERKUNG": "",
+			"TYP": "Curb/Ledge",
+            "BEMERKUNG": "Upledge mit anschließenden Downhill.",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -36,14 +38,15 @@ window.spotMarker={
         "id": "SPOTS.03",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.2661, 11.3956]
+            "coordinates": [11.3956, 47.2661]
         },
         "geometry_name": "SHAPE",
         "properties": {
             "OBJECTID": 3,
             "KATEGORIE": 2,
             "NAME": "BTV/Sparkassenplatz",
-            "BEMERKUNG": "",
+			"TYP": "Curb/Ledge",
+            "BEMERKUNG": "Perfekte Curbs auf gutem Boden.",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -51,14 +54,15 @@ window.spotMarker={
         "id": "SPOTS.04",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.276, 11.4014]
+            "coordinates": [11.4014, 47.276]
         },
         "geometry_name": "SHAPE",
         "properties": {
             "OBJECTID": 4,
             "KATEGORIE": 2,
+			"TYP": "Curb/Ledge/Mannypad",
             "NAME": "Chrisuskirche",
-            "BEMERKUNG": "",
+            "BEMERKUNG": "Stufen am Eingang und ein Curb an der Bushaltestelle gegenüber.",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -66,14 +70,15 @@ window.spotMarker={
         "id": "SPOTS.05",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.2704, 11.3954]
+            "coordinates": [11.3954, 47.2704]
         },
         "geometry_name": "SHAPE",
         "properties": {
             "OBJECTID": 5,
             "KATEGORIE": 2,
             "NAME": "Congress Wallie",
-            "BEMERKUNG": "",
+			"TYP": "Andere",
+            "BEMERKUNG": "Wallie vom Gehweg auf die Straße.",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -81,14 +86,15 @@ window.spotMarker={
         "id": "SPOTS.06",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.2644, 11.3858]
+            "coordinates": [11.3858, 47.2644]
         },
         "geometry_name": "SHAPE",
         "properties": {
             "OBJECTID": 6,
             "KATEGORIE": 2,
             "NAME": "Hauptuni",
-            "BEMERKUNG": "",
+			"TYP": "Stairs/Rail",
+            "BEMERKUNG": "Rails und Stairs von groß bis klein.",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -96,14 +102,15 @@ window.spotMarker={
         "id": "SPOTS.07",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.2758, 11.405]
+            "coordinates": [11.405, 47.2758]
         },
         "geometry_name": "SHAPE",
         "properties": {
             "OBJECTID": 7,
             "KATEGORIE": 2,
             "NAME": "Hörtnagl",
-            "BEMERKUNG": "",
+			"TYP": "Stairs/Mannypad",
+            "BEMERKUNG": "Eingangsbereich mit einem 2x2 Doubleset. Auch als Mannypad fahrbar.",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -111,14 +118,15 @@ window.spotMarker={
         "id": "SPOTS.08",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.2661, 11.3964]
+            "coordinates": [11.3964, 47.2661]
         },
         "geometry_name": "SHAPE",
         "properties": {
             "OBJECTID": 8,
             "KATEGORIE": 2,
             "NAME": "HotelCentral",
-            "BEMERKUNG": "",
+			"TYP": "Curb/Ledge",
+            "BEMERKUNG": "2er Curbline auf gutem Boden.",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -126,14 +134,15 @@ window.spotMarker={
         "id": "SPOTS.09",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.2639, 11.4038]
+            "coordinates": [11.4038, 47.2639]
         },
         "geometry_name": "SHAPE",
         "properties": {
             "OBJECTID": 9,
             "KATEGORIE": 2,
             "NAME": "Ischia",
-            "BEMERKUNG": "",
+			"TYP": "Curb/Ledge",
+            "BEMERKUNG": "Holzcurbs mit Wallie Option auf gutem Boden",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -141,14 +150,15 @@ window.spotMarker={
         "id": "SPOTS.10",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.2645, 11.4038]
+            "coordinates": [11.4038, 47.2645]
         },
         "geometry_name": "SHAPE",
         "properties": {
             "OBJECTID": 10,
             "KATEGORIE": 2,
             "NAME": "Ischia Gap",
-            "BEMERKUNG": "",
+			"TYP": "Gap",
+            "BEMERKUNG": "Mittelgroßes Gap von einer Laderampe auf die Straße",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -156,14 +166,15 @@ window.spotMarker={
         "id": "SPOTS.11",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.2763, 11.4144]
+            "coordinates": [11.4144, 47.2763]
         },
         "geometry_name": "SHAPE",
         "properties": {
             "OBJECTID": 11,
             "KATEGORIE": 2,
             "NAME": "Kletterhalle",
-            "BEMERKUNG": "",
+			"TYP": "Curb/Ledge",
+            "BEMERKUNG": "Mehrere Curbs in einer Line auf gutem Boden, jedoch wenig Platz.",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -171,14 +182,15 @@ window.spotMarker={
         "id": "SPOTS.12",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.27, 11.3956]
+            "coordinates": [11.3956, 47.27]
         },
         "geometry_name": "SHAPE",
         "properties": {
             "OBJECTID": 12,
             "KATEGORIE": 2,
             "NAME": "Landestheater",
-            "BEMERKUNG": "",
+			"TYP": "Curb/Ledge",
+            "BEMERKUNG": "Langes Curb über ein Gitter auf schlechtem Boden",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -186,14 +198,15 @@ window.spotMarker={
         "id": "SPOTS.13",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.2642, 11.3967]
+            "coordinates": [11.3967, 47.2642]
         },
         "geometry_name": "SHAPE",
         "properties": {
             "OBJECTID": 13,
             "KATEGORIE": 2,
             "NAME": "Landhausplatz",
-            "BEMERKUNG": "",
+			"TYP": "Öffentlicher Platz",
+            "BEMERKUNG": "Der mit Abstand bekannteste Skatespot Innsbrucks. Viele Trannys, gutes Flat, Sitzbänke teils als Curbs fahrbar.",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -201,14 +214,15 @@ window.spotMarker={
         "id": "SPOTS.14",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.2673, 11.3973]
+            "coordinates": [11.3973, 47.2673]
         },
         "geometry_name": "SHAPE",
         "properties": {
             "OBJECTID": 14,
             "KATEGORIE": 2,
             "NAME": "Landesmuseum",
-            "BEMERKUNG": "",
+			"TYP": "Curb/Ledge/Stairs",
+            "BEMERKUNG": "Stairset mit kurzer Anfahrt und einem Curbspot in unmittelbarer Nähe.",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -216,14 +230,15 @@ window.spotMarker={
         "id": "SPOTS.15",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.2655, 11.4055]
+            "coordinates": [11.4055, 47.2655]
         },
         "geometry_name": "SHAPE",
         "properties": {
             "OBJECTID": 15,
             "KATEGORIE": 2,
             "NAME": "Rapoldipark",
-            "BEMERKUNG": "",
+			"TYP": "Bank",
+            "BEMERKUNG": "Holzbanks auf Holzboden",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -231,14 +246,15 @@ window.spotMarker={
         "id": "SPOTS.16",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.2660, 11.4065]
+            "coordinates": [11.4065, 47.2660]
         },
         "geometry_name": "SHAPE",
         "properties": {
             "OBJECTID": 16,
             "KATEGORIE": 2,
             "NAME": "Rapoldipark Curb",
-            "BEMERKUNG": "",
+			"TYP": "Curb/Ledge",
+            "BEMERKUNG": "Brunnen mit Granitumrandung",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -246,7 +262,7 @@ window.spotMarker={
         "id": "SPOTS.17",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.2743, 11.4283]
+            "coordinates": [11.4283, 47.2743]
         },
         "geometry_name": "SHAPE",
         "properties": {
@@ -261,14 +277,15 @@ window.spotMarker={
         "id": "SPOTS.18",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.2767, 11.4146]
+            "coordinates": [11.4146, 47.2767]
         },
         "geometry_name": "SHAPE",
         "properties": {
             "OBJECTID": 18,
             "KATEGORIE": 1,
             "NAME": "Skatehalle Innsbruck",
-            "BEMERKUNG": "",
+			"TYP": "Skatepark",
+            "BEMERKUNG": "Der größte Skatepark Innsbrucks. Meist überfüllt, vor allem bei schlechtem Wetter.",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -276,14 +293,15 @@ window.spotMarker={
         "id": "SPOTS.19",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.2595, 11.4062]
+            "coordinates": [11.4062, 47.2595]
         },
         "geometry_name": "SHAPE",
         "properties": {
             "OBJECTID": 19,
             "KATEGORIE": 2,
             "NAME": "Tivoli Curbs",
-            "BEMERKUNG": "",
+			"TYP": "Curb/Ledge",
+            "BEMERKUNG": "Etliche Curbs in verschiedenen größen.",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -291,14 +309,15 @@ window.spotMarker={
         "id": "SPOTS.20",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.2588, 11.4087]
+            "coordinates": [11.4087, 47.2588]
         },
         "geometry_name": "SHAPE",
         "properties": {
             "OBJECTID": 20,
             "KATEGORIE": 2,
             "NAME": "Tivoli Bank",
-            "BEMERKUNG": "",
+			"TYP": "Bank",
+            "BEMERKUNG": "Bank mit schlechter Anfahrt",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -306,14 +325,15 @@ window.spotMarker={
         "id": "SPOTS.21",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.2588, 11.4071]
+            "coordinates": [11.4071, 47.2588]
         },
         "geometry_name": "SHAPE",
         "properties": {
             "OBJECTID": 21,
             "KATEGORIE": 1,
             "NAME": "Tivoli Skatepark",
-            "BEMERKUNG": "",
+			"TYP": "Skatepark",
+            "BEMERKUNG": "Sehr trannylastiger Skatepark. Wird bereits bei wenig Besuchern chaotisch.",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -321,14 +341,15 @@ window.spotMarker={
         "id": "SPOTS.22",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.2599, 11.4104]
+            "coordinates": [11.4104, 47.2599]
         },
         "geometry_name": "SHAPE",
         "properties": {
             "OBJECTID": 22,
             "KATEGORIE": 2,
             "NAME": "Tivoli Wallride",
-            "BEMERKUNG": "",
+			"TYP": "Wallride",
+            "BEMERKUNG": "Wallride über 4 Stufen.",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -336,14 +357,15 @@ window.spotMarker={
         "id": "SPOTS.23",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.2588, 11.3930]
+            "coordinates": [11.3930, 47.2588]
         },
         "geometry_name": "SHAPE",
         "properties": {
             "OBJECTID": 23,
             "KATEGORIE": 2,
             "NAME": "Wilten Wallie",
-            "BEMERKUNG": "",
+			"TYP": "Andere",
+            "BEMERKUNG": "Wallie mit Drop dahinter auf mäßigem Boden.",
             "SE_ANNO_CAD_DATA": null
         }
     }],
