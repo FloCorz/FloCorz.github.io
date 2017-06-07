@@ -50,8 +50,15 @@ window.onload = function() {
         profileControl.addTo(map);
 		
 		function loadTrack(gpxFile) {
-			//document.getElementById("Kurztext").innerHTML = window.ETAPPENINFO[gpxFile].Kurztext;
-			//document.getElementById("Streckenbeschreibung").innerHTML = window.ETAPPENINFO[gpxFile].Streckenbeschreibung;
+		document.getElementById("Titel").innerHTML = window.ETAPPENINFO[gpxFile].Titel;
+		document.getElementById("Ausgangspunkt").innerHTML = window.ETAPPENINFO[gpxFile].Ausgangspunkt;
+		document.getElementById("Endpunkt").innerHTML = window.ETAPPENINFO[gpxFile].Endpunkt;
+		document.getElementById("Laenge").innerHTML = window.ETAPPENINFO[gpxFile].Laenge;
+		document.getElementById("Fahrzeit").innerHTML = window.ETAPPENINFO[gpxFile].Fahrzeit;	
+		document.getElementById("Schwierigkeitsgrad").innerHTML = window.ETAPPENINFO[gpxFile].Schwierigkeitsgrad;
+		//document.getElementById("Hoehenmeterauf").innerHTML = window.ETAPPENINFO[gpxFile].Hoehenmeterauf;
+		//document.getElementById("Hoehenmeterab").innerHTML = window.ETAPPENINFO[gpxFile].Hoehenmeterab;
+		document.getElementById("Info").innerHTML = window.ETAPPENINFO[gpxFile].Info;
 		
 		gpxTrackGroup.clearLayers();
 		coloredLineGroup.clearLayers();

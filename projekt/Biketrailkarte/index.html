@@ -20,34 +20,26 @@
     <style>
         body {
             padding: 0px;
-            margin: 0px;
-			text-align: center;
+            margin-left : 1px;
+			margin-right: 1px;
         }
-        html, body, {
-            height: 100vh;
+        html, body, #map {
+            height: 60vh;
             width: 100vw;
         }
+        select {
+            font-size: 1.2em;
+            margin: 0.2em;
+        }
 		h1 {
-		color: white;
-		background-color: black;
-		text-align: center;
+			text-align: center;
+			color: white;
+			background-color: black;
+			font-family: Arial;
 		}
 		h3 {
-		color: white;
-		background-color: black;
-		text-align: center;
+			font-family: Arial; 
 		}
-		#map {
-			float: center;
-			height: 600px;
-			width: 1024px;
-			border: 1px solid black;
-		}
-		div {
-		display: block;
-		margin-left: auto;
-		margin-right: auto; 
-		} 
     </style>
 </head>
 
@@ -55,7 +47,11 @@
 	<h1> Mountainbiken am „Bike Trail Tirol“  </h1>
 	<h3> Der „Bike Trail Tirol“ ist der längste zusammenhängende Mountainbike-Rundkurs der Alpen und führt auf 32 Etappen, 1.000 Kilometern und 27.000 Höhenmetern durch die vielfältigen Regionen des Landes.</h3>
 	<p> Der Aufbau des Rundkurses erlaubt dabei die freie Wahl von Start- und Zielpunkt. Ob ein- oder mehrtägige Rundtouren: Am „Bike Trail Tirol“ wartet auf jeden die passende Tour. Genussradler finden ihre Balance zwischen Entspannung und Anstrengung auf flacheren, landschaftlich reizvollen Strecken. Und wer die sportliche Herausforderung sucht, ist auf den Mountainbike-Touren in Tirol gut aufgehoben. Treten Sie in die Pedale und erkunden Sie das Herz der Alpen am längsten zusammenhängenden Mountainbike-Rundkurs der Alpen.</p>
-  
+	
+	<div style="text-align: center; color:white; background-color:black;" id="Titel"> </div>
+	<div id="map"></div>
+	<div style="text-align: center; color:white; background-color:black;" id="Schwierigkeitsgrad"> </div>
+	
 	<select id="etappen">
 	<option value="01 Steeg-Weissenbach.gpx">Biketrail-Etappe 1 </option>
 	<option value="02 Weissenbach-Tannheim.gpx">Biketrail-Etappe 2 </option>
@@ -91,7 +87,16 @@
 	<option value="32 Imst-Ehrwald.gpx">Biketrail-Etappe 32</option>
 	</select>
 	
-	<div id="map"></div>	
+	<p>Von 
+        <span id="Ausgangspunkt"></span> nach
+        <span id="Endpunkt"></span>, dabei werden 
+        <span id="Hoehenmeterauf"></span> Höhenmeter bergauf und 
+        <span id="Hoehenmeterab"></span> Höhenmeter bergab auf einer Strecke von 
+        <span id="Laenge"></span> km überwunden. Die durchschnittliche Fahrzeit liegt bei 
+        <span id="Fahrzeit"></span> Stunden.  
+		<span id="Info">Weitere Infos</span> 
+    </p>
+	
 </body>
 
 </html>
