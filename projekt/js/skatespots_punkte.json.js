@@ -10,7 +10,7 @@ window.spotMarker={
         },
         "geometry_name": "SHAPE",
         "properties": {
-            "OBJECTID": 101,
+            "OBJECTID": 1,
             "KATEGORIE": 2,
             "NAME": "Altenheim Wilten",
             "BEMERKUNG": "",
@@ -25,10 +25,10 @@ window.spotMarker={
         },
         "geometry_name": "SHAPE",
         "properties": {
-            "OBJECTID": 102,
+            "OBJECTID": 2,
             "KATEGORIE": 2,
-            "NAME": "",
-            "BEMERKUNG": "Asfinag Ledge",
+            "NAME": "Asfinag Ledge",
+            "BEMERKUNG": "",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -40,10 +40,10 @@ window.spotMarker={
         },
         "geometry_name": "SHAPE",
         "properties": {
-            "OBJECTID": 103,
+            "OBJECTID": 3,
             "KATEGORIE": 2,
-            "NAME": "",
-            "BEMERKUNG": "BTV/Sparkassenplatz",
+            "NAME": "BTV/Sparkassenplatz",
+            "BEMERKUNG": "",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -55,10 +55,10 @@ window.spotMarker={
         },
         "geometry_name": "SHAPE",
         "properties": {
-            "OBJECTID": 104,
+            "OBJECTID": 4,
             "KATEGORIE": 2,
-            "NAME": "",
-            "BEMERKUNG": "Chrisuskirche",
+            "NAME": "Chrisuskirche",
+            "BEMERKUNG": "",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -70,10 +70,10 @@ window.spotMarker={
         },
         "geometry_name": "SHAPE",
         "properties": {
-            "OBJECTID": 105,
+            "OBJECTID": 5,
             "KATEGORIE": 2,
-            "NAME": "",
-            "BEMERKUNG": "Congress Wallie",
+            "NAME": "Congress Wallie",
+            "BEMERKUNG": "",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -85,10 +85,10 @@ window.spotMarker={
         },
         "geometry_name": "SHAPE",
         "properties": {
-            "OBJECTID": 106,
+            "OBJECTID": 6,
             "KATEGORIE": 2,
-            "NAME": "",
-            "BEMERKUNG": "Hauptuni",
+            "NAME": "Hauptuni",
+            "BEMERKUNG": "",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -100,10 +100,10 @@ window.spotMarker={
         },
         "geometry_name": "SHAPE",
         "properties": {
-            "OBJECTID": 107,
+            "OBJECTID": 7,
             "KATEGORIE": 2,
-            "NAME": "",
-            "BEMERKUNG": "Hörtnagl",
+            "NAME": "Hörtnagl",
+            "BEMERKUNG": "",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -115,10 +115,10 @@ window.spotMarker={
         },
         "geometry_name": "SHAPE",
         "properties": {
-            "OBJECTID": 108,
+            "OBJECTID": 8,
             "KATEGORIE": 2,
-            "NAME": "",
-            "BEMERKUNG": "HotelCentral",
+            "NAME": "HotelCentral",
+            "BEMERKUNG": "",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -130,10 +130,10 @@ window.spotMarker={
         },
         "geometry_name": "SHAPE",
         "properties": {
-            "OBJECTID": 109,
+            "OBJECTID": 9,
             "KATEGORIE": 2,
-            "NAME": "",
-            "BEMERKUNG": "Ischia",
+            "NAME": "Ischia",
+            "BEMERKUNG": "",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -145,10 +145,10 @@ window.spotMarker={
         },
         "geometry_name": "SHAPE",
         "properties": {
-            "OBJECTID": 110,
+            "OBJECTID": 10,
             "KATEGORIE": 2,
-            "NAME": "",
-            "BEMERKUNG": "Ischia Gap",
+            "NAME": "Ischia Gap",
+            "BEMERKUNG": "",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -160,10 +160,10 @@ window.spotMarker={
         },
         "geometry_name": "SHAPE",
         "properties": {
-            "OBJECTID": 111,
+            "OBJECTID": 11,
             "KATEGORIE": 2,
-            "NAME": "",
-            "BEMERKUNG": "Kletterhalle",
+            "NAME": "Kletterhalle",
+            "BEMERKUNG": "",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -175,10 +175,10 @@ window.spotMarker={
         },
         "geometry_name": "SHAPE",
         "properties": {
-            "OBJECTID": 112,
+            "OBJECTID": 12,
             "KATEGORIE": 2,
-            "NAME": "",
-            "BEMERKUNG": "Landestheater",
+            "NAME": "Landestheater",
+            "BEMERKUNG": "",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -190,10 +190,10 @@ window.spotMarker={
         },
         "geometry_name": "SHAPE",
         "properties": {
-            "OBJECTID": 113,
+            "OBJECTID": 13,
             "KATEGORIE": 2,
-            "NAME": "",
-            "BEMERKUNG": "Landhausplatz",
+            "NAME": "Landhausplatz",
+            "BEMERKUNG": "",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -205,10 +205,10 @@ window.spotMarker={
         },
         "geometry_name": "SHAPE",
         "properties": {
-            "OBJECTID": 114,
+            "OBJECTID": 14,
             "KATEGORIE": 2,
-            "NAME": "",
-            "BEMERKUNG": "Landesmuseum",
+            "NAME": "Landesmuseum",
+            "BEMERKUNG": "",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -220,10 +220,10 @@ window.spotMarker={
         },
         "geometry_name": "SHAPE",
         "properties": {
-            "OBJECTID": 115,
+            "OBJECTID": 15,
             "KATEGORIE": 2,
-            "NAME": "",
-            "BEMERKUNG": "Rapoldipark",
+            "NAME": "Rapoldipark",
+            "BEMERKUNG": "",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -235,10 +235,10 @@ window.spotMarker={
         },
         "geometry_name": "SHAPE",
         "properties": {
-            "OBJECTID": 116,
+            "OBJECTID": 16,
             "KATEGORIE": 2,
-            "NAME": "",
-            "BEMERKUNG": "Rapoldipark Curb",
+            "NAME": "Rapoldipark Curb",
+            "BEMERKUNG": "",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -250,10 +250,10 @@ window.spotMarker={
         },
         "geometry_name": "SHAPE",
         "properties": {
-            "OBJECTID": 117,
+            "OBJECTID": 17,
             "KATEGORIE": 1,
-            "NAME": "",
-            "BEMERKUNG": "Reichenau Skatepark",
+            "NAME": "Reichenau Skatepark",
+            "BEMERKUNG": "",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -265,10 +265,10 @@ window.spotMarker={
         },
         "geometry_name": "SHAPE",
         "properties": {
-            "OBJECTID": 118,
+            "OBJECTID": 18,
             "KATEGORIE": 1,
-            "NAME": "",
-            "BEMERKUNG": "Skatehalle Innsbruck",
+            "NAME": "Skatehalle Innsbruck",
+            "BEMERKUNG": "",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -280,10 +280,10 @@ window.spotMarker={
         },
         "geometry_name": "SHAPE",
         "properties": {
-            "OBJECTID": 119,
+            "OBJECTID": 19,
             "KATEGORIE": 2,
-            "NAME": "",
-            "BEMERKUNG": "Tivoli Curbs",
+            "NAME": "Tivoli Curbs",
+            "BEMERKUNG": "",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -295,10 +295,10 @@ window.spotMarker={
         },
         "geometry_name": "SHAPE",
         "properties": {
-            "OBJECTID": 120,
+            "OBJECTID": 20,
             "KATEGORIE": 2,
-            "NAME": "",
-            "BEMERKUNG": "Tivoli Bank",
+            "NAME": "Tivoli Bank",
+            "BEMERKUNG": "",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -310,10 +310,10 @@ window.spotMarker={
         },
         "geometry_name": "SHAPE",
         "properties": {
-            "OBJECTID": 121,
+            "OBJECTID": 21,
             "KATEGORIE": 1,
-            "NAME": "",
-            "BEMERKUNG": "Tivoli Skatepark",
+            "NAME": "Tivoli Skatepark",
+            "BEMERKUNG": "",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -325,10 +325,10 @@ window.spotMarker={
         },
         "geometry_name": "SHAPE",
         "properties": {
-            "OBJECTID": 122,
+            "OBJECTID": 22,
             "KATEGORIE": 2,
-            "NAME": "",
-            "BEMERKUNG": "Tivoli Wallride",
+            "NAME": "Tivoli Wallride",
+            "BEMERKUNG": "",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -340,10 +340,10 @@ window.spotMarker={
         },
         "geometry_name": "SHAPE",
         "properties": {
-            "OBJECTID": 123,
+            "OBJECTID": 23,
             "KATEGORIE": 2,
-            "NAME": "",
-            "BEMERKUNG": "Wilten Wallie",
+            "NAME": "Wilten Wallie",
+            "BEMERKUNG": "",
             "SE_ANNO_CAD_DATA": null
         }
     }],
