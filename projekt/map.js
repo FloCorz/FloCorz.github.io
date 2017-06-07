@@ -1,5 +1,5 @@
     
-	window.onload = function() {
+window.onload = function() {
         // WMTS-Layer basemap.at - Quelle: http://www.basemap.at/wmts/1.0.0/WMTSCapabilities.xml
         var layers = {
             geolandbasemap: L.tileLayer("https://{s}.wien.gv.at/basemap/geolandbasemap/normal/google3857/{z}/{y}/{x}.png", {
@@ -50,8 +50,9 @@
             4: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-orange.png",
             5: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-yellow.png",
             6: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-violet.png"
-        };
-        var punkteSpaziergang = L.geoJSON(window.STADTSPAZIERGANGPUNKTE, {
+        };*/
+        // Punkte des Stadtspaziergangs als Marker mit Popup hinzufügen
+        var punkteSkate = L.geoJSON(window.SPOTMARKER, {
             onEachFeature : function (feature, layer) {
                 var markup = '<h3>' + feature.properties.NAME + '</h3>';
                 markup += '<p>' + feature.properties.BEMERKUNG + '</p>';
@@ -59,24 +60,10 @@
                 markup += '<ul>';
                 markup += '<li>' + 'Objekt ID: ' + feature.properties.OBJECTID + '</li>';
                 markup += '<li>' + 'Kategorie: ' + feature.properties.KATEGORIE + '</li>';
-                markup += '<li>' + 'Adresse: ' + feature.properties.ADRESSE + '</li>';
-                markup += '<li>' + '<a href="' + feature.properties.WEITERE_INF + '">Weitere Informationen</a></div>';
                 markup += '<ul>';
                 layer.bindPopup(markup);
-            },
-            pointToLayer: function(feature, latlng) {
-                return L.marker(latlng, {
-                    icon: L.icon({
-                        iconSize: [25, 41],
-                        iconAnchor: [12, 41],
-                        popupAnchor: [1, -34],
-                        shadowSize: [41, 41],
-                        shadowUrl: '../js/leaflet/images/marker-shadow.png',
-                        iconUrl: iconByCategory[feature.properties.KATEGORIE]
-                    })
-                });
             }
-        }).addTo(map); */
+        }).addTo(map);
 
         // Ausschnitt auf Punkte des Stadtspaziergangs setzen
         // map.fitBounds(punkteSpaziergang.getBounds());
@@ -89,7 +76,5 @@
             "basemap.at - HIGH-DPI": layers.bmaphidpi,
             "basemap.at - ORTHOFOTO": layers.bmaporthofoto30cm,
             "OpenStreetMap": layers.osm,
-        },{
-            "Spaziergang - Punkte" : punkteSpaziergang
         }).addTo(map);
 };

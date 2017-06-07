@@ -1,4 +1,4 @@
-window.spotMarker={
+window.spotMarker = {
     "type": "FeatureCollection",
     "totalFeatures": 25,
     "features": [{
