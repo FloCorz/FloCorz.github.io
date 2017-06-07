@@ -43,16 +43,32 @@ window.onload = function() {
         }).addTo(map);
 
         // Punkte des Stadtspaziergangs als verschiedenfarbige Marker mit Popup hinzufügen
-        /* var iconByCategory = {
+ var iconByCategory = {
             1: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
-            2: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png",
-            3: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png",
-            4: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-orange.png",
-            5: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-yellow.png",
-            6: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-violet.png"
-        };*/
+            2: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png"
+        };
         // Punkte des Stadtspaziergangs als Marker mit Popup hinzufügen
-        var punkteSkate = L.geoJSON(window.spotMarker).addTo(map);
+        var punkteSpaziergang = L.geoJSON(window.spotMarker, {
+            pointToLayer: function(feature, latlng) {
+                return L.marker(latlng, {
+                    icon: L.icon({
+                        iconSize: [25, 41],
+                        iconAnchor: [12, 41],
+                        popupAnchor: [1, -34],
+                        shadowSize: [41, 41],
+                        shadowUrl: 'https://unpkg.com/leaflet@1.0.3/dist/images/marker-shadow.png',
+                        iconUrl: iconByCategory[feature.properties.KATEGORIE]
+                    })
+                });
+            }
+        }).bindPopup(function(layer) {
+			var note = '<h3>' + layer.feature.properties.NAME + '</h3>';
+			note += '<h4>' + layer.feature.properties.BEMERKUNG + '</h4>';
+			note += '<h5>' + "Object ID: " + layer.feature.properties.OBJECTID + '</h5>';
+			note += '<h5>' + "Kategorie: " + layer.feature.properties.KATEGORIE + '</h5>';
+            return note;
+					
+        }).addTo(map);
 
         // Ausschnitt auf Punkte des Stadtspaziergangs setzen
         // map.fitBounds(punkteSpaziergang.getBounds());
