@@ -50,13 +50,13 @@ window.onload = function() {
         profileControl.addTo(map);
 		
 		function loadTrack(gpxFile) {
-			document.getElementById("Kurztext").innerHTML = window.ETAPPENINFO[gpxFile].Kurztext;
-			document.getElementById("Streckenbeschreibung").innerHTML = window.ETAPPENINFO[gpxFile].Streckenbeschreibung;
+			//document.getElementById("Kurztext").innerHTML = window.ETAPPENINFO[gpxFile].Kurztext;
+			//document.getElementById("Streckenbeschreibung").innerHTML = window.ETAPPENINFO[gpxFile].Streckenbeschreibung;
 		
 		gpxTrackGroup.clearLayers();
 		coloredLineGroup.clearLayers();
 			
-		gpxTrack = omnivore.gpx('data/' + gpxFile).addTo(gpxTrackGroup);
+		gpxTrack = omnivore.gpx('biketrail/' + gpxFile).addTo(gpxTrackGroup);
 			
 			// nach erfolgreichem Laden Popup hinzufügen, Ausschnitt setzen und Höhenprofil erzeugen
 			gpxTrack.on('ready', function () {
