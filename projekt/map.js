@@ -62,9 +62,9 @@ window.onload = function() {
                 });
             }
         }).bindPopup(function(layer) {
-			var note = '<h3>' + layer.feature.properties.NAME + '</h3>';
+			var note = '<h2>' + layer.feature.properties.NAME + '</h2>';
 			note += '<h4>' + layer.feature.properties.BEMERKUNG + '</h4>';
-			note += '<h5>' + "Object ID: " + layer.feature.properties.OBJECTID + '</h5>';
+			note += '<h5>' + "Bemerkung: " + layer.feature.properties.BEMERKUNG + '</h5>';
 			note += '<h5>' + "Kategorie: " + layer.feature.properties.KATEGORIE + '</h5>';
             return note;
 					
