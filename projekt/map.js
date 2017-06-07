@@ -42,8 +42,8 @@ window.onload = function() {
             imperial: false
         }).addTo(map);
 
-        // Punkte Skatespots
- var iconByCategory = {
+   // Punkte Skatespots
+ 	   var skateiconByCategory = {
             1: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-orange.png",
             2: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png"
         };
@@ -57,7 +57,7 @@ window.onload = function() {
                         popupAnchor: [1, -34],
                         shadowSize: [41, 41],
                         shadowUrl: 'https://unpkg.com/leaflet@1.0.3/dist/images/marker-shadow.png',
-                        iconUrl: iconByCategory[feature.properties.KATEGORIE]
+                        iconUrl: skateiconByCategory[feature.properties.KATEGORIE]
                     })
                 });
             }
@@ -69,9 +69,8 @@ window.onload = function() {
 					
         }).addTo(map);
 		
-		//Punkte Surfspots
-		
- var surficonByCategory = {
+	//Punkte Surfspots
+ 	   var surficonByCategory = {
             1: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
             2: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png"
         };
