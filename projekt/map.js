@@ -1,5 +1,5 @@
     
-	window.onload = function() {
+window.onload = function() {
         // WMTS-Layer basemap.at - Quelle: http://www.basemap.at/wmts/1.0.0/WMTSCapabilities.xml
         var layers = {
             geolandbasemap: L.tileLayer("https://{s}.wien.gv.at/basemap/geolandbasemap/normal/google3857/{z}/{y}/{x}.png", {
@@ -43,27 +43,12 @@
         }).addTo(map);
 
         // Punkte des Stadtspaziergangs als verschiedenfarbige Marker mit Popup hinzufügen
-        /* var iconByCategory = {
+ var iconByCategory = {
             1: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
-            2: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png",
-            3: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png",
-            4: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-orange.png",
-            5: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-yellow.png",
-            6: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-violet.png"
+            2: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png"
         };
-        var punkteSpaziergang = L.geoJSON(window.STADTSPAZIERGANGPUNKTE, {
-            onEachFeature : function (feature, layer) {
-                var markup = '<h3>' + feature.properties.NAME + '</h3>';
-                markup += '<p>' + feature.properties.BEMERKUNG + '</p>';
-                markup += '<strong>Details</strong>';
-                markup += '<ul>';
-                markup += '<li>' + 'Objekt ID: ' + feature.properties.OBJECTID + '</li>';
-                markup += '<li>' + 'Kategorie: ' + feature.properties.KATEGORIE + '</li>';
-                markup += '<li>' + 'Adresse: ' + feature.properties.ADRESSE + '</li>';
-                markup += '<li>' + '<a href="' + feature.properties.WEITERE_INF + '">Weitere Informationen</a></div>';
-                markup += '<ul>';
-                layer.bindPopup(markup);
-            },
+        // Punkte des Stadtspaziergangs als Marker mit Popup hinzufügen
+        var punkteSkate = L.geoJSON(window.spotMarker, {
             pointToLayer: function(feature, latlng) {
                 return L.marker(latlng, {
                     icon: L.icon({
@@ -71,14 +56,22 @@
                         iconAnchor: [12, 41],
                         popupAnchor: [1, -34],
                         shadowSize: [41, 41],
-                        shadowUrl: '../js/leaflet/images/marker-shadow.png',
+                        shadowUrl: 'https://unpkg.com/leaflet@1.0.3/dist/images/marker-shadow.png',
                         iconUrl: iconByCategory[feature.properties.KATEGORIE]
                     })
                 });
             }
-        }).addTo(map); */
+        }).bindPopup(function(layer) {
+			var note = '<h2>' + layer.feature.properties.NAME + '</h2>';
+			note += '<h4>' + layer.feature.properties.BEMERKUNG + '</h4>';
+			note += '<h5>' + "Bemerkung: " + layer.feature.properties.BEMERKUNG + '</h5>';
+			note += '<h5>' + "Kategorie: " + layer.feature.properties.KATEGORIE + '</h5>';
+            return note;
+					
+        }).addTo(map);
 
         // Ausschnitt auf Punkte des Stadtspaziergangs setzen
+        map.fitBounds(punkteSkate.getBounds());
         // map.fitBounds(punkteSpaziergang.getBounds());
 
         // WMTS-Layer Auswahl hinzufügen
@@ -89,7 +82,7 @@
             "basemap.at - HIGH-DPI": layers.bmaphidpi,
             "basemap.at - ORTHOFOTO": layers.bmaporthofoto30cm,
             "OpenStreetMap": layers.osm,
-        },{
-            "Spaziergang - Punkte" : punkteSpaziergang
+        }, {
+            "Skateboard": punkteSkate,
         }).addTo(map);
 };
