@@ -1,4 +1,4 @@
-window.spotMarker={
+window.skatespotMarker={
     "type": "FeatureCollection",
     "totalFeatures": 23,
     "features": [{
@@ -13,7 +13,8 @@ window.spotMarker={
             "OBJECTID": 1,
             "KATEGORIE": 2,
             "NAME": "Altenheim Wilten",
-            "BEMERKUNG": "",
+			"TYP": "Curb/Ledge",
+            "BEMERKUNG": "Flatcurb von der Einfahrt auf den Gehweg.",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -28,7 +29,8 @@ window.spotMarker={
             "OBJECTID": 2,
             "KATEGORIE": 2,
             "NAME": "Asfinag Ledge",
-            "BEMERKUNG": "",
+			"TYP": "Curb/Ledge",
+            "BEMERKUNG": "Upledge mit anschließenden Downhill.",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -43,7 +45,8 @@ window.spotMarker={
             "OBJECTID": 3,
             "KATEGORIE": 2,
             "NAME": "BTV/Sparkassenplatz",
-            "BEMERKUNG": "",
+			"TYP": "Curb/Ledge",
+            "BEMERKUNG": "Perfekte Curbs auf gutem Boden.",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -57,8 +60,9 @@ window.spotMarker={
         "properties": {
             "OBJECTID": 4,
             "KATEGORIE": 2,
+			"TYP": "Curb/Ledge/Mannypad",
             "NAME": "Chrisuskirche",
-            "BEMERKUNG": "",
+            "BEMERKUNG": "Stufen am Eingang und ein Curb an der Bushaltestelle gegenüber.",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -73,7 +77,8 @@ window.spotMarker={
             "OBJECTID": 5,
             "KATEGORIE": 2,
             "NAME": "Congress Wallie",
-            "BEMERKUNG": "",
+			"TYP": "Andere",
+            "BEMERKUNG": "Wallie vom Gehweg auf die Straße.",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -88,7 +93,8 @@ window.spotMarker={
             "OBJECTID": 6,
             "KATEGORIE": 2,
             "NAME": "Hauptuni",
-            "BEMERKUNG": "",
+			"TYP": "Stairs/Rail",
+            "BEMERKUNG": "Rails und Stairs von groß bis klein.",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -103,7 +109,8 @@ window.spotMarker={
             "OBJECTID": 7,
             "KATEGORIE": 2,
             "NAME": "Hörtnagl",
-            "BEMERKUNG": "",
+			"TYP": "Stairs/Mannypad",
+            "BEMERKUNG": "Eingangsbereich mit einem 2x2 Doubleset." </br> "Auch als Mannypad fahrbar.",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -118,7 +125,8 @@ window.spotMarker={
             "OBJECTID": 8,
             "KATEGORIE": 2,
             "NAME": "HotelCentral",
-            "BEMERKUNG": "",
+			"TYP": "Curb/Ledge",
+            "BEMERKUNG": "2er Curbline auf gutem Boden.",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -133,7 +141,8 @@ window.spotMarker={
             "OBJECTID": 9,
             "KATEGORIE": 2,
             "NAME": "Ischia",
-            "BEMERKUNG": "",
+			"TYP": "Curb/Ledge",
+            "BEMERKUNG": "Holzcurbs mit Wallie Option auf gutem Boden",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -148,7 +157,8 @@ window.spotMarker={
             "OBJECTID": 10,
             "KATEGORIE": 2,
             "NAME": "Ischia Gap",
-            "BEMERKUNG": "",
+			"TYP": "Gap",
+            "BEMERKUNG": "Mittelgroßes Gap von einer Laderampe auf die Straße",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -163,7 +173,8 @@ window.spotMarker={
             "OBJECTID": 11,
             "KATEGORIE": 2,
             "NAME": "Kletterhalle",
-            "BEMERKUNG": "",
+			"TYP": "Curb/Ledge",
+            "BEMERKUNG": "Mehrere Curbs in einer Line auf gutem Boden, jedoch wenig Platz.",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -178,7 +189,8 @@ window.spotMarker={
             "OBJECTID": 12,
             "KATEGORIE": 2,
             "NAME": "Landestheater",
-            "BEMERKUNG": "",
+			"TYP": "Curb/Ledge",
+            "BEMERKUNG": "Langes Curb über ein Gitter auf schlechtem Boden",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -193,7 +205,8 @@ window.spotMarker={
             "OBJECTID": 13,
             "KATEGORIE": 2,
             "NAME": "Landhausplatz",
-            "BEMERKUNG": "",
+			"TYP": "Öffentlicher Platz",
+            "BEMERKUNG": "Der mit Abstand bekannteste Skatespot Innsbrucks." </br> "Viele Trannys, gutes Flat, Sitzbänke teils als Curbs fahrbar.",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -208,7 +221,8 @@ window.spotMarker={
             "OBJECTID": 14,
             "KATEGORIE": 2,
             "NAME": "Landesmuseum",
-            "BEMERKUNG": "",
+			"TYP": "Curb/Ledge/Stairs",
+            "BEMERKUNG": "Stairset mit kurzer Anfahrt und einem Curbspot in unmittelbarer Nähe.",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -223,7 +237,8 @@ window.spotMarker={
             "OBJECTID": 15,
             "KATEGORIE": 2,
             "NAME": "Rapoldipark",
-            "BEMERKUNG": "",
+			"TYP": "Bank",
+            "BEMERKUNG": "Holzbanks auf Holzboden",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -238,7 +253,8 @@ window.spotMarker={
             "OBJECTID": 16,
             "KATEGORIE": 2,
             "NAME": "Rapoldipark Curb",
-            "BEMERKUNG": "",
+			"TYP": "Curb/Ledge",
+            "BEMERKUNG": "Brunnen mit Granitumrandung",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -268,7 +284,8 @@ window.spotMarker={
             "OBJECTID": 18,
             "KATEGORIE": 1,
             "NAME": "Skatehalle Innsbruck",
-            "BEMERKUNG": "",
+			"TYP": "Skatepark",
+            "BEMERKUNG": "Der größte Skatepark Innsbrucks." </br> " Meist überfüllt, vor allem bei schlechtem Wetter.",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -283,7 +300,8 @@ window.spotMarker={
             "OBJECTID": 19,
             "KATEGORIE": 2,
             "NAME": "Tivoli Curbs",
-            "BEMERKUNG": "",
+			"TYP": "Curb/Ledge",
+            "BEMERKUNG": "Etliche Curbs in verschiedenen größen.",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -298,7 +316,8 @@ window.spotMarker={
             "OBJECTID": 20,
             "KATEGORIE": 2,
             "NAME": "Tivoli Bank",
-            "BEMERKUNG": "",
+			"TYP": "Bank",
+            "BEMERKUNG": "Bank mit schlechter Anfahrt",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -313,7 +332,8 @@ window.spotMarker={
             "OBJECTID": 21,
             "KATEGORIE": 1,
             "NAME": "Tivoli Skatepark",
-            "BEMERKUNG": "",
+			"TYP": "Skatepark",
+            "BEMERKUNG": "Sehr trannylastiger Skatepark." </br> "Wird bereits bei wenig Besuchern chaotisch.",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -328,7 +348,8 @@ window.spotMarker={
             "OBJECTID": 22,
             "KATEGORIE": 2,
             "NAME": "Tivoli Wallride",
-            "BEMERKUNG": "",
+			"TYP": "Wallride",
+            "BEMERKUNG": "Wallride über 4 Stufen.",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -343,7 +364,8 @@ window.spotMarker={
             "OBJECTID": 23,
             "KATEGORIE": 2,
             "NAME": "Wilten Wallie",
-            "BEMERKUNG": "",
+			"TYP": "Andere",
+            "BEMERKUNG": "Wallie mit Drop dahinter auf mäßigem Boden.",
             "SE_ANNO_CAD_DATA": null
         }
     }],
