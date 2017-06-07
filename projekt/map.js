@@ -48,7 +48,7 @@ window.onload = function() {
             2: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png"
         };
         // Punkte des Stadtspaziergangs als Marker mit Popup hinzufügen
-        var punkteSpaziergang = L.geoJSON(window.spotMarker, {
+        var punkteSkate = L.geoJSON(window.spotMarker, {
             pointToLayer: function(feature, latlng) {
                 return L.marker(latlng, {
                     icon: L.icon({
@@ -71,6 +71,7 @@ window.onload = function() {
         }).addTo(map);
 
         // Ausschnitt auf Punkte des Stadtspaziergangs setzen
+        map.fitBounds(punkteSkate.getBounds());
         // map.fitBounds(punkteSpaziergang.getBounds());
 
         // WMTS-Layer Auswahl hinzufügen
@@ -81,5 +82,7 @@ window.onload = function() {
             "basemap.at - HIGH-DPI": layers.bmaphidpi,
             "basemap.at - ORTHOFOTO": layers.bmaporthofoto30cm,
             "OpenStreetMap": layers.osm,
+        }, {
+            "Skateboard": punkteSkate,
         }).addTo(map);
 };
