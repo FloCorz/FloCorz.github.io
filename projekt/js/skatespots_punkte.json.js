@@ -1,6 +1,6 @@
 window.spotMarker={
     "type": "FeatureCollection",
-    "totalFeatures": 25,
+    "totalFeatures": 23,
     "features": [{
         "type": "Feature",
         "id": "SPOTS.01",
