@@ -43,7 +43,7 @@
         }).addTo(map);
 
         // Punkte des Stadtspaziergangs als verschiedenfarbige Marker mit Popup hinzufügen
-        var iconByCategory = {
+        /* var iconByCategory = {
             1: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
             2: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png",
             3: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png",
@@ -76,10 +76,10 @@
                     })
                 });
             }
-        }).addTo(map);
+        }).addTo(map); */
 
         // Ausschnitt auf Punkte des Stadtspaziergangs setzen
-        map.fitBounds(punkteSpaziergang.getBounds());
+        // map.fitBounds(punkteSpaziergang.getBounds());
 
         // WMTS-Layer Auswahl hinzufügen
         var layerControl = L.control.layers({
