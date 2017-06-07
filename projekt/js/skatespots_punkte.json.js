@@ -110,7 +110,7 @@ window.skatespotMarker={
             "KATEGORIE": 2,
             "NAME": "Hörtnagl",
 			"TYP": "Stairs/Mannypad",
-            "BEMERKUNG": "Eingangsbereich mit einem 2x2 Doubleset." </br> "Auch als Mannypad fahrbar.",
+            "BEMERKUNG": "Eingangsbereich mit einem 2x2 Doubleset. Auch als Mannypad fahrbar.",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -206,7 +206,7 @@ window.skatespotMarker={
             "KATEGORIE": 2,
             "NAME": "Landhausplatz",
 			"TYP": "Öffentlicher Platz",
-            "BEMERKUNG": "Der mit Abstand bekannteste Skatespot Innsbrucks." </br> "Viele Trannys, gutes Flat, Sitzbänke teils als Curbs fahrbar.",
+            "BEMERKUNG": "Der mit Abstand bekannteste Skatespot Innsbrucks. Viele Trannys, gutes Flat, Sitzbänke teils als Curbs fahrbar.",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -285,7 +285,7 @@ window.skatespotMarker={
             "KATEGORIE": 1,
             "NAME": "Skatehalle Innsbruck",
 			"TYP": "Skatepark",
-            "BEMERKUNG": "Der größte Skatepark Innsbrucks." </br> " Meist überfüllt, vor allem bei schlechtem Wetter.",
+            "BEMERKUNG": "Der größte Skatepark Innsbrucks. Meist überfüllt, vor allem bei schlechtem Wetter.",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -333,7 +333,7 @@ window.skatespotMarker={
             "KATEGORIE": 1,
             "NAME": "Tivoli Skatepark",
 			"TYP": "Skatepark",
-            "BEMERKUNG": "Sehr trannylastiger Skatepark." </br> "Wird bereits bei wenig Besuchern chaotisch.",
+            "BEMERKUNG": "Sehr trannylastiger Skatepark. Wird bereits bei wenig Besuchern chaotisch.",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
