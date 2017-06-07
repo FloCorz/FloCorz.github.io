@@ -269,7 +269,8 @@ window.skatespotMarker={
             "OBJECTID": 17,
             "KATEGORIE": 1,
             "NAME": "Reichenau Skatepark",
-            "BEMERKUNG": "",
+			"TYP": "Skatepark",
+            "BEMERKUNG": "Schlechter Park, schlechter Boden.",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
