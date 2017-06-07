@@ -52,18 +52,7 @@ window.onload = function() {
             6: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-violet.png"
         };*/
         // Punkte des Stadtspaziergangs als Marker mit Popup hinzufügen
-        var punkteSkate = L.geoJSON(window.SPOTMARKER, {
-            onEachFeature : function (feature, layer) {
-                var markup = '<h3>' + feature.properties.NAME + '</h3>';
-                markup += '<p>' + feature.properties.BEMERKUNG + '</p>';
-                markup += '<strong>Details</strong>';
-                markup += '<ul>';
-                markup += '<li>' + 'Objekt ID: ' + feature.properties.OBJECTID + '</li>';
-                markup += '<li>' + 'Kategorie: ' + feature.properties.KATEGORIE + '</li>';
-                markup += '<ul>';
-                layer.bindPopup(markup);
-            }
-        }).addTo(map);
+        var punkteSkate = L.geoJSON(window.spotMarker).addTo(map);
 
         // Ausschnitt auf Punkte des Stadtspaziergangs setzen
         // map.fitBounds(punkteSpaziergang.getBounds());
