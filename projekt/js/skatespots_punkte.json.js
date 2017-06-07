@@ -6,7 +6,7 @@ window.spotMarker={
         "id": "SPOTS.01",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.2582, 11.3954]
+            "coordinates": [11.3954, 47.2582]
         },
         "geometry_name": "SHAPE",
         "properties": {
@@ -21,7 +21,7 @@ window.spotMarker={
         "id": "SPOTS.02",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.2732, 11.3967]
+            "coordinates": [11.3967, 47.2732]
         },
         "geometry_name": "SHAPE",
         "properties": {
@@ -36,7 +36,7 @@ window.spotMarker={
         "id": "SPOTS.03",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.2661, 11.3956]
+            "coordinates": [11.3956, 47.2661]
         },
         "geometry_name": "SHAPE",
         "properties": {
@@ -51,7 +51,7 @@ window.spotMarker={
         "id": "SPOTS.04",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.276, 11.4014]
+            "coordinates": [11.4014, 47.276]
         },
         "geometry_name": "SHAPE",
         "properties": {
@@ -66,7 +66,7 @@ window.spotMarker={
         "id": "SPOTS.05",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.2704, 11.3954]
+            "coordinates": [11.3954, 47.2704]
         },
         "geometry_name": "SHAPE",
         "properties": {
@@ -81,7 +81,7 @@ window.spotMarker={
         "id": "SPOTS.06",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.2644, 11.3858]
+            "coordinates": [11.3858, 47.2644]
         },
         "geometry_name": "SHAPE",
         "properties": {
@@ -96,7 +96,7 @@ window.spotMarker={
         "id": "SPOTS.07",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.2758, 11.405]
+            "coordinates": [11.405, 47.2758]
         },
         "geometry_name": "SHAPE",
         "properties": {
@@ -111,7 +111,7 @@ window.spotMarker={
         "id": "SPOTS.08",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.2661, 11.3964]
+            "coordinates": [11.3964, 47.2661]
         },
         "geometry_name": "SHAPE",
         "properties": {
@@ -126,7 +126,7 @@ window.spotMarker={
         "id": "SPOTS.09",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.2639, 11.4038]
+            "coordinates": [11.4038, 47.2639]
         },
         "geometry_name": "SHAPE",
         "properties": {
@@ -141,7 +141,7 @@ window.spotMarker={
         "id": "SPOTS.10",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.2645, 11.4038]
+            "coordinates": [11.4038, 47.2645]
         },
         "geometry_name": "SHAPE",
         "properties": {
@@ -156,7 +156,7 @@ window.spotMarker={
         "id": "SPOTS.11",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.2763, 11.4144]
+            "coordinates": [11.4144, 47.2763]
         },
         "geometry_name": "SHAPE",
         "properties": {
@@ -171,7 +171,7 @@ window.spotMarker={
         "id": "SPOTS.12",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.27, 11.3956]
+            "coordinates": [11.3956, 47.27]
         },
         "geometry_name": "SHAPE",
         "properties": {
@@ -186,7 +186,7 @@ window.spotMarker={
         "id": "SPOTS.13",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.2642, 11.3967]
+            "coordinates": [11.3967, 47.2642]
         },
         "geometry_name": "SHAPE",
         "properties": {
@@ -201,7 +201,7 @@ window.spotMarker={
         "id": "SPOTS.14",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.2673, 11.3973]
+            "coordinates": [11.3973, 47.2673]
         },
         "geometry_name": "SHAPE",
         "properties": {
@@ -216,7 +216,7 @@ window.spotMarker={
         "id": "SPOTS.15",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.2655, 11.4055]
+            "coordinates": [11.4055, 47.2655]
         },
         "geometry_name": "SHAPE",
         "properties": {
@@ -231,7 +231,7 @@ window.spotMarker={
         "id": "SPOTS.16",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.2660, 11.4065]
+            "coordinates": [11.4065, 47.2660]
         },
         "geometry_name": "SHAPE",
         "properties": {
@@ -246,7 +246,7 @@ window.spotMarker={
         "id": "SPOTS.17",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.2743, 11.4283]
+            "coordinates": [11.4283, 47.2743]
         },
         "geometry_name": "SHAPE",
         "properties": {
@@ -261,7 +261,7 @@ window.spotMarker={
         "id": "SPOTS.18",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.2767, 11.4146]
+            "coordinates": [11.4146, 47.2767]
         },
         "geometry_name": "SHAPE",
         "properties": {
@@ -276,7 +276,7 @@ window.spotMarker={
         "id": "SPOTS.19",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.2595, 11.4062]
+            "coordinates": [11.4062, 47.2595]
         },
         "geometry_name": "SHAPE",
         "properties": {
@@ -291,7 +291,7 @@ window.spotMarker={
         "id": "SPOTS.20",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.2588, 11.4087]
+            "coordinates": [11.4087, 47.2588]
         },
         "geometry_name": "SHAPE",
         "properties": {
@@ -306,7 +306,7 @@ window.spotMarker={
         "id": "SPOTS.21",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.2588, 11.4071]
+            "coordinates": [11.4071, 47.2588]
         },
         "geometry_name": "SHAPE",
         "properties": {
@@ -321,7 +321,7 @@ window.spotMarker={
         "id": "SPOTS.22",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.2599, 11.4104]
+            "coordinates": [11.4104, 47.2599]
         },
         "geometry_name": "SHAPE",
         "properties": {
@@ -336,7 +336,7 @@ window.spotMarker={
         "id": "SPOTS.23",
         "geometry": {
             "type": "Point",
-            "coordinates": [47.2588, 11.3930]
+            "coordinates": [11.3930, 47.2588]
         },
         "geometry_name": "SHAPE",
         "properties": {
