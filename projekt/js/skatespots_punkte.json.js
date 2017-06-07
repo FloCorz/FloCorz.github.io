@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 window.skatespotMarker={
-=======
-window.spotMarker = {
->>>>>>> 6ef6daba9de1dfce402c64903757d93e8437b1e2
     "type": "FeatureCollection",
     "totalFeatures": 23,
     "features": [{
