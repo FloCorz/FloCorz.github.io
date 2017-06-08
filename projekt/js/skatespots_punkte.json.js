@@ -369,6 +369,38 @@ window.skatespotMarker={
             "BEMERKUNG": "Wallie mit Drop dahinter auf mäßigem Boden.",
             "SE_ANNO_CAD_DATA": null
         }
+	}, {
+        "type": "Feature",
+        "id": "SPOTS.24",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [11.355918, 47.255805]
+        }, 
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 24,
+            "KATEGORIE": 1,
+            "NAME": "Skatepark Usi",
+			"TYP": "Skatepark",
+            "BEMERKUNG": "Mittelmaessiger Skatepark mit guter Curb und kleinem Pool.",
+            "SE_ANNO_CAD_DATA": null
+        }
+    },{
+        "type": "Feature",
+        "id": "SPOTS.25",
+        "geometry": {
+            "type": "Point",
+            "coordinates": [11.343952, 47.267502]
+        }, 
+        "geometry_name": "SHAPE",
+        "properties": {
+            "OBJECTID": 25,
+            "KATEGORIE": 1,
+            "NAME": "Skatepark Lohbachsiedlung",
+			"TYP": "Skatepark",
+            "BEMERKUNG": "Schlechter Skatepark mit rauem Flat und schlechten Obstacles.",
+            "SE_ANNO_CAD_DATA": null
+        }
     }],
     "crs": {
         "type": "name",
