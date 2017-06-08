@@ -125,7 +125,7 @@ window.onload = function() {
 		
 
         // Ausschnitt auf Punkte der Spotmap setzen
-        map.fitBounds(punkteSkate.getBounds());
+        map.fitBounds(punkteSnow.getBounds());
         // map.fitBounds(punkteSpaziergang.getBounds());
 
         // WMTS-Layer Auswahl hinzufügen
