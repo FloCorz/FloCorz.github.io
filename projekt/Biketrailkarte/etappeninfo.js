@@ -6,8 +6,8 @@ window.ETAPPENINFO = {
       "Laenge": "44",
       "Fahrzeit": "4,5",
       "Schwierigkeitsgrad": "leicht",
-      "Hoehenmeterauf": 200,
-      "Hoehenmeterab": 420,
+      "Hoehenmeterauf": "200",
+      "Hoehenmeterab": "420",
       "Info": "http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-steeg-weissenbach"
    },
    "02 Weissenbach-Tannheim.gpx": {
@@ -17,8 +17,8 @@ window.ETAPPENINFO = {
       "Laenge": "17,1",
       "Fahrzeit": "2,25",
       "Schwierigkeitsgrad": "mittelschwierig",
-      "Hoehenmeterauf": 400,
-      "Hoehenmeterab": 190,
+      "Hoehenmeterauf": "400",
+      "Hoehenmeterab": "190",
       "Info": "http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-weissenbach-tannheim"
    },
    "03 Tannheim-Reutte.gpx": {
@@ -28,8 +28,8 @@ window.ETAPPENINFO = {
       "Laenge": "44",
       "Fahrzeit": "4",
       "Schwierigkeitsgrad": "mittelschwierig",
-      "Hoehenmeterauf": 500,
-      "Hoehenmeterab": 590,
+      "Hoehenmeterauf": "500",
+      "Hoehenmeterab": "590",
       "Info": "http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-tannheim-reutte"
    },
    "04 Weissenbach-Reutte.gpx": {
@@ -39,8 +39,8 @@ window.ETAPPENINFO = {
       "Laenge": "7,1",
       "Fahrzeit": "1",
       "Schwierigkeitsgrad": "leicht",
-      "Hoehenmeterauf": 160,
-      "Hoehenmeterab": 50,
+      "Hoehenmeterauf": "160",
+      "Hoehenmeterab": "50",
       "Info": "http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-weissenbach-reutte"
    },
    "05 Reutte-Ehrwald.gpx": {
@@ -50,8 +50,8 @@ window.ETAPPENINFO = {
       "Laenge": "18,8",
       "Fahrzeit": "2",
       "Schwierigkeitsgrad": "leicht",
-      "Hoehenmeterauf": 280,
-      "Hoehenmeterab": 285,
+      "Hoehenmeterauf": "280",
+      "Hoehenmeterab": "285",
       "Info": "http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-reutte-ehrwald"
    },
    "06 Ehrwald-Scharnitz.gpx": {
@@ -61,8 +61,8 @@ window.ETAPPENINFO = {
       "Laenge": "40",
       "Fahrzeit": "4",
       "Schwierigkeitsgrad": "mittelschwierig",
-      "Hoehenmeterauf": 990,
-      "Hoehenmeterab": 1200,
+      "Hoehenmeterauf": "990",
+      "Hoehenmeterab": "1200",
       "Info": "http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-ehrwald-scharnitz"
    },
    "07 Scharnitz-Achensee.gpx": {
@@ -72,8 +72,8 @@ window.ETAPPENINFO = {
       "Laenge": "61,5",
       "Fahrzeit": "6",
       "Schwierigkeitsgrad": "schwierig",
-      "Hoehenmeterauf": 1850,
-      "Hoehenmeterab": 1880,
+      "Hoehenmeterauf": "1850",
+      "Hoehenmeterab": "1880",
       "Info": "http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-scharnitz-achensee"
    },
    "08 Achensee-Kaiserhaus.gpx": {
@@ -83,8 +83,8 @@ window.ETAPPENINFO = {
       "Laenge": "56",
       "Fahrzeit": "5",
       "Schwierigkeitsgrad": "schwierig",
-      "Hoehenmeterauf": 1460,
-      "Hoehenmeterab": 1660,
+      "Hoehenmeterauf": "1460",
+      "Hoehenmeterab": "1660",
       "Info": "http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-achensee-kaiserhaus"
    },
    "09 Kaiserhaus-Kufstein.gpx": {
@@ -94,8 +94,8 @@ window.ETAPPENINFO = {
       "Laenge": "31,5",
       "Fahrzeit": "3,25",
       "Schwierigkeitsgrad": "mittelschwierig",
-      "Hoehenmeterauf": 540,
-      "Hoehenmeterab": 780,
+      "Hoehenmeterauf": "540",
+      "Hoehenmeterab": "780",
       "Info": "http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-kaiserhaus-kufstein"
    },
    "10 Kufstein-Koessen.gpx": {
@@ -105,8 +105,8 @@ window.ETAPPENINFO = {
       "Laenge": "33,8",
       "Fahrzeit": "3",
       "Schwierigkeitsgrad": "mittelschwierig",
-      "Hoehenmeterauf": 770,
-      "Hoehenmeterab": 660,
+      "Hoehenmeterauf": "770",
+      "Hoehenmeterab": "660",
       "Info": "http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-kufstein-koessen"
    },
    "11 Koessen-Kitzbuehel.gpx": {
@@ -116,8 +116,8 @@ window.ETAPPENINFO = {
       "Laenge": "56",
       "Fahrzeit": "7",
       "Schwierigkeitsgrad": "schwierig",
-      "Hoehenmeterauf": 1900,
-      "Hoehenmeterab": 1730,
+      "Hoehenmeterauf": "1900",
+      "Hoehenmeterab": "1730",
       "Info": "http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-koessen-kitzbuehel"
    },
    "12 Variante Pillersee.gpx": {
@@ -127,8 +127,8 @@ window.ETAPPENINFO = {
       "Laenge": "42",
       "Fahrzeit": "4",
       "Schwierigkeitsgrad": "mittelschwierig",
-      "Hoehenmeterauf": 850,
-      "Hoehenmeterab": 770,
+      "Hoehenmeterauf": "850",
+      "Hoehenmeterab": "770",
       "Info": "http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-variante-pillersee"
    },
    "13 Kitzbühel-Westendorf.gpx": {
@@ -138,8 +138,8 @@ window.ETAPPENINFO = {
       "Laenge": "15,5",
       "Fahrzeit": "1,75",
       "Schwierigkeitsgrad": "leicht",
-      "Hoehenmeterauf": 150,
-      "Hoehenmeterab": 150,
+      "Hoehenmeterauf": "150",
+      "Hoehenmeterab": "150",
       "Info": "http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-kitzbuehel-westendorf"
    },
    "14 Westendorf-Alpbach.gpx": {
@@ -149,8 +149,8 @@ window.ETAPPENINFO = {
       "Laenge": "36,5",
       "Fahrzeit": "4,5",
       "Schwierigkeitsgrad": "mittelschwierig",
-      "Hoehenmeterauf": 1300,
-      "Hoehenmeterab": 1100,
+      "Hoehenmeterauf": "1300",
+      "Hoehenmeterab": "1100",
       "Info": "http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-westendorf-alpbach"
    },
    "15 Alpbach-Zell.gpx": {
@@ -160,8 +160,8 @@ window.ETAPPENINFO = {
       "Laenge": "43,5",
       "Fahrzeit": "5",
       "Schwierigkeitsgrad": "mittelschwierig",
-      "Hoehenmeterauf": 1150,
-      "Hoehenmeterab": 1550,
+      "Hoehenmeterauf": "1150",
+      "Hoehenmeterab": "1550",
       "Info": "http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-alpbach-zell"
    },
    "16 Zell-Achensee.gpx": {
@@ -171,8 +171,8 @@ window.ETAPPENINFO = {
       "Laenge": "36,5",
       "Fahrzeit": "3",
       "Schwierigkeitsgrad": "leicht",
-      "Hoehenmeterauf": 580,
-      "Hoehenmeterab": 220,
+      "Hoehenmeterauf": "580",
+      "Hoehenmeterab": "220",
       "Info": "http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-zell-achensee"
    },
    "17 Zell-Mayrhofen.gpx": {
@@ -182,8 +182,8 @@ window.ETAPPENINFO = {
       "Laenge": "8,8",
       "Fahrzeit": "1",
       "Schwierigkeitsgrad": "leicht",
-      "Hoehenmeterauf": 30,
-      "Hoehenmeterab": 90,
+      "Hoehenmeterauf": "30",
+      "Hoehenmeterab": "90",
       "Info": "http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-zell-mayrhofen"
    },
    "18 Mayrhofen-Lanersbach.gpx": {
@@ -193,8 +193,8 @@ window.ETAPPENINFO = {
       "Laenge": "14,5",
       "Fahrzeit": "3",
       "Schwierigkeitsgrad": "mittelschwierig",
-      "Hoehenmeterauf": 900,
-      "Hoehenmeterab": 280,
+      "Hoehenmeterauf": "900",
+      "Hoehenmeterab": "280",
       "Info": "http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-mayrhofen-lanersbach"
    },
    "19 Lanersbach-Weerberg.gpx": {
@@ -204,8 +204,8 @@ window.ETAPPENINFO = {
       "Laenge": "28",
       "Fahrzeit": "5",
       "Schwierigkeitsgrad": "schwierig",
-      "Hoehenmeterauf": 1090,
-      "Hoehenmeterab": 1480,
+      "Hoehenmeterauf": "1090",
+      "Hoehenmeterab": "1480",
       "Info": "http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-lanersbach-geiseljoch-weerberg"
    },
    "20 Weerberg-Windegg.gpx": {
@@ -215,8 +215,8 @@ window.ETAPPENINFO = {
       "Laenge": "22",
       "Fahrzeit": "4,5",
       "Schwierigkeitsgrad": "mittelschwierig",
-      "Hoehenmeterauf": 940,
-      "Hoehenmeterab": 630,
+      "Hoehenmeterauf": "940",
+      "Hoehenmeterab": "630",
       "Info": "http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-weerberg-windegg"
    },
    "21 Windegg-Matrei.gpx": {
@@ -226,8 +226,8 @@ window.ETAPPENINFO = {
       "Laenge": "27",
       "Fahrzeit": "3",
       "Schwierigkeitsgrad": "mittelschwierig",
-      "Hoehenmeterauf": 520,
-      "Hoehenmeterab": 720,
+      "Hoehenmeterauf": "520",
+      "Hoehenmeterab": "720",
       "Info": "http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-windegg-matrei"
    },
    "22 Matrei-Mieders.gpx": {
@@ -237,8 +237,8 @@ window.ETAPPENINFO = {
       "Laenge": "13",
       "Fahrzeit": "3",
       "Schwierigkeitsgrad": "mittelschwierig",
-      "Hoehenmeterauf": 740,
-      "Hoehenmeterab": 740,
+      "Hoehenmeterauf": "740",
+      "Hoehenmeterab": "740",
       "Info": "http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-matrei-maria-waldrast-mieders"
    },
    "23 Mieders-Mutters.gpx": {
@@ -248,8 +248,8 @@ window.ETAPPENINFO = {
       "Laenge": "20",
       "Fahrzeit": "2",
       "Schwierigkeitsgrad": "mittelschwierig",
-      "Hoehenmeterauf": 900,
-      "Hoehenmeterab": 1030,
+      "Hoehenmeterauf": "900",
+      "Hoehenmeterab": "1030",
       "Info": "http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-mieders-mutters"
    },
    "24 Mutters-Sellrain.gpx": {
@@ -259,8 +259,8 @@ window.ETAPPENINFO = {
       "Laenge": "16,7",
       "Fahrzeit": "1",
       "Schwierigkeitsgrad": "leicht",
-      "Hoehenmeterauf": 415,
-      "Hoehenmeterab": 310,
+      "Hoehenmeterauf": "415",
+      "Hoehenmeterab": "310",
       "Info": "http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-mutters-sellrain"
    },
    "25 Sellrain-Oetz.gpx": {
@@ -270,8 +270,8 @@ window.ETAPPENINFO = {
       "Laenge": "34,6",
       "Fahrzeit": "3",
       "Schwierigkeitsgrad": "mittelschwierig",
-      "Hoehenmeterauf": 1110,
-      "Hoehenmeterab": 1270,
+      "Hoehenmeterauf": "1110",
+      "Hoehenmeterab": "1270",
       "Info": "http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-sellrain-kuehtai-oetz"
    },
    "26 Oetz-Imst.gpx": {
@@ -281,8 +281,8 @@ window.ETAPPENINFO = {
       "Laenge": "14,6",
       "Fahrzeit": "1",
       "Schwierigkeitsgrad": "leicht",
-      "Hoehenmeterauf": 215,
-      "Hoehenmeterab": 280,
+      "Hoehenmeterauf": "215",
+      "Hoehenmeterab": "280",
       "Info": "http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-oetz-imst"
    },
    "27 Imst-Wenns.gpx": {
@@ -292,8 +292,8 @@ window.ETAPPENINFO = {
       "Laenge": "21,9",
       "Fahrzeit": "2",
       "Schwierigkeitsgrad": "schwierig",
-      "Hoehenmeterauf": 1230,
-      "Hoehenmeterab": 965,
+      "Hoehenmeterauf": "1230",
+      "Hoehenmeterab": "965",
       "Info": "http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-imst-venetalm-wenns"
    },
    "28 Wenns-Landeck.gpx": {
@@ -303,8 +303,8 @@ window.ETAPPENINFO = {
       "Laenge": "18,7",
       "Fahrzeit": "1",
       "Schwierigkeitsgrad": "mittelschwierig",
-      "Hoehenmeterauf": 630,
-      "Hoehenmeterab": 880,
+      "Hoehenmeterauf": "630",
+      "Hoehenmeterab": "880",
       "Info": "http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-wenns-pillerhoehe-landeck"
    },
    "29 Landeck-Ischgl.gpx": {
@@ -314,8 +314,8 @@ window.ETAPPENINFO = {
       "Laenge": "33",
       "Fahrzeit": "3",
       "Schwierigkeitsgrad": "schwierig",
-      "Hoehenmeterauf": 1250,
-      "Hoehenmeterab": 690,
+      "Hoehenmeterauf": "1250",
+      "Hoehenmeterab": "690",
       "Info": "http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-landeck-ischgl"
    },
    "30 Ischgl-St.Anton.gpx": {
@@ -325,8 +325,8 @@ window.ETAPPENINFO = {
       "Laenge": "41,8",
       "Fahrzeit": "4",
       "Schwierigkeitsgrad": "schwierig",
-      "Hoehenmeterauf": 1290,
-      "Hoehenmeterab": 1200,
+      "Hoehenmeterauf": "1290",
+      "Hoehenmeterab": "1200",
       "Info": "http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-ischgl-st-anton"
    },
    "31 St.Anton-Steeg.gpx": {
@@ -336,8 +336,8 @@ window.ETAPPENINFO = {
       "Laenge": "35,1",
       "Fahrzeit": "3",
       "Schwierigkeitsgrad": "mittelschwierig",
-      "Hoehenmeterauf": 750,
-      "Hoehenmeterab": 1080,
+      "Hoehenmeterauf": "750",
+      "Hoehenmeterab": "1080",
       "Info": "http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-st-anton-steeg"
    },
    "32 Imst-Ehrwald.gpx": {
@@ -347,8 +347,8 @@ window.ETAPPENINFO = {
       "Laenge": "37,1",
       "Fahrzeit": "3",
       "Schwierigkeitsgrad": "schwierig",
-      "Hoehenmeterauf": 1380,
-      "Hoehenmeterab": 1100,
+      "Hoehenmeterauf": "1380",
+      "Hoehenmeterab": "1100",
       "Info": "http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-imst-marienbergjoch-ehrwald"
    }
 };

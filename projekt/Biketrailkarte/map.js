@@ -56,8 +56,8 @@ window.onload = function() {
 		document.getElementById("Laenge").innerHTML = window.ETAPPENINFO[gpxFile].Laenge;
 		document.getElementById("Fahrzeit").innerHTML = window.ETAPPENINFO[gpxFile].Fahrzeit;	
 		document.getElementById("Schwierigkeitsgrad").innerHTML = window.ETAPPENINFO[gpxFile].Schwierigkeitsgrad;
-		//document.getElementById("Hoehenmeterauf").innerHTML = window.ETAPPENINFO[gpxFile].Hoehenmeterauf;
-		//document.getElementById("Hoehenmeterab").innerHTML = window.ETAPPENINFO[gpxFile].Hoehenmeterab;
+		document.getElementById("Hoehenmeterauf").innerHTML = window.ETAPPENINFO[gpxFile].Hoehenmeterauf;
+		document.getElementById("Hoehenmeterab").innerHTML = window.ETAPPENINFO[gpxFile].Hoehenmeterab;
 		document.getElementById("Info").innerHTML = window.ETAPPENINFO[gpxFile].Info;
 		
 		gpxTrackGroup.clearLayers();
@@ -67,25 +67,11 @@ window.onload = function() {
 			
 			// nach erfolgreichem Laden Popup hinzufügen, Ausschnitt setzen und Höhenprofil erzeugen
 			gpxTrack.on('ready', function () {
-				// Popup hinzufügen
-				var markup = '<h3>Adlerweg-Etappe 5: Alpengasthof Buchacker - Kaiserhaus</h3>';
-				markup += '<p>Moderate Ansprüche an die Kondition stellt diese Adlerweg-Etappe, die vom Alpengasthaus Buchacker zum Gasthof Gwerchtwirt führt. Entlang der Strecke gibt es immer wieder wunderbare Ausblicke zum Kaisergebirge, zu den Kitzbühler Alpen, zum Rofangebirge, zu den Zillertaler und Stubaier Alpen, und bei guter Sicht sogar bis zum Großglockner und Großvenediger.</p>'
-				markup += '<li>Ausgangspunkt: Alpengasthaus Buchacker</li>';
-				markup += '<li>Endpunkt: Gasthof Gwercherwirt</li>';
-				markup += '<li>Höhenmeter bergauf: 980</li>';
-				markup += '<li>Höhenmeter bergab: 1630</li>';
-				markup += '<li>Höchster Punkt: 1772</li>';
-				markup += '<li>Schwierigkeitsgrad: leicht</li>';
-				markup += '<li>Streckenlänge (in km): 18</li>';
-				markup += '<li>Gehzeit (in Stunden): 3</li>';
-				markup += '<li>Einkehrmöglichkeiten: Alpengasthof Buchacker, Gwercherwirt</li>';
-				markup += '<li><a href="http://www.tirol.at/reisefuehrer/sport/wandern/wandertouren/a-adlerweg-etappe-5-gasthof-buchacker-pinegg">Weitere Informationen</a></li>';
-				gpxTrack.bindPopup(markup, { maxWidth : 450 });
 
-				// Ausschnitt setzen
-				map.fitBounds(gpxTrack.getBounds());
+			// Ausschnitt setzen
+			map.fitBounds(gpxTrack.getBounds());
 
-				// Höhenprofil erzeugen
+			// Höhenprofil erzeugen
 		
 			profileControl.clear();
 			gpxTrack.eachLayer(function(layer) {
