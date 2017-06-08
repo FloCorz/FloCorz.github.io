@@ -74,7 +74,7 @@ window.onload = function() {
             1: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
             2: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png"
         };
-        // Punkte des Stadtspaziergangs als Marker mit Popup hinzufügen
+        // Punkte der Surfspots als Marker mit Popup hinzufügen
         var punkteSurf = L.geoJSON(window.surfspotMarker, {
             pointToLayer: function(feature, latlng) {
                 return L.marker(latlng, {
@@ -96,8 +96,35 @@ window.onload = function() {
 					
         }).addTo(map);
 		
+	//Punkte Snowspots
+  	   var snowiconByCategory = {
+           1: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-yellow.png",
+           2: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-violet.png"
+         };
+         // Punkte der Snowspots als Marker mit Popup hinzufügen
+         var punkteSnow = L.geoJSON(window.snowspotMarker, {
+             pointToLayer: function(feature, latlng) {
+                 return L.marker(latlng, {
+                     icon: L.icon({
+                         iconSize: [25, 41],
+                         iconAnchor: [12, 41],
+                         popupAnchor: [1, -34],
+                         shadowSize: [41, 41],
+                         shadowUrl: 'https://unpkg.com/leaflet@1.0.3/dist/images/marker-shadow.png',
+                         iconUrl: snowiconByCategory[feature.properties.KATEGORIE]
+                     })
+                 });
+             }
+         }).bindPopup(function(layer) {
+ 			var note = '<h2>' + layer.feature.properties.NAME + '</h2>';
+ 			note += '<h5>' + "Bemerkung: " + layer.feature.properties.BEMERKUNG + '</h5>';
+ 			note += '<h5>' + "Typ: " + layer.feature.properties.TYP + '</h5>';
+             return note;
+					
+         }).addTo(map);
+		
 
-        // Ausschnitt auf Punkte des Stadtspaziergangs setzen
+        // Ausschnitt auf Punkte der Spotmap setzen
         map.fitBounds(punkteSkate.getBounds());
         // map.fitBounds(punkteSpaziergang.getBounds());
 
@@ -110,7 +137,8 @@ window.onload = function() {
             "basemap.at - ORTHOFOTO": layers.bmaporthofoto30cm,
             "OpenStreetMap": layers.osm,
         }, {
-            "Skateboard": punkteSkate,
-			"Surfboard": punkteSurf,
+            "Skate": punkteSkate,
+			"Surf": punkteSurf,
+			"Snow": punkteSnow,
         }).addTo(map);
 };
