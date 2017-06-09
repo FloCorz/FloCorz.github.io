@@ -44,15 +44,15 @@ window.onload = function() {
 
    // Punkte Skatespots
  	   var skateiconByCategory = {
-            1: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-orange.png",
-            2: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png"
+            1: "https://webmappingprojekt.files.wordpress.com/2017/06/skateboard.png?w=1140",
+            2: "https://webmappingprojekt.files.wordpress.com/2017/06/skateboard2.png?w=1140"
         };
         // Punkte der Skatespots als Marker mit Popup hinzufügen
         var punkteSkate = L.geoJSON(window.skatespotMarker, {
             pointToLayer: function(feature, latlng) {
                 return L.marker(latlng, {
                     icon: L.icon({
-                        iconSize: [25, 41],
+                        iconSize: [28, 33],
                         iconAnchor: [12, 41],
                         popupAnchor: [1, -34],
                         shadowSize: [41, 41],
@@ -65,21 +65,22 @@ window.onload = function() {
 			var note = '<h2>' + layer.feature.properties.NAME + '</h2>';
 			note += '<h5>' + "Bemerkung: " + layer.feature.properties.BEMERKUNG + '</h5>';
 			note += '<h5>' + "Typ: " + layer.feature.properties.TYP + '</h5>';
+			note += '<h5>' + " " + layer.feature.properties.FOTO + '</h5>';
             return note;
 					
         }).addTo(map);
 		
 	//Punkte Surfspots
  	   var surficonByCategory = {
-            1: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-blue.png",
-            2: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png"
+            1: "https://webmappingprojekt.files.wordpress.com/2017/06/riversurf2.png?w=1140",
+            2: "https://webmappingprojekt.files.wordpress.com/2017/06/riversurf.png?w=1140"
         };
         // Punkte der Surfspots als Marker mit Popup hinzufügen
         var punkteSurf = L.geoJSON(window.surfspotMarker, {
             pointToLayer: function(feature, latlng) {
                 return L.marker(latlng, {
                     icon: L.icon({
-                        iconSize: [25, 41],
+                        iconSize: [28, 33],
                         iconAnchor: [12, 41],
                         popupAnchor: [1, -34],
                         shadowSize: [41, 41],
@@ -92,21 +93,22 @@ window.onload = function() {
 			var note = '<h2>' + layer.feature.properties.NAME + '</h2>';
 			note += '<h5>' + "Bemerkung: " + layer.feature.properties.BEMERKUNG + '</h5>';
 			note += '<h5>' + "Typ: " + layer.feature.properties.TYP + '</h5>';
+			note += '<h5>' + " " + layer.feature.properties.FOTO + '</h5>';
             return note;
 					
         }).addTo(map);
 		
 	//Punkte Snowspots
   	   var snowiconByCategory = {
-           1: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-yellow.png",
-           2: "https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-violet.png"
+           1: "https://webmappingprojekt.files.wordpress.com/2017/06/snowboard21.png?crop",
+           2: "https://webmappingprojekt.files.wordpress.com/2017/06/snowboard.png?w=1140"
          };
          // Punkte der Snowspots als Marker mit Popup hinzufügen
          var punkteSnow = L.geoJSON(window.snowspotMarker, {
              pointToLayer: function(feature, latlng) {
                  return L.marker(latlng, {
                      icon: L.icon({
-                         iconSize: [25, 41],
+                         iconSize: [28, 33],
                          iconAnchor: [12, 41],
                          popupAnchor: [1, -34],
                          shadowSize: [41, 41],
@@ -119,7 +121,8 @@ window.onload = function() {
  			var note = '<h2>' + layer.feature.properties.NAME + '</h2>';
  			note += '<h5>' + "Bemerkung: " + layer.feature.properties.BEMERKUNG + '</h5>';
  			note += '<h5>' + "Typ: " + layer.feature.properties.TYP + '</h5>';
-             return note;
+			note += '<h5>' + " " + layer.feature.properties.FOTO + '</h5>';
+            return note;
 					
          }).addTo(map);
 		
