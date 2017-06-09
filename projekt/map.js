@@ -65,7 +65,7 @@ window.onload = function() {
 			var note = '<h2>' + layer.feature.properties.NAME + '</h2>';
 			note += '<h5>' + "Bemerkung: " + layer.feature.properties.BEMERKUNG + '</h5>';
 			note += '<h5>' + "Typ: " + layer.feature.properties.TYP + '</h5>';
-			note += '<h5>' + "Foto: " + layer.feature.properties.FOTO + '</h5>';
+			note += '<h5>' + " " + layer.feature.properties.FOTO + '</h5>';
             return note;
 					
         }).addTo(map);
