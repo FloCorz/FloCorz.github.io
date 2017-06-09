@@ -15,6 +15,7 @@ window.surfspotMarker={
             "NAME": "Dreiheiligenwelle",
 			"TYP": "Natürliche Flusswelle",
             "BEMERKUNG": "Welle Funktionier nur teilweise bei Hochwasser.",
+			"FOTO": "<img src= https://webmappingprojekt.files.wordpress.com/2017/06/surf_dreiheiligenwelle.jpg?w=1140 />",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -31,6 +32,7 @@ window.surfspotMarker={
             "NAME": "Sillwelle",
 			"TYP": "Gebaute Flusswelle",
             "BEMERKUNG": "Die Welle funktioniert bisher noch nicht. Es würde weitere bauliche Maßnahmen benötigen.",
+			"FOTO": "<img src=https://webmappingprojekt.files.wordpress.com/2017/06/surf_sillwelle2.jpg?w=1140 />",
             "SE_ANNO_CAD_DATA": null
         }
     }],
