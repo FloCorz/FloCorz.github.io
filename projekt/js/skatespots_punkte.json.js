@@ -15,6 +15,7 @@ window.skatespotMarker={
             "NAME": "Altenheim Wilten",
 			"TYP": "Curb/Ledge",
             "BEMERKUNG": "Flatcurb von der Einfahrt auf den Gehweg.",
+			"FOTO": "<img src= https://i0.wp.com/webmappingprojekt.files.wordpress.com/2017/06/skate_altenheimwilten.jpg?ssl=1&w=450 />",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -31,6 +32,7 @@ window.skatespotMarker={
             "NAME": "Asfinag Ledge",
 			"TYP": "Curb/Ledge",
             "BEMERKUNG": "Upledge mit anschließenden Downhill.",
+			"FOTO": "<img src= https://i1.wp.com/webmappingprojekt.files.wordpress.com/2017/06/skate_asfinagledge.jpg?ssl=1&w=450 />",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -47,6 +49,7 @@ window.skatespotMarker={
             "NAME": "BTV/Sparkassenplatz",
 			"TYP": "Curb/Ledge",
             "BEMERKUNG": "Perfekte Curbs auf gutem Boden.",
+			"FOTO": "<img src= https://i2.wp.com/webmappingprojekt.files.wordpress.com/2017/06/skate_btv3.jpg?ssl=1&w=450 />",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -63,6 +66,7 @@ window.skatespotMarker={
 			"TYP": "Curb/Ledge/Mannypad",
             "NAME": "Chrisuskirche",
             "BEMERKUNG": "Stufen am Eingang und ein Curb an der Bushaltestelle gegenüber.",
+			"FOTO": "<img src= https://i2.wp.com/webmappingprojekt.files.wordpress.com/2017/06/skate_christuskirche1.jpg?ssl=1&w=450 />",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -79,6 +83,7 @@ window.skatespotMarker={
             "NAME": "Congress Wallie",
 			"TYP": "Andere",
             "BEMERKUNG": "Wallie vom Gehweg auf die Straße.",
+			"FOTO": "<img src= https://i2.wp.com/webmappingprojekt.files.wordpress.com/2017/06/skate_congresswall.jpg?ssl=1&w=450 />",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -95,6 +100,7 @@ window.skatespotMarker={
             "NAME": "Hauptuni",
 			"TYP": "Stairs/Rail",
             "BEMERKUNG": "Rails und Stairs von groß bis klein.",
+			"FOTO": "<img src= https://i1.wp.com/webmappingprojekt.files.wordpress.com/2017/06/skate_hauptuni1.jpg?ssl=1&w=450 />",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -111,6 +117,7 @@ window.skatespotMarker={
             "NAME": "Hörtnagl",
 			"TYP": "Stairs/Mannypad",
             "BEMERKUNG": "Eingangsbereich mit einem 2x2 Doubleset. Auch als Mannypad fahrbar.",
+			"FOTO": "<img src= https://i2.wp.com/webmappingprojekt.files.wordpress.com/2017/06/skate_hocc88rtnaglset3.jpg?ssl=1&w=450 />",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -127,6 +134,7 @@ window.skatespotMarker={
             "NAME": "HotelCentral",
 			"TYP": "Curb/Ledge",
             "BEMERKUNG": "2er Curbline auf gutem Boden.",
+			"FOTO": "<img src= https://i2.wp.com/webmappingprojekt.files.wordpress.com/2017/06/skate_hotel2.jpg?ssl=1&w=450 />",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -143,6 +151,7 @@ window.skatespotMarker={
             "NAME": "Ischia",
 			"TYP": "Curb/Ledge",
             "BEMERKUNG": "Holzcurbs mit Wallie Option auf gutem Boden",
+			"FOTO": "<img src= https://i1.wp.com/webmappingprojekt.files.wordpress.com/2017/06/skate_ischia1.jpg?ssl=1&w=450 />",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -159,6 +168,7 @@ window.skatespotMarker={
             "NAME": "Ischia Gap",
 			"TYP": "Gap",
             "BEMERKUNG": "Mittelgroßes Gap von einer Laderampe auf die Straße",
+			"FOTO": "<img src= https://i1.wp.com/webmappingprojekt.files.wordpress.com/2017/06/skate_ischiagap.jpg?ssl=1&w=450 />",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -175,6 +185,7 @@ window.skatespotMarker={
             "NAME": "Kletterhalle",
 			"TYP": "Curb/Ledge",
             "BEMERKUNG": "Mehrere Curbs in einer Line auf gutem Boden, jedoch wenig Platz.",
+			"FOTO": "<img src= https://i2.wp.com/webmappingprojekt.files.wordpress.com/2017/06/skate_klettercurbs.jpg?ssl=1&w=450 />",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -191,6 +202,7 @@ window.skatespotMarker={
             "NAME": "Landestheater",
 			"TYP": "Curb/Ledge",
             "BEMERKUNG": "Langes Curb über ein Gitter auf schlechtem Boden",
+			"FOTO": "<img src= https://i0.wp.com/webmappingprojekt.files.wordpress.com/2017/06/skate_landestheaterledge.jpg?ssl=1&w=450 />",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -205,8 +217,9 @@ window.skatespotMarker={
             "OBJECTID": 13,
             "KATEGORIE": 2,
             "NAME": "Landhausplatz",
-			"TYP": "Öffentlicher Raum",
+			"TYP": "Öffentlicher Platz",
             "BEMERKUNG": "Der mit Abstand bekannteste Skatespot Innsbrucks. Viele Trannys, gutes Flat, Sitzbänke teils als Curbs fahrbar.",
+			"FOTO": "<img src= https://i2.wp.com/webmappingprojekt.files.wordpress.com/2017/06/skate_lhp4.jpg?ssl=1&w=450 />",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -223,6 +236,7 @@ window.skatespotMarker={
             "NAME": "Landesmuseum",
 			"TYP": "Curb/Ledge/Stairs",
             "BEMERKUNG": "Stairset mit kurzer Anfahrt und einem Curbspot in unmittelbarer Nähe.",
+			"FOTO": "<img src= https://i0.wp.com/webmappingprojekt.files.wordpress.com/2017/06/skate_museum3.jpg?ssl=1&w=450 />",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -239,6 +253,7 @@ window.skatespotMarker={
             "NAME": "Rapoldipark",
 			"TYP": "Bank",
             "BEMERKUNG": "Holzbanks auf Holzboden",
+			"FOTO": "<img src= https://i2.wp.com/webmappingprojekt.files.wordpress.com/2017/06/skate_rapoldipark1.jpg?ssl=1&w=450 />",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -255,6 +270,7 @@ window.skatespotMarker={
             "NAME": "Rapoldipark Curb",
 			"TYP": "Curb/Ledge",
             "BEMERKUNG": "Brunnen mit Granitumrandung",
+			"FOTO": "<img src= https://i1.wp.com/webmappingprojekt.files.wordpress.com/2017/06/skate_rapoldiparkcurb.jpg?ssl=1&w=450 />",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -271,6 +287,7 @@ window.skatespotMarker={
             "NAME": "Reichenau Skatepark",
 			"TYP": "Skatepark",
             "BEMERKUNG": "Schlechter Park, schlechter Boden.",
+			"FOTO": "<img src= https://i1.wp.com/webmappingprojekt.files.wordpress.com/2017/06/skate_reichenaupark2.jpg?ssl=1&w=450 />",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -287,6 +304,7 @@ window.skatespotMarker={
             "NAME": "Skatehalle Innsbruck",
 			"TYP": "Skatepark",
             "BEMERKUNG": "Der größte Skatepark Innsbrucks. Meist überfüllt, vor allem bei schlechtem Wetter.",
+			"FOTO": "<img src= https://i1.wp.com/webmappingprojekt.files.wordpress.com/2017/06/skate_skatehalle.jpg?ssl=1&w=450 />",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -303,6 +321,7 @@ window.skatespotMarker={
             "NAME": "Tivoli Curbs",
 			"TYP": "Curb/Ledge",
             "BEMERKUNG": "Etliche Curbs in verschiedenen größen.",
+			"FOTO": "<img src= https://i0.wp.com/webmappingprojekt.files.wordpress.com/2017/06/skate_tivoli5.jpg?ssl=1&w=450 />",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -319,6 +338,7 @@ window.skatespotMarker={
             "NAME": "Tivoli Bank",
 			"TYP": "Bank",
             "BEMERKUNG": "Bank mit schlechter Anfahrt",
+			"FOTO": "<img src= https://i1.wp.com/webmappingprojekt.files.wordpress.com/2017/06/skate_tivolibank2.jpg?ssl=1&w=450 />",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -335,6 +355,7 @@ window.skatespotMarker={
             "NAME": "Tivoli Skatepark",
 			"TYP": "Skatepark",
             "BEMERKUNG": "Sehr trannylastiger Skatepark. Wird bereits bei wenig Besuchern chaotisch.",
+			"FOTO": "<img src= https://i0.wp.com/webmappingprojekt.files.wordpress.com/2017/06/skate_tivolipark1.jpg?ssl=1&w=450 />",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -351,6 +372,7 @@ window.skatespotMarker={
             "NAME": "Tivoli Wallride",
 			"TYP": "Wallride",
             "BEMERKUNG": "Wallride über 4 Stufen.",
+			"FOTO": "<img src= https://i2.wp.com/webmappingprojekt.files.wordpress.com/2017/06/skate_tivoliwallride.jpg?ssl=1&w=450 />",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -367,6 +389,7 @@ window.skatespotMarker={
             "NAME": "Wilten Wallie",
 			"TYP": "Andere",
             "BEMERKUNG": "Wallie mit Drop dahinter auf mäßigem Boden.",
+			"FOTO": "<img src= https://i2.wp.com/webmappingprojekt.files.wordpress.com/2017/06/skate_wiltenwallie.jpg?ssl=1&w=450 />",
             "SE_ANNO_CAD_DATA": null
         }
 	}, {
@@ -380,9 +403,10 @@ window.skatespotMarker={
         "properties": {
             "OBJECTID": 24,
             "KATEGORIE": 1,
-            "NAME": "Skatepark Usi",
+            "NAME": "Usi Skatepark",
 			"TYP": "Skatepark",
             "BEMERKUNG": "Mittelmaessiger Skatepark mit guter Curb und kleinem Pool.",
+			"FOTO": "<img src=  />",
             "SE_ANNO_CAD_DATA": null
         }
     },{
@@ -396,9 +420,10 @@ window.skatespotMarker={
         "properties": {
             "OBJECTID": 25,
             "KATEGORIE": 1,
-            "NAME": "Skatepark Lohbachsiedlung",
+            "NAME": "Lohbachsiedlung Skatepark",
 			"TYP": "Skatepark",
             "BEMERKUNG": "Schlechter Skatepark mit rauem Flat und schlechten Obstacles.",
+			"FOTO": "<img src= https://i1.wp.com/webmappingprojekt.files.wordpress.com/2017/06/skate_lohbach.jpg?ssl=1&w=450 />",
             "SE_ANNO_CAD_DATA": null
         }
     }],
