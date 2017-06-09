@@ -101,7 +101,7 @@ window.ETAPPENINFO = {
    "10 Kufstein-Koessen.gpx": {
       "Titel": "Biketrail-Etappe 10: Kufstein - Koessen ",
       "Ausgangspunkt": "Kufstein",
-      "Endpunkt": "Koessen",
+      "Endpunkt": "Kössen",
       "Laenge": "33,8",
       "Fahrzeit": "3",
       "Schwierigkeitsgrad": "mittelschwierig",
@@ -111,8 +111,8 @@ window.ETAPPENINFO = {
    },
    "11 Koessen-Kitzbuehel.gpx": {
       "Titel": "Biketrail-Etappe 11: Koessen - Kitzbuehel",
-      "Ausgangspunkt": "Koessen",
-      "Endpunkt": "Kitzbuehel",
+      "Ausgangspunkt": "Kössen",
+      "Endpunkt": "Kitzbühel",
       "Laenge": "56",
       "Fahrzeit": "7",
       "Schwierigkeitsgrad": "schwierig",
@@ -123,7 +123,7 @@ window.ETAPPENINFO = {
    "12 Variante Pillersee.gpx": {
       "Titel": "Biketrail-Etappe 12: Variante Pillersee ",
       "Ausgangspunkt": "Erpfendorf",
-      "Endpunkt": "Muehlbach",
+      "Endpunkt": "Mühlbach",
       "Laenge": "42",
       "Fahrzeit": "4",
       "Schwierigkeitsgrad": "mittelschwierig",
@@ -133,7 +133,7 @@ window.ETAPPENINFO = {
    },
    "13 Kitzbühel-Westendorf.gpx": {
       "Titel": "Biketrail-Etappe 13: Kitzbuehel - Westendorf ",
-      "Ausgangspunkt": "Kitzbuehel",
+      "Ausgangspunkt": "Kitzbühel",
       "Endpunkt": "Westendorf",
       "Laenge": "15,5",
       "Fahrzeit": "1,75",
@@ -188,7 +188,7 @@ window.ETAPPENINFO = {
    },
    "18 Mayrhofen-Lanersbach.gpx": {
       "Titel": "Biketrail-Etappe 18: Mayrhofen - Lanersbach ",
-      "Ausgangspunkt": "Mayhofen",
+      "Ausgangspunkt": "Mayrhofen",
       "Endpunkt": "Lanersbach",
       "Laenge": "14,5",
       "Fahrzeit": "3",
@@ -266,7 +266,7 @@ window.ETAPPENINFO = {
    "25 Sellrain-Oetz.gpx": {
       "Titel": "Biketrail-Etappe 25: Sellrain - Kuehtai - Oetz ",
       "Ausgangspunkt": "Sellrain",
-      "Endpunkt": "Oetz",
+      "Endpunkt": "Ötz",
       "Laenge": "34,6",
       "Fahrzeit": "3",
       "Schwierigkeitsgrad": "mittelschwierig",
@@ -276,7 +276,7 @@ window.ETAPPENINFO = {
    },
    "26 Oetz-Imst.gpx": {
       "Titel": "Biketrail-Etappe 26: Oetz - Imst",
-      "Ausgangspunkt": "Oetz",
+      "Ausgangspunkt": "Ötz",
       "Endpunkt": "Imst",
       "Laenge": "14,6",
       "Fahrzeit": "1",
