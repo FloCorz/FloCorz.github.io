@@ -337,7 +337,7 @@ window.skatespotMarker={
             "KATEGORIE": 2,
             "NAME": "Tivoli Bank",
 			"TYP": "Bank",
-            "BEMERKUNG": "Bank mit schlechter Anfahrt",
+            "BEMERKUNG": "Steile Bank mit eher schlechte bzw. kurzer Anfahrt",
 			"FOTO": "<img src= https://i1.wp.com/webmappingprojekt.files.wordpress.com/2017/06/skate_tivolibank2.jpg?ssl=1&w=450 />",
             "SE_ANNO_CAD_DATA": null
         }
@@ -371,7 +371,7 @@ window.skatespotMarker={
             "KATEGORIE": 2,
             "NAME": "Tivoli Wallride",
 			"TYP": "Wallride",
-            "BEMERKUNG": "Wallride über 4 Stufen.",
+            "BEMERKUNG": "Wallride über 4 Stufen mit kurzer Anfahrt .",
 			"FOTO": "<img src= https://i2.wp.com/webmappingprojekt.files.wordpress.com/2017/06/skate_tivoliwallride.jpg?ssl=1&w=450 />",
             "SE_ANNO_CAD_DATA": null
         }
