@@ -59,6 +59,10 @@
             center: [47.654, 13.370],
             zoom: 8
         });
+		
+		var clusterGruppe_skate = L.markerClusterGroup().addTo(map);
+        var clusterGruppe_surf = L.markerClusterGroup().addTo(map);
+		var clusterGruppe_snow = L.markerClusterGroup().addTo(map);
 
         // Maßstab hinzufügen
         L.control.scale({
@@ -85,15 +89,16 @@
                         iconUrl: skateiconByCategory[feature.properties.KATEGORIE]
                     })
                 });
-            }
-        }).bindPopup(function(layer) {
+            },
+			onEachFeature : function (feature, layer) {
             var note = '<h2>' + layer.feature.properties.NAME + '</h2>';
             note += '<h5>' + "Bemerkung: " + layer.feature.properties.BEMERKUNG + '</h5>';
             note += '<h5>' + "Typ: " + layer.feature.properties.TYP + '</h5>';
             note += '<h5>' + " " + layer.feature.properties.FOTO + '</h5>';
-            return note;
-
-        }).addTo(map);
+                layer.bindPopup(note);
+            }
+        }).addTo(clusterGruppe_skate);
+		
 
         //Punkte Surfspots
         var surficonByCategory = {
@@ -113,15 +118,16 @@
                         iconUrl: surficonByCategory[feature.properties.KATEGORIE]
                     })
                 });
-            }
-        }).bindPopup(function(layer) {
+            },
+			onEachFeature : function (feature, layer) {
             var note = '<h2>' + layer.feature.properties.NAME + '</h2>';
             note += '<h5>' + "Bemerkung: " + layer.feature.properties.BEMERKUNG + '</h5>';
             note += '<h5>' + "Typ: " + layer.feature.properties.TYP + '</h5>';
             note += '<h5>' + " " + layer.feature.properties.FOTO + '</h5>';
-            return note;
-
-        }).addTo(map);
+                layer.bindPopup(note);
+            }
+        }).addTo(clusterGruppe_surf);
+		
 
         //Punkte Snowspots
         var snowiconByCategory = {
@@ -141,15 +147,15 @@
                         iconUrl: snowiconByCategory[feature.properties.KATEGORIE]
                     })
                 });
-            }
-        }).bindPopup(function(layer) {
+            },
+			onEachFeature : function (feature, layer) {
             var note = '<h2>' + layer.feature.properties.NAME + '</h2>';
             note += '<h5>' + "Bemerkung: " + layer.feature.properties.BEMERKUNG + '</h5>';
             note += '<h5>' + "Typ: " + layer.feature.properties.TYP + '</h5>';
             note += '<h5>' + " " + layer.feature.properties.FOTO + '</h5>';
-            return note;
-
-        }).addTo(map);
+                layer.bindPopup(note);
+            }
+        }).addTo(clusterGruppe_snow);
 
 
         // Ausschnitt auf Punkte der Spotmap setzen
@@ -165,8 +171,8 @@
             "basemap.at - ORTHOFOTO": layers.bmaporthofoto30cm,
             "OpenStreetMap": layers.osm,
         }, {
-            "Skate": punkteSkate,
-            "Surf": punkteSurf,
-            "Snow": punkteSnow,
+            "Skate": clusterGruppe_skate,
+            "Surf": clusterGruppe_surf,
+            "Snow": clusterGruppe_snow,
         }).addTo(map);
     };

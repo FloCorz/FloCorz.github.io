@@ -83,7 +83,7 @@ window.snowspotMarker={
             "NAME": "Glungezer Park",
 			"TYP": "Kicker/Rails",
             "BEMERKUNG": "Der Snowpark an der Glungezerbahn ist von Innsbruck in ca. 30 Minuten zu erreichen.",
-			"FOTO": "<img src=  />",
+			"FOTO": "<img src= http://www.skiresort.de/typo3temp/pics/a9cca255f5.jpg />",
             "SE_ANNO_CAD_DATA": null
         }
     }],
