@@ -1,7 +1,33 @@
     
 window.onload = function() {
-        // WMTS-Layer basemap.at - Quelle: http://www.basemap.at/wmts/1.0.0/WMTSCapabilities.xml
-        var layers = {
+
+		var bild = document.getElementById("figureImage");
+
+		var unterschrift = document.getElementById("figureCaption");
+
+		var letzterButton = document.getElementById("button1");
+
+		var navigation = document.getElementById("sportSelector");
+
+		navigation.onclick = function (evt) {
+
+        var bildname = evt.target.getAttribute("data-image");
+        var bildtitel = evt.target.getAttribute("data-title");
+
+        bild.src = "images/" + bildname;
+
+        unterschrift.innerHTML = bildtitel;
+
+        evt.target.setAttribute("class", "current");
+
+        letzterButton.removeAttribute("class");
+
+        letzterButton = evt.target;
+		};
+		
+		
+		
+		var layers = {
             geolandbasemap: L.tileLayer("https://{s}.wien.gv.at/basemap/geolandbasemap/normal/google3857/{z}/{y}/{x}.png", {
                 subdomains: ['maps', 'maps1', 'maps2', 'maps3', 'maps4'],
                 attribution: 'Datenquelle: <a href="http://www.basemap.at/">basemap.at</a>'
