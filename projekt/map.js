@@ -1,33 +1,32 @@
-    
-window.onload = function() {
+    window.onload = function() {
 
-		var bild = document.getElementById("figureImage");
+        var bild = document.getElementById("figureImage");
 
-		var unterschrift = document.getElementById("figureCaption");
+        var unterschrift = document.getElementById("figureCaption");
 
-		var letzterButton = document.getElementById("button1");
+        var letzterButton = document.getElementById("button1");
 
-		var navigation = document.getElementById("sportSelector");
+        var navigation = document.getElementById("sportSelector");
 
-		navigation.onclick = function (evt) {
+        navigation.onclick = function(evt) {
 
-        var bildname = evt.target.getAttribute("data-image");
-        var bildtitel = evt.target.getAttribute("data-title");
+            var bildname = evt.target.getAttribute("data-image");
+            var bildtitel = evt.target.getAttribute("data-title");
 
-        bild.src = "images/" + bildname;
+            bild.src = "images/" + bildname;
 
-        unterschrift.innerHTML = bildtitel;
+            unterschrift.innerHTML = bildtitel;
 
-        evt.target.setAttribute("class", "current");
+            evt.target.setAttribute("class", "current");
 
-        letzterButton.removeAttribute("class");
+            letzterButton.removeAttribute("class");
 
-        letzterButton = evt.target;
-		};
-		
-		
-		
-		var layers = {
+            letzterButton = evt.target;
+        };
+
+
+
+        var layers = {
             geolandbasemap: L.tileLayer("https://{s}.wien.gv.at/basemap/geolandbasemap/normal/google3857/{z}/{y}/{x}.png", {
                 subdomains: ['maps', 'maps1', 'maps2', 'maps3', 'maps4'],
                 attribution: 'Datenquelle: <a href="http://www.basemap.at/">basemap.at</a>'
@@ -57,8 +56,8 @@ window.onload = function() {
         // Karte definieren
         var map = L.map('map', {
             layers: [layers.geolandbasemap],
-            center : [47.654, 13.370],
-            zoom : 8
+            center: [47.654, 13.370],
+            zoom: 8
         });
 
         // Maßstab hinzufügen
@@ -68,8 +67,8 @@ window.onload = function() {
             imperial: false
         }).addTo(map);
 
-   // Punkte Skatespots
- 	   var skateiconByCategory = {
+        // Punkte Skatespots
+        var skateiconByCategory = {
             1: "https://webmappingprojekt.files.wordpress.com/2017/06/skateboard.png?w=1140",
             2: "https://webmappingprojekt.files.wordpress.com/2017/06/skateboard2.png?w=1140"
         };
@@ -88,16 +87,16 @@ window.onload = function() {
                 });
             }
         }).bindPopup(function(layer) {
-			var note = '<h2>' + layer.feature.properties.NAME + '</h2>';
-			note += '<h5>' + "Bemerkung: " + layer.feature.properties.BEMERKUNG + '</h5>';
-			note += '<h5>' + "Typ: " + layer.feature.properties.TYP + '</h5>';
-			note += '<h5>' + " " + layer.feature.properties.FOTO + '</h5>';
+            var note = '<h2>' + layer.feature.properties.NAME + '</h2>';
+            note += '<h5>' + "Bemerkung: " + layer.feature.properties.BEMERKUNG + '</h5>';
+            note += '<h5>' + "Typ: " + layer.feature.properties.TYP + '</h5>';
+            note += '<h5>' + " " + layer.feature.properties.FOTO + '</h5>';
             return note;
-					
+
         }).addTo(map);
-		
-	//Punkte Surfspots
- 	   var surficonByCategory = {
+
+        //Punkte Surfspots
+        var surficonByCategory = {
             1: "https://webmappingprojekt.files.wordpress.com/2017/06/riversurf2.png?w=1140",
             2: "https://webmappingprojekt.files.wordpress.com/2017/06/riversurf.png?w=1140"
         };
@@ -116,42 +115,42 @@ window.onload = function() {
                 });
             }
         }).bindPopup(function(layer) {
-			var note = '<h2>' + layer.feature.properties.NAME + '</h2>';
-			note += '<h5>' + "Bemerkung: " + layer.feature.properties.BEMERKUNG + '</h5>';
-			note += '<h5>' + "Typ: " + layer.feature.properties.TYP + '</h5>';
-			note += '<h5>' + " " + layer.feature.properties.FOTO + '</h5>';
+            var note = '<h2>' + layer.feature.properties.NAME + '</h2>';
+            note += '<h5>' + "Bemerkung: " + layer.feature.properties.BEMERKUNG + '</h5>';
+            note += '<h5>' + "Typ: " + layer.feature.properties.TYP + '</h5>';
+            note += '<h5>' + " " + layer.feature.properties.FOTO + '</h5>';
             return note;
-					
+
         }).addTo(map);
-		
-	//Punkte Snowspots
-  	   var snowiconByCategory = {
-           1: "https://webmappingprojekt.files.wordpress.com/2017/06/snowboard21.png?crop",
-           2: "https://webmappingprojekt.files.wordpress.com/2017/06/snowboard.png?w=1140"
-         };
-         // Punkte der Snowspots als Marker mit Popup hinzufügen
-         var punkteSnow = L.geoJSON(window.snowspotMarker, {
-             pointToLayer: function(feature, latlng) {
-                 return L.marker(latlng, {
-                     icon: L.icon({
-                         iconSize: [28, 33],
-                         iconAnchor: [12, 41],
-                         popupAnchor: [1, -34],
-                         shadowSize: [41, 41],
-                         shadowUrl: 'https://unpkg.com/leaflet@1.0.3/dist/images/marker-shadow.png',
-                         iconUrl: snowiconByCategory[feature.properties.KATEGORIE]
-                     })
-                 });
-             }
-         }).bindPopup(function(layer) {
- 			var note = '<h2>' + layer.feature.properties.NAME + '</h2>';
- 			note += '<h5>' + "Bemerkung: " + layer.feature.properties.BEMERKUNG + '</h5>';
- 			note += '<h5>' + "Typ: " + layer.feature.properties.TYP + '</h5>';
-			note += '<h5>' + " " + layer.feature.properties.FOTO + '</h5>';
+
+        //Punkte Snowspots
+        var snowiconByCategory = {
+            1: "https://webmappingprojekt.files.wordpress.com/2017/06/snowboard21.png?crop",
+            2: "https://webmappingprojekt.files.wordpress.com/2017/06/snowboard.png?w=1140"
+        };
+        // Punkte der Snowspots als Marker mit Popup hinzufügen
+        var punkteSnow = L.geoJSON(window.snowspotMarker, {
+            pointToLayer: function(feature, latlng) {
+                return L.marker(latlng, {
+                    icon: L.icon({
+                        iconSize: [28, 33],
+                        iconAnchor: [12, 41],
+                        popupAnchor: [1, -34],
+                        shadowSize: [41, 41],
+                        shadowUrl: 'https://unpkg.com/leaflet@1.0.3/dist/images/marker-shadow.png',
+                        iconUrl: snowiconByCategory[feature.properties.KATEGORIE]
+                    })
+                });
+            }
+        }).bindPopup(function(layer) {
+            var note = '<h2>' + layer.feature.properties.NAME + '</h2>';
+            note += '<h5>' + "Bemerkung: " + layer.feature.properties.BEMERKUNG + '</h5>';
+            note += '<h5>' + "Typ: " + layer.feature.properties.TYP + '</h5>';
+            note += '<h5>' + " " + layer.feature.properties.FOTO + '</h5>';
             return note;
-					
-         }).addTo(map);
-		
+
+        }).addTo(map);
+
 
         // Ausschnitt auf Punkte der Spotmap setzen
         map.fitBounds(punkteSnow.getBounds());
@@ -167,7 +166,7 @@ window.onload = function() {
             "OpenStreetMap": layers.osm,
         }, {
             "Skate": punkteSkate,
-			"Surf": punkteSurf,
-			"Snow": punkteSnow,
+            "Surf": punkteSurf,
+            "Snow": punkteSnow,
         }).addTo(map);
-};
+    };
