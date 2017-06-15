@@ -32,7 +32,7 @@ window.snowspotMarker={
             "NAME": "Golden Roof Park Axams",
 			"TYP": "Kicker/Rails",
             "BEMERKUNG": "Der Golden Roof Park liegt im Skigebiet Axamer Lizum. Dieser Snowpark ist jedoch eher für Familien ausgelegt.",
-			"FOTO": "<img src=  />",
+			"FOTO": "<img src= https://webmappingprojekt.files.wordpress.com/2017/06/goldenroofpark.png?crop />",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
