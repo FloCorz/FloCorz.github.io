@@ -8,19 +8,27 @@
     <title>Extremsport in Innsbruck: Überblick</title>
 
     <link rel="stylesheet" href="js/leaflet/leaflet.css" />
-
     <script src="js/leaflet/leaflet.js"></script>
+		
     <script src="./map.js"></script>
     <script src="js/skatespots_punkte.json.js"></script>
     <script src="js/surfspots_punkte.json.js"></script>
     <script src="js/snowspots_punkte.json.js"></script>
+	
+	<script src="js/leaflet-markercluster/leaflet.markercluster.js"></script>
+	<link rel="stylesheet" href="js/leaflet-markercluster/MarkerCluster.css" />
+	<link rel="stylesheet" href="js/leaflet-markercluster/MarkerCluster.Default.css" />	
 
 
     <style>
         body {
             padding: 0px;
             margin: 0px;
-            text-align: center;
+        }
+		figcaption, nav{
+            padding: 0px;
+            margin: 0px;
+			text-align: center;
         }
 
         html {
@@ -34,21 +42,6 @@
             text-align: center;
         }
 
-        #figureImage {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            height: 600px;
-            width: 1024px;
-            border: 2px solid black;
-        }
-
-        #map {
-            float: center;
-            height: 600px;
-            width: 1024px;
-            border: 2px solid black;
-        }
 
         div {
             display: block;
@@ -68,6 +61,23 @@
             height: 30vh;
             width: 20vw;
         }
+
+        #figureImage {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 600px;
+            width: 1024px;
+            border: 2px solid black;
+        }
+
+        #map {
+            float: center;
+            height: 600px;
+            width: 1024px;
+            border: 2px solid black;
+        }
+		
     </style>
 </head>
 
