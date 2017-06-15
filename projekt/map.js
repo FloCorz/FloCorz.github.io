@@ -82,7 +82,7 @@
                 return L.marker(latlng, {
                     icon: L.icon({
                         iconSize: [28, 33],
-                        iconAnchor: [12, 41],
+                        iconAnchor: [10, 33],
                         popupAnchor: [1, -34],
                         shadowSize: [41, 41],
                         shadowUrl: 'https://unpkg.com/leaflet@1.0.3/dist/images/marker-shadow.png',
