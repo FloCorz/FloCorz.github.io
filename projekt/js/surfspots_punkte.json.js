@@ -1,6 +1,6 @@
 window.surfspotMarker={
     "type": "FeatureCollection",
-    "totalFeatures": 2,
+    "totalFeatures": 3,
     "features": [{
         "type": "Feature",
         "id": "SPOTS.01",
@@ -15,7 +15,7 @@ window.surfspotMarker={
             "NAME": "Dreiheiligenwelle",
 			"TYP": "Natürliche Flusswelle",
             "BEMERKUNG": "Welle Funktionier nur teilweise bei Hochwasser.",
-			"FOTO": "<img src= https://webmappingprojekt.files.wordpress.com/2017/06/surf_dreiheiligenwelle.jpg?w=1140 />",
+			"FOTO": "<img src= images/SpotsUse/Surf_Dreiheiligenwelle.jpg />",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -27,12 +27,12 @@ window.surfspotMarker={
         },
         "geometry_name": "SHAPE",
         "properties": {
-            "OBJECTID": 1,
-            "KATEGORIE": 1,
+            "OBJECTID": 2,
+            "KATEGORIE": 2,
             "NAME": "Innwelle bei Silz",
 			"TYP": "Gebaute Flusswelle",
             "BEMERKUNG": "Welle bei der Area 47. Funktioniert je nach Wasserstand.",
-			"FOTO": "<img src= https://webmappingprojekt.files.wordpress.com/2017/06/silzwelle.jpg?crop />",
+			"FOTO": "<img src= images/SpotsUse/Surf_Silzwelle.jpg />",
             "SE_ANNO_CAD_DATA": null
         }
     },{
@@ -44,12 +44,12 @@ window.surfspotMarker={
         },
         "geometry_name": "SHAPE",
         "properties": {
-            "OBJECTID": 2,
+            "OBJECTID": 3,
             "KATEGORIE": 2,
             "NAME": "Sillwelle",
 			"TYP": "Gebaute Flusswelle",
             "BEMERKUNG": "Die Welle funktioniert bisher noch nicht. Es würde weitere bauliche Maßnahmen benötigen.",
-			"FOTO": "<img src=https://webmappingprojekt.files.wordpress.com/2017/06/surf_sillwelle2.jpg?w=1140 />",
+			"FOTO": "<img src= images/SpotsUse/Surf_Sillwelle2.jpg />",
             "SE_ANNO_CAD_DATA": null
         }
     }],
