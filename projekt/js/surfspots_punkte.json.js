@@ -14,7 +14,7 @@ window.surfspotMarker={
             "KATEGORIE": 1,
             "NAME": "Dreiheiligenwelle",
 			"TYP": "Natürliche Flusswelle",
-            "BEMERKUNG": "Welle Funktionier nur teilweise bei Hochwasser.",
+            "BEMERKUNG": "Welle funktioniert nur teilweise bei Hoch- /Niedrigwasser.",
 			"FOTO": "<img src= images/SpotsUse/Surf_Dreiheiligenwelle.jpg />",
             "SE_ANNO_CAD_DATA": null
         }

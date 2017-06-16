@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -32,17 +33,24 @@
             height: 60vh;
             width: 100vw;
         }
+		
+		#Titel,
+		#Schwierigkeitsgrad {
+            height: 3vh;
+            width: 100vw;
+        }
 
         select {
             font-size: 1.2em;
             margin: 0.2em;
         }
 
-        h1 {
-            text-align: center;
-            color: white;
-            background-color: black;
-            font-family: Arial;
+        #BiketrailSeiteTitel {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 100px;
+            width: 1024px;
         }
 
         h3 {
@@ -52,23 +60,35 @@
 		
 		p {
 			font-size: 18px;
+			align: justify;
+			font-family: arial;
 		}
 		
 		a {
 			text-decoration: none;
 		}
-		.footer{ 
+		
+		.footer { 
 			color: black;
 			background-color: white;  
 			text-align: center;    
 			bottom: 0px; 
 			width: 100%;
+			font-family: arial;
+			color: black;
+			opacity: 0.7;
 		} 
     </style>
 </head>
 
 <body>
-    <h1> Mountainbiken am „Bike Trail Tirol“ </h1>
+	
+	<figure>
+		
+		<img id="BiketrailSeiteTitel" src="images/MountainbiketrailTirolTitel.png" />
+		
+	</figere>
+	
     <h3> Der „Bike Trail Tirol“ ist der längste zusammenhängende Mountainbike-Rundkurs der Alpen und führt auf 32 Etappen, 1.000 Kilometern und 27.000 Höhenmetern durch die vielfältigen Regionen des Landes.</h3>
     <p> Der Aufbau des Rundkurses erlaubt dabei die freie Wahl von Start- und Zielpunkt. Ob ein- oder mehrtägige Rundtouren: Am „Bike Trail Tirol“ wartet auf jeden die passende Tour. Genussradler finden ihre Balance zwischen Entspannung und Anstrengung auf flacheren, landschaftlich reizvollen Strecken. Und wer die sportliche Herausforderung sucht, ist auf den Mountainbike-Touren in Tirol gut aufgehoben. Treten Sie in die Pedale und erkunden Sie das Herz der Alpen am längsten zusammenhängenden Mountainbike-Rundkurs der Alpen.</p>
 
@@ -121,11 +141,12 @@
         <a href = <span id="Info"></span>>Weitere Informationen</a>
     </p>
 	
+	<br>
+	
 	<div class = "footer">
 		Autoren: <a href="https://github.com/FloCorz/FloCorz.github.io">Florian Corzelius</a>, <a href="https://github.com/raffikossmann/raffikossmann.github.io">Raffael Kossmann</a> und <a href="https://github.com/sh4pefile/sh4pefile.github.io">Paul Tiefenbacher</a> 
 		<br></br>
 		Quellen: <a href="https://www.tirol.gv.at/">Land Tirol</a> und <a href="http://www.tirol.at/reisefuehrer/sport/mountainbiken/bike-trail-tirol">Tirol Werbung</a>
-		<br></br>
 	</div>
 	
 </body>
