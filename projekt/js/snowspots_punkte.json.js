@@ -15,7 +15,7 @@ window.snowspotMarker={
             "NAME": "Nordkette Skyline Park",
 			"TYP": "Kicker/Rails",
             "BEMERKUNG": "Der Nordkette Skyline Park liegt direkt über Innsbruck und ist in ca. einer halben zu erreichen.",
-			"FOTO": "<img src= https://scontent.cdninstagram.com/t51.2885-15/e35/14449111_1175235239231290_4701009668758044672_n.jpg />",
+			"FOTO": "<img src= images/SpotsUse/Snow_Seegrube.jpg />",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -32,7 +32,7 @@ window.snowspotMarker={
             "NAME": "Golden Roof Park Axams",
 			"TYP": "Kicker/Rails",
             "BEMERKUNG": "Der Golden Roof Park liegt im Skigebiet Axamer Lizum. Dieser Snowpark ist jedoch eher für Familien ausgelegt.",
-			"FOTO": "<img src= https://webmappingprojekt.files.wordpress.com/2017/06/goldenroofpark.png?crop />",
+			"FOTO": "<img src= images/SpotsUse/Snow_GoldenRoof.png />",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -49,7 +49,7 @@ window.snowspotMarker={
             "NAME": "Sane! Rinn Jib Park",
 			"TYP": "Rails",
             "BEMERKUNG": "Der Sane! Rinn Jib Park liegt ca. 15 Minuten von Innsbruck entfert am Schlepplift des Kinderlands Rinn.",
-			"FOTO": "<img src= https://scontent.cdninstagram.com/t51.2885-15/e35/12783946_517715741763669_1020907442_n.jpg />",
+			"FOTO": "<img src= images/SpotsUse/Snow_Rinn.jpg />",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -66,7 +66,7 @@ window.snowspotMarker={
             "NAME": "K-Park Kühtai",
 			"TYP": "Kicker/Rails/Superpipe",
             "BEMERKUNG": "Der K-Park im Skigebiet Kühtai liegt ca. 30 Minuten von Innsbruck entfernt. Es ist ein mittelmäßiger Snowpark, der jedoch über eine der wenigen Superpipes in den Alpen verfügt.",
-			"FOTO": "<img src= https://scontent.cdninstagram.com/t51.2885-15/e35/18013326_1924972207781445_2604018137326157824_n.jpg />",
+			"FOTO": "<img src= images/SpotsUse/Snow_Kuehtai.jpg />",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -83,7 +83,7 @@ window.snowspotMarker={
             "NAME": "Glungezer Park",
 			"TYP": "Kicker/Rails",
             "BEMERKUNG": "Der Snowpark an der Glungezerbahn ist von Innsbruck in ca. 30 Minuten zu erreichen.",
-			"FOTO": "<img src= http://www.skiresort.de/typo3temp/pics/a9cca255f5.jpg />",
+			"FOTO": "<img src= images/SpotsUse/Snow_Glungezer.jpg />",
             "SE_ANNO_CAD_DATA": null
         }
     }],
