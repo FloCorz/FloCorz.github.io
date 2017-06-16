@@ -253,7 +253,7 @@ window.skatespotMarker={
             "NAME": "Rapoldipark",
 			"TYP": "Bank",
             "BEMERKUNG": "Holzbanks auf Holzboden",
-			"FOTO": "<img src= images/SpotsUse/Skate_Rapoldipark1.jpg/>",
+			"FOTO": "<img src= images/SpotsUse/Skate_Rapoldipark1.jpg />",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
@@ -321,7 +321,7 @@ window.skatespotMarker={
             "NAME": "Tivoli Curbs",
 			"TYP": "Curb/Ledge",
             "BEMERKUNG": "Etliche Curbs in verschiedenen größen.",
-			"FOTO": "<img src= images/SpotsUse/Skate_Tivoli5.jpg/>",
+			"FOTO": "<img src= images/SpotsUse/Skate_Tivoli5.jpg />",
             "SE_ANNO_CAD_DATA": null
         }
     }, {
