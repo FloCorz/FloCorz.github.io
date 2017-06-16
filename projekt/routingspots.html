@@ -12,7 +12,9 @@
 
     <link rel="stylesheet" href="js/leaflet-routingmachine/leaflet-routing-machine.css" />
     <script src="js/leaflet-routingmachine/leaflet-routing-machine.js"></script>
-
+	
+	<script src="js/leaflet-routingmachine/controlgeocoder.js"></script>
+	
     <style>
         body {
             padding: 0px;
@@ -106,13 +108,15 @@
         });
 		
 		L.Routing.control({
-            position : 'topleft',
-            waypoints: [
-                L.latLng(47.654, 13.370),
-                L.latLng(48.208493, 16.373118)
-            ]
-        }).addTo(map);
-		
+			waypoints: [
+				L.latLng(47.3, 13.8),
+				L.latLng(47.3, 13.3)
+			],
+			routeWhileDragging: true,
+			language: 'de',
+			geocoder: L.Control.Geocoder.nominatim()
+		}).addTo(map);
+
     </script>
 
 </body>
