@@ -165,7 +165,7 @@
             var note = '<h2>' + layer.feature.properties.ROUTENNAME + '</h2>';
 			note += '<h5>' + "Bemerkung: " + layer.feature.properties.ROUTENBESC + '</h5>';
             note += '<h5>' + "Typ: " + layer.feature.properties.ROUTEN_TYP + '</h5>';
-            
+            note += '<h5>' + "Fahrzeit: " + layer.feature.properties.FAHRZEIT + '</h5>';			         
             return note;
         }).addTo(map);		
 
