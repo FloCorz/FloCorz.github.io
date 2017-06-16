@@ -157,11 +157,7 @@
             }
         }).addTo(clusterGruppe_snow);
 		
-		var linienMountainbike = L.geoJSON(window.mountainbikeMarker, {
-            style: function(feature) {
-                var farbe = "red"
-            }
-        }).bindPopup(function(layer) {
+		var linienMountainbike = L.geoJSON(window.mountainbikeMarker).bindPopup(function(layer) {
             var note = '<h2>' + layer.feature.properties.ROUTENNAME + '</h2>';
 			note += '<h5>' + "Bemerkung: " + layer.feature.properties.ROUTENBESC + '</h5>';
             note += '<h5>' + "Typ: " + layer.feature.properties.ROUTEN_TYP + '</h5>';
