@@ -156,6 +156,18 @@
                 layer.bindPopup(note);
             }
         }).addTo(clusterGruppe_snow);
+		
+		var linienMountainbike = L.geoJSON(window.mountainbikeMarker, {
+            style: function(feature) {
+                var farbe = "red"
+            }
+        }).bindPopup(function(layer) {
+            var note = '<h2>' + layer.feature.properties.ROUTENNAME + '</h2>';
+			note += '<h5>' + "Bemerkung: " + layer.feature.properties.ROUTENBESC + '</h5>';
+            note += '<h5>' + "Typ: " + layer.feature.properties.ROUTEN_TYP + '</h5>';
+            
+            return note;
+        }).addTo(map);		
 
 
         // Ausschnitt auf Punkte der Spotmap setzen
@@ -174,5 +186,6 @@
             "Skate": clusterGruppe_skate,
             "Surf": clusterGruppe_surf,
             "Snow": clusterGruppe_snow,
+			"Mountainbike": linienMountainbike
         }).addTo(map);
     };
