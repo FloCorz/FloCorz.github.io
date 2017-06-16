@@ -55,7 +55,7 @@
 
         // Karte definieren
         var map = L.map('map', {
-            layers: [layers.geolandbasemap],
+            layers: [layers.bmapgrau],
             center: [47.654, 13.370],
             zoom: 8
         });
@@ -171,7 +171,7 @@
 
 
         // Ausschnitt auf Punkte der Spotmap setzen
-        map.fitBounds(punkteSurf.getBounds());
+        map.fitBounds(linienMountainbike.getBounds());
         // map.fitBounds(punkteSpaziergang.getBounds());
 
         // WMTS-Layer Auswahl hinzufügen
