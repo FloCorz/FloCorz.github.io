@@ -36,12 +36,6 @@
             width: 100vw;
         }
 
-        h1 {
-            color: white;
-            background-color: black;
-            text-align: center;
-        }
-
         h3 {
             color: white;
             background-color: black;
@@ -68,12 +62,29 @@
             width: 20vw;
         }
 		
-        #LegendeImage {
+        #SeiteTitel {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 100px;
+            width: 1024px;
+        }
+		
+		#KarteTitel {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 100px;
+            width: 1024px;
+        }
+		
+		#LegendeImage {
             display: block;
             margin-left: auto;
             margin-right: auto;
             height: 170px;
             width: 870px;
+			position: fixed;
         }
 
         #figureImage {
@@ -96,7 +107,12 @@
 </head>
 
 <body>
-    <h1> Extremsportarten in Innsbruck </h1>
+	
+	<figure>
+		
+		<img id="SeiteTitel" src="images/ExtremsportartenSchriftzug.png" />
+		
+	</figere>
 
     <nav id="sportSelector">
         <input id="button1" type="button" value="Snowboarding" data-image="snow.jpg" data-title="Snowboarding is a recreational activity as well as a Olympic and Paralympic sport that involves descending a snow-covered slope while standing on a snowboard attached to a rider's feet. Freestyle snowboarding is any riding that includes performing tricks. In freestyle, the rider utilizes natural and man-made features such as rails, jumps, boxes, and innumerable others to perform tricks. It is a popular all-inclusive concept that distinguishes the creative aspects of snowboarding." class="current" />
@@ -106,14 +122,20 @@
     </nav>
 
     <figure>
-        <img id="figureImage" src="images/snow.jpg" alt="Snowboarding" />
+		
+        <img id="figureImage" src="images/snow.jpg" alt="Bild" />
 		
 		<br>
 		
         <figcaption id="figureCaption">Snowboarding is a recreational activity and Olympic and Paralympic sport that involves descending a snow-covered slope while standing on a snowboard attached to a rider's feet. Freestyle snowboarding is any riding that includes performing tricks. In freestyle, the rider utilizes natural and man-made features such as rails, jumps, boxes, and innumerable others to perform tricks. It is a popular all-inclusive concept that distinguishes the creative aspects of snowboarding.</figcaption>
     </figure>
 	
-	<h3> Überblick der Extremsportdestinationen in Innsbruck und Umgebung </h3>
+	
+	<figure>
+		
+		<img id="KarteTitel" src="images/ExtremsportdestinationenTitel.png" />
+		
+	</figere>
 
     <div id="map"></div>
 	
