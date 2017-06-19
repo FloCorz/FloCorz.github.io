@@ -8,7 +8,7 @@ window.ETAPPENINFO = {
       "Schwierigkeitsgrad": "leicht",
       "Hoehenmeterauf": "200",
       "Hoehenmeterab": "420",
-      "Info": "http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-steeg-weissenbach"
+      "Info": "/a-bike-trail-tirol-steeg-weissenbach"
    },
    "02 Weissenbach-Tannheim.gpx": {
       "Titel": "Biketrail-Etappe 2: Weissenbach-Tannheim",
@@ -19,7 +19,7 @@ window.ETAPPENINFO = {
       "Schwierigkeitsgrad": "mittelschwierig",
       "Hoehenmeterauf": "400",
       "Hoehenmeterab": "190",
-      "Info": "http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-weissenbach-tannheim"
+      "Info": "/a-bike-trail-tirol-weissenbach-tannheim"
    },
    "03 Tannheim-Reutte.gpx": {
       "Titel": "Biketrail-Etappe 3: Tannheim-Reutte",
@@ -30,7 +30,7 @@ window.ETAPPENINFO = {
       "Schwierigkeitsgrad": "mittelschwierig",
       "Hoehenmeterauf": "500",
       "Hoehenmeterab": "590",
-      "Info": "http://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-tannheim-reutte"
+      "Info": "/a-bike-trail-tirol-tannheim-reutte"
    },
    "04 Weissenbach-Reutte.gpx": {
       "Titel": "Biketrail-Etappe 4: Weissenbach-Reutte",
