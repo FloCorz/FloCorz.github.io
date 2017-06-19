@@ -5,98 +5,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <title>Spot-Routing</title>
+    <title>Extremsport in Innsbruck: Überblick</title>
 
     <link rel="stylesheet" href="js/leaflet/leaflet.css" />
     <script src="js/leaflet/leaflet.js"></script>
+		
+    <script src="./mapNAV.js"></script>
+    <script src="js/skatespots_punkte.json.js"></script>
+    <script src="js/surfspots_punkte.json.js"></script>
+    <script src="js/snowspots_punkte.json.js"></script>
+	<script src="js/mountainbike_linien.json.js"></script>
+	
+	<script src="js/leaflet-markercluster/leaflet.markercluster.js"></script>
+	<link rel="stylesheet" href="js/leaflet-markercluster/MarkerCluster.css" />
+	<link rel="stylesheet" href="js/leaflet-markercluster/MarkerCluster.Default.css" />
 
-    <link rel="stylesheet" href="js/leaflet-routingmachine/leaflet-routing-machine.css" />
+	<link rel="stylesheet" href="js/leaflet-routingmachine/leaflet-routing-machine.css" />
     <script src="js/leaflet-routingmachine/leaflet-routing-machine.js"></script>
-	
-	<script src="js/leaflet-routingmachine/controlgeocoder.js"></script>
-	
+
+
     <style>
         body {
             padding: 0px;
             margin: 0px;
         }
-        html, body, #map {
+		
+        html {
             height: 100vh;
             width: 100vw;
         }
+
+        .footer {
+            color: black;
+            background-color: white;
+            text-align: center;
+            bottom: 0px;
+            width: 100%;
+			font-family: arial;
+        }
+
+        #map {
+            float: center;
+            height: 100vh;
+            width: 100vw;
+            border: 2px solid black;
+        }
+		
+		img {
+            height: 30vh;
+            width: 20vw;
+        }
+		
     </style>
 </head>
 
 <body>
     <div id="map"></div>
-
-    <script>
-
-        var layers = {
-            geolandbasemap: L.tileLayer("https://{s}.wien.gv.at/basemap/geolandbasemap/normal/google3857/{z}/{y}/{x}.png", {
-                subdomains: ['maps', 'maps1', 'maps2', 'maps3', 'maps4'],
-                attribution: 'Datenquelle: <a href="http://www.basemap.at/">basemap.at</a>'
-            }),
-            bmapgrau: L.tileLayer("https://{s}.wien.gv.at/basemap/bmapgrau/normal/google3857/{z}/{y}/{x}.png", {
-                subdomains: ['maps', 'maps1', 'maps2', 'maps3', 'maps4'],
-                attribution: 'Datenquelle: <a href="http://www.basemap.at/">basemap.at</a>'
-            }),
-            bmapoverlay: L.tileLayer("https://{s}.wien.gv.at/basemap/bmapoverlay/normal/google3857/{z}/{y}/{x}.png", {
-                subdomains: ['maps', 'maps1', 'maps2', 'maps3', 'maps4'],
-                attribution: 'Datenquelle: <a href="http://www.basemap.at/">basemap.at</a>'
-            }),
-            bmaphidpi: L.tileLayer("https://{s}.wien.gv.at/basemap/bmaphidpi/normal/google3857/{z}/{y}/{x}.jpeg", {
-                subdomains: ['maps', 'maps1', 'maps2', 'maps3', 'maps4'],
-                attribution: 'Datenquelle: <a href="http://www.basemap.at/">basemap.at</a>'
-            }),
-            bmaporthofoto30cm: L.tileLayer("https://{s}.wien.gv.at/basemap/bmaporthofoto30cm/normal/google3857/{z}/{y}/{x}.jpeg", {
-                subdomains: ['maps', 'maps1', 'maps2', 'maps3', 'maps4'],
-                attribution: 'Datenquelle: <a href="http://www.basemap.at/">basemap.at</a>'
-            }),
-            osm: L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                subdomains: ['a', 'b', 'c'],
-                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-            })
-        };
-
-        var map = L.map('map', {
-            layers: [layers.geolandbasemap],
-            center : [47.654, 13.370],
-            zoom : 8
-        });
-
-        L.control.scale({
-            maxWidth: 200,
-            metric: true,
-            imperial: false
-        }).addTo(map);
-
-        var layerControl = L.control.layers({
-            "basemap.at - STANDARD": layers.geolandbasemap,
-            "basemap.at - GRAU": layers.bmapgrau,
-            "basemap.at - OVERLAY": layers.bmapoverlay,
-            "basemap.at - HIGH-DPI": layers.bmaphidpi,
-            "basemap.at - ORTHOFOTO": layers.bmaporthofoto30cm,
-            "OpenStreetMap": layers.osm,
-        }).addTo(map);
-		
-            var routing_control = L.Routing.control({
-                show : false
-            }).addTo(map);
-			
-			map.locate({
-            setView: true,
-            maxZoom: 16
-			});
-
-            map.on('locationfound', function (event) {
-                    routing_control.setWaypoints([
-                        event.latlng,
-						(47.5, 13.4) 
-                    ]);
-                    routing_control.show();
-            });
-    </script>
+    <div class="footer">
+		<br>
+		Zurück zur <a href="https://flocorz.github.io/projekt/index.html">Hauptseite</a>
+		<br></br>
+        Autoren: <a href="https://github.com/FloCorz/FloCorz.github.io">Florian Corzelius</a>, <a href="https://github.com/raffikossmann/raffikossmann.github.io">Raffael Kossmann</a> und <a href="https://github.com/sh4pefile/sh4pefile.github.io">Paul Tiefenbacher</a>
+        <br></br>
+    </div>
 
 </body>
 
