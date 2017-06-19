@@ -157,7 +157,22 @@
             }
         }).addTo(clusterGruppe_snow);
 		
-		var linienMountainbike = L.geoJSON(window.mountainbikeMarker).bindPopup(function(layer) {
+		var linienMountainbike = L.geoJSON(window.mountainbikeMarker, {
+            style: function(feature) {
+                var farbe = "";
+                if (feature.properties.ROUTEN_TYP == "Mountainbikeroute schwierig") {
+                    farbe = "red";
+                } else if (feature.properties.ROUTEN_TYP == "Mountainbikeroute mittelschwierig") {
+                    farbe = "orange";
+                }
+				else {
+                    farbe = "yellow";
+                }
+                return {
+                    color: farbe
+                };
+			  }
+            }).bindPopup(function(layer) {
             var note = '<h2>' + layer.feature.properties.ROUTENNAME + '</h2>';
 			note += '<h5>' + "Bemerkung: " + layer.feature.properties.ROUTENBESC + '</h5>';
             note += '<h5>' + "Typ: " + layer.feature.properties.ROUTEN_TYP + '</h5>';

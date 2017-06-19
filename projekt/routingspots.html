@@ -80,43 +80,22 @@
             "OpenStreetMap": layers.osm,
         }).addTo(map);
 		
-        map.locate({
+            var routing_control = L.Routing.control({
+                show : false
+            }).addTo(map);
+			
+			map.locate({
             setView: true,
             maxZoom: 16
-        });
+			});
 
-        map.on('locationfound', function (evt) {
-
-            var radius = Math.round(evt.accuracy / 2.0);
-            var tipp = "Sie befinden sich im Umkreis von " + Math.round(radius) + " Metern dieses Punktes";
-            var overlay = L.featureGroup().addTo(map);
-
-            L.marker(evt.latlng).addTo(overlay).bindPopup(tipp).openPopup();
-            L.circle(evt.latlng, {
-                radius: radius,
-                fillOpacity : 0.05
-            }).addTo(overlay);
-
-            layerControl.addOverlay(overlay, "Genauigkeitsbereich der Position");
-        });
-
-        map.on('locationerror', function (evt) {
-            alert("Ihre Position konnte nicht bestimmt werden");
-            map.setView(
-                [47.654, 13.370], 8
-            );
-        });
-		
-		L.Routing.control({
-			waypoints: [
-				L.latLng(47.3, 13.8),
-				L.latLng(47.3, 13.3)
-			],
-			routeWhileDragging: true,
-			language: 'de',
-			geocoder: L.Control.Geocoder.nominatim()
-		}).addTo(map);
-
+            map.on('locationfound', function (event) {
+                    routing_control.setWaypoints([
+                        event.latlng,
+						(47.5, 13.4) 
+                    ]);
+                    routing_control.show();
+            });
     </script>
 
 </body>
