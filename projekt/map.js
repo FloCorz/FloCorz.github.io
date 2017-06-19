@@ -160,9 +160,9 @@
 		var linienMountainbike = L.geoJSON(window.mountainbikeMarker, {
             style: function(feature) {
                 var farbe = "";
-                if (feature.properties.ROUTEN_TYP == "Mountainbikeroute schwierig") {
+                if (feature.properties.SCHWIERIGK == "schwierig") {
                     farbe = "red";
-                } else if (feature.properties.ROUTEN_TYP == "Mountainbikeroute mittelschwierig") {
+                } else if (feature.properties.SCHWIERIGK == "mittelschwierig") {
                     farbe = "orange";
                 }
 				else {
