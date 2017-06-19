@@ -45,7 +45,9 @@ window.onload = function() {
     // Höhenprofil control hinzufügen
     var profileControl = L.control.elevation({
         position: 'bottomleft',
-        theme: 'steelblue-theme'
+        theme: 'steelblue-theme',
+		width: 400,
+		height: 125,
     });
     profileControl.addTo(map);
 

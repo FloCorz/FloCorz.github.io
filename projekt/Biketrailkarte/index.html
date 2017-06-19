@@ -20,24 +20,28 @@
 
     <style>
         body {
-            padding: 0px;
-            margin-left: 1px;
-            margin-right: 1px;
+            padding: 0.5em;
+            margin-left: 0.5em;
+            margin-right: 0.5em;
 			background: url(images/mountainbikebild.jpg);
 			background-position: top;
         }
 
         html,
-        body,
+        body {
+            height: 60vh;
+            width: 97vw;
+        }
+		
         #map {
             height: 60vh;
-            width: 100vw;
+            width: 91vw;
         }
 		
 		#Titel,
 		#Schwierigkeitsgrad {
             height: 3vh;
-            width: 100vw;
+            width: 91vw;
         }
 
         select {
@@ -56,12 +60,18 @@
         h3 {
             font-family: Arial;
 			text-align: center;
+			background: url(images/TextBackground.png);
+			padding: 1em;
+			border-radius: 1em;
         }
 		
 		p {
 			font-size: 18px;
-			align: justify;
+			text-align: justify;
 			font-family: arial;
+			background: url(images/TextBackground.png);
+			padding: 1em;
+			border-radius: 1em;
 		}
 		
 		a {
@@ -70,14 +80,15 @@
 		
 		.footer { 
 			color: black;
-			background-color: white;  
-			text-align: center;    
-			bottom: 0px; 
-			width: 100%;
+			background: url(images/TextBackground.png);
+			text-align: center;  
+			padding: 1em;  
 			font-family: arial;
 			color: black;
 			opacity: 0.7;
+			border-radius: 1em;
 		} 
+		
     </style>
 </head>
 
@@ -131,7 +142,7 @@
 	<option value="32 Imst-Ehrwald.gpx">Biketrail-Etappe 32</option>
 	</select>
 
-    <p style ="color:white">Von
+    <p style ="color:black; padding: 1em;" > Von
         <span id="Ausgangspunkt"></span> nach
         <span id="Endpunkt"></span>, wobei
         <span id="Hoehenmeterauf"></span> Höhenmeter bergauf und
