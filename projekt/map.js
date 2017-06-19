@@ -55,7 +55,7 @@
 
         // Karte definieren
         var map = L.map('map', {
-            layers: [layers.bmapgrau],
+            layers: [layers.geolandbasemap],
             center: [47.654, 13.370],
             zoom: 8
         });
