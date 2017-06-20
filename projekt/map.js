@@ -59,10 +59,10 @@
             center: [47.654, 13.370],
             zoom: 8
         });
-		
-		var clusterGruppe_skate = L.markerClusterGroup().addTo(map);
+
+        var clusterGruppe_skate = L.markerClusterGroup().addTo(map);
         var clusterGruppe_surf = L.markerClusterGroup().addTo(map);
-		var clusterGruppe_snow = L.markerClusterGroup().addTo(map);
+        var clusterGruppe_snow = L.markerClusterGroup().addTo(map);
 
         // Maßstab hinzufügen
         L.control.scale({
@@ -90,15 +90,15 @@
                     })
                 });
             },
-			onEachFeature : function (feature, layer) {
-            var note = '<h2>' + layer.feature.properties.NAME + '</h2>';
-            note += '<h5>' + "Bemerkung: " + layer.feature.properties.BEMERKUNG + '</h5>';
-            note += '<h5>' + "Typ: " + layer.feature.properties.TYP + '</h5>';
-            note += '<h5>' + " " + layer.feature.properties.FOTO + '</h5>';
+            onEachFeature: function(feature, layer) {
+                var note = '<h2>' + layer.feature.properties.NAME + '</h2>';
+                note += '<h5>' + "Bemerkung: " + layer.feature.properties.BEMERKUNG + '</h5>';
+                note += '<h5>' + "Typ: " + layer.feature.properties.TYP + '</h5>';
+                note += '<h5>' + " " + layer.feature.properties.FOTO + '</h5>';
                 layer.bindPopup(note);
             }
         }).addTo(clusterGruppe_skate);
-		
+
 
         //Punkte Surfspots
         var surficonByCategory = {
@@ -119,15 +119,15 @@
                     })
                 });
             },
-			onEachFeature : function (feature, layer) {
-            var note = '<h2>' + layer.feature.properties.NAME + '</h2>';
-            note += '<h5>' + "Bemerkung: " + layer.feature.properties.BEMERKUNG + '</h5>';
-            note += '<h5>' + "Typ: " + layer.feature.properties.TYP + '</h5>';
-            note += '<h5>' + " " + layer.feature.properties.FOTO + '</h5>';
+            onEachFeature: function(feature, layer) {
+                var note = '<h2>' + layer.feature.properties.NAME + '</h2>';
+                note += '<h5>' + "Bemerkung: " + layer.feature.properties.BEMERKUNG + '</h5>';
+                note += '<h5>' + "Typ: " + layer.feature.properties.TYP + '</h5>';
+                note += '<h5>' + " " + layer.feature.properties.FOTO + '</h5>';
                 layer.bindPopup(note);
             }
         }).addTo(clusterGruppe_surf);
-		
+
 
         //Punkte Snowspots
         var snowiconByCategory = {
@@ -148,37 +148,36 @@
                     })
                 });
             },
-			onEachFeature : function (feature, layer) {
-            var note = '<h2>' + layer.feature.properties.NAME + '</h2>';
-            note += '<h5>' + "Bemerkung: " + layer.feature.properties.BEMERKUNG + '</h5>';
-            note += '<h5>' + "Typ: " + layer.feature.properties.TYP + '</h5>';
-            note += '<h5>' + " " + layer.feature.properties.FOTO + '</h5>';
+            onEachFeature: function(feature, layer) {
+                var note = '<h2>' + layer.feature.properties.NAME + '</h2>';
+                note += '<h5>' + "Bemerkung: " + layer.feature.properties.BEMERKUNG + '</h5>';
+                note += '<h5>' + "Typ: " + layer.feature.properties.TYP + '</h5>';
+                note += '<h5>' + " " + layer.feature.properties.FOTO + '</h5>';
                 layer.bindPopup(note);
             }
         }).addTo(clusterGruppe_snow);
-		
-		var linienMountainbike = L.geoJSON(window.mountainbikeMarker, {
+
+        var linienMountainbike = L.geoJSON(window.mountainbikeMarker, {
             style: function(feature) {
                 var farbe = "";
                 if (feature.properties.SCHWIERIGK == "schwierig") {
                     farbe = "red";
                 } else if (feature.properties.SCHWIERIGK == "mittelschwierig") {
                     farbe = "orange";
-                }
-				else {
+                } else {
                     farbe = "yellow";
                 }
                 return {
                     color: farbe
                 };
-			  }
-            }).bindPopup(function(layer) {
+            }
+        }).bindPopup(function(layer) {
             var note = '<h2>' + layer.feature.properties.ROUTENNAME + '</h2>';
-			note += '<h5>' + "Bemerkung: " + layer.feature.properties.ROUTENBESC + '</h5>';
+            note += '<h5>' + "Bemerkung: " + layer.feature.properties.ROUTENBESC + '</h5>';
             note += '<h5>' + "Typ: " + layer.feature.properties.ROUTEN_TYP + '</h5>';
-            note += '<h5>' + "Fahrzeit: " + layer.feature.properties.FAHRZEIT + '</h5>';			         
+            note += '<h5>' + "Fahrzeit: " + layer.feature.properties.FAHRZEIT + '</h5>';
             return note;
-        }).addTo(map);		
+        }).addTo(map);
 
 
         // Ausschnitt auf Punkte der Spotmap setzen
@@ -197,6 +196,6 @@
             "Skate": clusterGruppe_skate,
             "Surf": clusterGruppe_surf,
             "Snow": clusterGruppe_snow,
-			"Mountainbike": linienMountainbike
+            "Mountainbike": linienMountainbike
         }).addTo(map);
     };
