@@ -163,9 +163,6 @@
                 event.latlng
             ]);
             routing_control.show();
-
-            map.removeLayer(tipp_marker);
-            tipp_marker = null;
         });
 
         punkteSnow.on("click", function(event) {
@@ -174,9 +171,6 @@
                 event.latlng
             ]);
             routing_control.show();
-
-            map.removeLayer(tipp_marker);
-            tipp_marker = null;
         });
 
         punkteSurf.on("click", function(event) {
@@ -185,9 +179,6 @@
                 event.latlng
             ]);
             routing_control.show();
-
-            map.removeLayer(tipp_marker);
-            tipp_marker = null;
         });
 
     };
