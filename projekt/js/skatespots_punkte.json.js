@@ -252,7 +252,7 @@ window.skatespotMarker={
             "KATEGORIE": 2,
             "NAME": "Rapoldipark",
 			"TYP": "Bank",
-            "BEMERKUNG": "Holzbanks auf Holzboden",
+            "BEMERKUNG": "Holzbanks auf Holzboden. ",
 			"FOTO": "<img src= images/SpotsUse/Skate_Rapoldipark1.jpg />",
             "SE_ANNO_CAD_DATA": null
         }
@@ -269,7 +269,7 @@ window.skatespotMarker={
             "KATEGORIE": 2,
             "NAME": "Rapoldipark Curb",
 			"TYP": "Curb/Ledge",
-            "BEMERKUNG": "Brunnen mit Granitumrandung",
+            "BEMERKUNG": "Brunnen mit Granitumrandung, als Ledge fahrbar.",
 			"FOTO": "<img src= images/SpotsUse/Skate_RapoldiparkCurb.jpg />",
             "SE_ANNO_CAD_DATA": null
         }
@@ -337,7 +337,7 @@ window.skatespotMarker={
             "KATEGORIE": 2,
             "NAME": "Tivoli Bank",
 			"TYP": "Bank",
-            "BEMERKUNG": "Steile Bank mit eher schlechte bzw. kurzer Anfahrt",
+            "BEMERKUNG": "Steile Bank mit eher schlechter bzw. kurzer Anfahrt",
 			"FOTO": "<img src= images/SpotsUse/Skate_TivoliBank2.jpg />",
             "SE_ANNO_CAD_DATA": null
         }
