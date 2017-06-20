@@ -60,8 +60,7 @@ window.onload = function() {
         document.getElementById("Schwierigkeitsgrad").innerHTML = window.ETAPPENINFO[gpxFile].Schwierigkeitsgrad;
         document.getElementById("Hoehenmeterauf").innerHTML = window.ETAPPENINFO[gpxFile].Hoehenmeterauf;
         document.getElementById("Hoehenmeterab").innerHTML = window.ETAPPENINFO[gpxFile].Hoehenmeterab;
-        document.getElementById("Info").innerHTML = window.ETAPPENINFO[gpxFile].Info;
-
+		
         gpxTrackGroup.clearLayers();
         coloredLineGroup.clearLayers();
 
